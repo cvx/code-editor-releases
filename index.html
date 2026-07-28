@@ -3,37 +3,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Code Editor 0.5</title>
 <style>
-  :root { color-scheme: light dark; --fg: #1c1c1e; --dim: #6b6b70; --bg: #fbfbfd; --card: #fff; --line: #e5e5ea; --accent: #0b6bcb; }
+  :root { color-scheme: light dark; --fg: #1c1c1e; --dim: #6b6b70; --bg: #fbfbfd; --accent: #0b6bcb; }
   @media (prefers-color-scheme: dark) {
-    :root { --fg: #f2f2f7; --dim: #98989f; --bg: #131316; --card: #1c1c20; --line: #33333a; --accent: #4c9ffe; }
+    :root { --fg: #f2f2f7; --dim: #98989f; --bg: #131316; --accent: #4c9ffe; }
   }
   * { box-sizing: border-box; }
   body { margin: 0; padding: 8vh 6vw; background: var(--bg); color: var(--fg);
          font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
   main { max-width: 34rem; margin: 0 auto; }
-  h1 { font-size: 2rem; letter-spacing: -0.02em; margin: 0 0 .3rem; }
-  .ver { color: var(--dim); margin: 0 0 2rem; }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 1.5rem; }
-  a.dl { display: block; text-align: center; background: var(--accent); color: #fff; text-decoration: none;
-         font-weight: 600; padding: .85rem 1rem; border-radius: 10px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+  h1 { font-size: 2rem; letter-spacing: -0.02em; margin: 0; }
+  a.dl { background: var(--accent); color: #fff; text-decoration: none; font-weight: 600;
+         font-size: .95rem; padding: .5rem 1.1rem; border-radius: 8px; white-space: nowrap; }
   a.dl:hover { filter: brightness(1.08); }
-  .meta { color: var(--dim); font-size: .875rem; text-align: center; margin: .75rem 0 0; }
-  ul { color: var(--dim); font-size: .9rem; padding-left: 1.2rem; margin: 1.5rem 0 0; }
-  li { margin: .3rem 0; }
-  footer { color: var(--dim); font-size: .8rem; margin-top: 2.5rem; }
+  .meta { color: var(--dim); font-size: .875rem; margin: .5rem 0 0; }
+  .note { color: var(--dim); font-size: .9rem; margin: 1.75rem 0 0; }
 </style>
 <main>
-  <h1>Code Editor</h1>
-  <p class="ver">Version 0.5 &middot; build 2223</p>
-  <div class="card">
-    <a class="dl" href="Code%20Editor-0.5.zip">Download for macOS</a>
-    <p class="meta">18 MB &middot; Apple Silicon &middot; macOS 26 or later</p>
-  </div>
-  <ul>
-    <li>Unzip and drag <strong>Code Editor</strong> to your Applications folder.</li>
-    <li>Signed and notarized by Apple &mdash; it opens normally, no security warning.</li>
-    <li>Updates install themselves: the app checks for new builds and offers them.
-        You can also use <strong>Check for Updates&hellip;</strong> in the app menu.</li>
-  </ul>
-  <footer>A work-in-progress build for testers. Expect rough edges.</footer>
+  <header>
+    <h1>Code Editor</h1>
+    <a class="dl" href="Code%20Editor-0.5.zip">Download</a>
+  </header>
+  <p class="meta">Version 0.5 &middot; 18 MB &middot; macOS 26 or later</p>
+  <p class="note">Unzip and drag <strong>Code Editor</strong> to your Applications folder.</p>
 </main>
