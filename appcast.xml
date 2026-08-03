@@ -3,6 +3,29 @@
     <channel>
         <title>Code Editor</title>
         <item>
+            <title>0.6</title>
+            <pubDate>Mon, 03 Aug 2026 05:17:27 +0200</pubDate>
+            <sparkle:version>2593</sparkle:version>
+            <sparkle:shortVersionString>0.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <sparkle:releaseNotesLink>https://cvx.github.io/code-editor-releases/Cove-0.6.md</sparkle:releaseNotesLink>
+            <enclosure url="https://cvx.github.io/code-editor-releases/Cove-0.6.zip" length="13555419" type="application/octet-stream" sparkle:edSignature="4r7XmaQEzZtABm8Z0S840StxrDuuHVSzl+f4SAm5Gqi2nr96srLBaE4mi6+A96kw8v69/BQeJqkqSet4ILDsAA=="/>
+        </item>
+        <item>
+            <title>0.6</title>
+            <pubDate>Mon, 03 Aug 2026 05:17:27 +0200</pubDate>
+            <sparkle:version>2588</sparkle:version>
+            <sparkle:shortVersionString>0.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <sparkle:releaseNotesLink>https://cvx.github.io/code-editor-releases/Cove-0.6.md</sparkle:releaseNotesLink>
+            <enclosure url="https://cvx.github.io/code-editor-releases/Cove-0.6.zip" length="13555538" type="application/octet-stream" sparkle:edSignature="cDfsStF4t9O1Lwcr/5EjbJ6pfhgR/tSL2mHi2xgd8quq4agQ4YAGGcF9+PfcIz2u6hcHRykb4VgUwJHO2cI0DA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://cvx.github.io/code-editor-releases/Cove2588-2223.delta" sparkle:deltaFrom="2223" length="6844962" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="pwG/v22O7UujmxsVgpOyLIEn80AmL99ZWo9HC2Z9mXF5Y882IaM0zx/gpqKTJmBGbu9KZoDS2FotqFw9yYcTBQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.5</title>
             <pubDate>Tue, 28 Jul 2026 20:49:03 +0200</pubDate>
             <sparkle:version>2223</sparkle:version>
