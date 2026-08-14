@@ -1,0 +1,37 @@
+- Source Control's branches are a section of the pane now, not a popover: **Branches | Commits | Changes**.
+- Create, rename, delete, compare and the remote verbs sit on the branch rows; ⏎ checks one out.
+- A commit composer at the foot of the change list commits with ⌘⏎.
+- **Stage All / Unstage All** on the count line, and a staging checkbox flips the moment it's clicked.
+- A status row carries the branch, ahead/behind and one fetch/pull/push button.
+- A change row names its directory after the file.
+- A working-tree diff shows one half of the staging split, with a toggle to the other.
+- Clicking an already-selected change opens its diff again.
+- A manifest in the file tree installs its dependencies from the row's menu.
+- Shell integration for bash and fish, so a terminal resize keeps one prompt.
+- Clicking in a terminal's prompt moves the cursor there.
+- Terminal links open in Cove, and paths open with ⌘-click.
+- The terminal's ANSI colours are readable on the light canvas too.
+- A full-screen program in the terminal resizes shell-first.
+- The assistant's Permissions panel lists the rules in evaluation order, with add, edit and delete.
+- Ultracode joins the effort levels, and fast mode sits on the model pill.
+- The model, effort and permission pills offer only what the chosen model supports.
+- /usage, /status, /plan, /rename and /memory answer in the chat.
+- A running turn's ⌘ stays at the foot of the transcript.
+- A queued follow-up sits above the status row.
+- A subagent's output is no longer spliced into the reply.
+- The task, plan, worktree, cron and orchestration tools read as themselves.
+- Transcripts scroll smoother and mount faster.
+- ⌘⇧A reveals the focused chat's tab.
+- A chat renames in place in the sidebar.
+- A pane mounts only its frontmost tab, so a hidden editor can't take the pointer or the keys.
+- A document keeps its undo history across a switch to a terminal.
+- The current find match keeps its own colours, and the other matches are fainter.
+- Return inside a JSDoc block continues the `*` gutter.
+- **Quick Action** (⇧⌘P) runs New File, New Assistant Tab, New Terminal and Sort Lines.
+- Every shortcut that opens Quick Open takes it back.
+- An open file reloads when it changes on disk.
+- Find in Workspace keeps its results when files change, offering a refresh instead.
+- A live frame-rate readout in the titlebar, off by default (Settings ▸ General).
+- The pointer shape is decided in one place, so an I-beam holds where it should.
+- Updates download in the background and install on quit; a scheduled one waits until the app is idle.
+- File icons are retuned to the pixel grid.
