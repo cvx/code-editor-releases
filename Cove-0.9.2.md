@@ -1,0 +1,19 @@
+- The Tasks pane lists the agent skills on disk, under the tasks in a folding **Skills** section.
+- Running a skill opens a new chat and sends it; "Run with Arguments…" stops at the composer.
+- A skill dragged onto a pane runs there, in a new chat.
+- A running task's output follows live in a popover, opened by the row's **ⓘ**.
+- That output reads ANSI colours instead of printing them, and outlives the run.
+- No "Run Output" tab opens when a task finishes — the popover's "Open in Editor" is that.
+- **Quick Action** (⇧⌘P) now carries every Editor-menu shortcut, the window and app verbs, and Go to Definition / Go to Line….
+- It also lists the four Open (Blame) on GitHub/GitLab links, naming the real service.
+- **File | Preview | Diff** are Quick Action rows too, each listed only when it would change the view.
+- Searching Quick Action matches aliases: "exit" finds Quit, "delete" finds Move to Trash.
+- Quick Open shows 12 rows before the list scrolls.
+- ⌘F in a terminal or a chat opens on the last match, where the newest text is.
+- A streaming reply's bottom is followed on a gentle lag rather than pinned hard.
+- Two runs in a chat are two tool groups, and a live turn keeps its header.
+- Scrolling over open tool groups is smoother.
+- A markdown preview keeps its scroll position across a toggle or a tab switch, and its scroller clears the chrome.
+- A queued follow-up keeps to the row's width, and its ✕ lights up on hover.
+- Long user messages cap at 80% of the row.
+- The sidebar starts at 242pt.
