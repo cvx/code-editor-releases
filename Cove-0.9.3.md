@@ -1,0 +1,5 @@
+- New commits arrive at the top of the Commits list without reloading it
+- Quick Action lists the workspace's tasks and skills
+- Running a task shows it in the Tasks sidebar, selected
+- A tab moved to another pane lands after that pane's active tab
+- A streaming reply grows smoothly instead of jumping
