@@ -1,25 +1,16 @@
-- Terminals survive a restart, scrollback and shell intact.
-- A terminal resize keeps exactly one prompt.
-- ⌘F in a terminal counts every hit in the buffer.
-- A modern overlay scrollbar, and content that scrolls under the pane's chrome.
-- An unfocused pane's terminal takes the scroll wheel.
-- ⌘-hovering a path in terminal output points a hand.
-- An assistant turn survives a restart, mid-turn reply included.
-- Replies stream with the newest words fading in, far cheaper to draw.
-- Background shells, subagents and workflows show on the actions pill.
-- Plan-approval and question cards share one chrome.
-- Settings shows plan usage per organization.
-- A find or a jump no longer moves the transcript.
-- The transcript rubber-bands; a short one rests on its pane's floor.
-- Right-clicking a code block opens its menu, force-clicking a word looks it up.
-- A Source Control row dropped on a pane opens its diff there.
-- A dragged search hit opens centred on the match.
-- Pane titles lead with their close button.
-- A window with no folder open persists across launches.
-- The sidebar follows the active tab, and its divider double-clicks back to default width.
-- The workspace dropdown and actions menu open on press, so one drag picks an item.
-- Assistant sidebar lists take the file tree's keys.
-- Tabs fade out at the tab bar's leading edge.
-- The tab bar stays put when another tab closes.
-- ←/→ steps between a message's images.
-- The About window wears the app icon's colours.
+- Terminals survive a restart, scrollback and shell intact
+- A terminal resize keeps exactly one prompt
+- ⌘F in a terminal counts every hit in the buffer
+- A modern overlay scrollbar in the terminal
+- ⌘-hovering a path in terminal output points a hand
+- An assistant turn survives a restart
+- Replies stream with the newest words fading in
+- Background shells, subagents and workflows on the actions pill
+- Settings shows plan usage per organization
+- A window with no folder open persists across launches
+- A Source Control row dropped on a pane opens its diff there
+- A dragged search hit opens centred on the match
+- Assistant sidebar lists take the file tree's keys
+- The workspace dropdown opens on press
+- ←/→ steps between a message's images
+- The About window wears the app icon's colours

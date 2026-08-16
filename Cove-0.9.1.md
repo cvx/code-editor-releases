@@ -1,20 +1,9 @@
-- A markdown file renders as prose in place of its editor, with **File | Preview | Diff** on the pane title.
-- ⌥⌘P toggles the preview; "Open Preview in Other Editor Pane" keeps the source editable beside it.
-- **Quick Action** (⇧⌘P) gains Rename…, Move… and the three copy verbs, acting on the open file.
-- A link in the transcript drags out as a file chip, and drops on a pane at its cited line.
-- A transcript link opens on the mouse up, so a press that moves drags instead.
-- Terminal links have one look: an accent underline over a wash, for declared links too.
-- A declared link that wraps is underlined across every row it spans, and ends where its text does.
-- A restored terminal claims its shell at launch, so a tab behind another one keeps its session.
-- A restored screen survives its own mount: no stranded prompt, no erased scrollback.
-- The terminal's scrollbar sits on the pane's edge again.
-- A terminal pane can shrink to three rows without its prompt hiding under the title.
-- Every window opens at its own size instead of filling the screen and snapping back.
-- A restored window comes up looking focused when it is.
-- The find chip reads the same in the editor, the terminal and a chat, and rounds in the transcript.
-- Find marks both halves of a hit that wraps the terminal's right edge.
-- A flick to the bottom of a streaming reply follows it again.
-- Deleting the `>` from a Quick Open command no longer blanks the panel.
-- The whole header of a transcript disclosure toggles it, not just its text.
-- An assistant account can carry a command, so the CLI it drives can live in a container.
-- The sidebar starts wider, at 250pt.
+- Markdown files render as prose, with **File | Preview | Diff** on the pane title
+- One find chip across the editor, terminal and chat
+- An assistant account can run its CLI in a container
+- Terminal links have one look, declared links included
+- A restored terminal keeps its shell and its screen
+- Every window opens at its own size
+- Transcript links drag out as file chips
+- A transcript link opens on the mouse up
+- Rename…, Move… and the copy verbs in Quick Action

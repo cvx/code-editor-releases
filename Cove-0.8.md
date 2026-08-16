@@ -1,36 +1,18 @@
-- Source Control's branch pill opens a branch panel: local and remote branches as one folding tree.
-- Checkout, create, compare, fetch/pull/push and delete live on its rows.
-- A **Changes | History** switch (⇧⌘Y) shows the branch's commits, paged as it scrolls.
-- **File ▸ Discard Changes (⇧⌘⌫)** throws away the selection's uncommitted work, always asking first.
-- ⌫ on a Source Control row does the same.
-- A changed file renames in place, on its own row.
-- Trashing a file with unsaved or uncommitted work stops to ask.
-- The file tree refreshes after a checkout.
-- Find in Workspace searches unsaved buffers, not just disk.
-- A pattern that won't compile is reported, not shown as "No results".
-- Find in Workspace is much faster on large workspaces.
-- A search hit is anchored on its line text, so a shifted file still opens right.
-- Results show their directory beside the filename.
-- JavaScript and TypeScript work with no install.
-- One TypeScript server per project instead of three.
-- A tab dropped where a divider meets the editor's edge makes a pane that long.
-- Drops that would change nothing are no longer offered.
-- An archived chat or a terminal task drags from the sidebar onto a pane.
-- A drag held over the section selector springs it open.
-- ⎋ in a sidebar list hands focus back to the editor.
-- Tasks and Source Control take the file tree's keys.
-- ⌃R opens the recent-workspaces dropdown in a window with no folder.
-- **Open as Workspace** on a folder in the file tree.
-- A workspace never opens twice; picking an open one focuses its window.
-- **Reveal in Sidebar** on the tab and pane-title menus.
-- An Assistant tab's menu carries the chat's own verbs.
-- A queued message can be edited by clicking it.
-- The assistant hears the state of the checkout each turn.
-- Switching tabs scrolls the bar before the content swaps.
-- A pane title cross-fades to the incoming name.
-- Chats open faster, scroll smoother, and hold their place when scrolled up.
-- Three text lines per mouse-wheel notch, everywhere.
-- An inactive pane's dim is softer.
-- A new terminal inherits the app's environment.
-- The previous diff stays up while the next one loads.
-- An update can install itself on quit.
+- Source Control's branch pill opens local and remote branches as one tree
+- A **Changes | History** switch (⇧⌘Y) pages through the branch's commits
+- **File ▸ Discard Changes** (⇧⌘⌫)
+- **Open as Workspace** on a folder in the file tree
+- A workspace never opens twice
+- Find in Workspace searches unsaved buffers
+- Find in Workspace is much faster on large workspaces
+- A search hit is anchored on its line text
+- JavaScript and TypeScript work with no install
+- Tasks and Source Control take the file tree's keys
+- An archived chat or a terminal task drags from the sidebar onto a pane
+- A drag held over the section selector springs it open
+- A tab dropped at a divider's corner makes a pane that long
+- A queued message can be edited by clicking it
+- The assistant hears the state of the checkout each turn
+- Chats open faster, scroll smoother, and hold their place
+- Three text lines per mouse-wheel notch
+- An update can install itself on quit

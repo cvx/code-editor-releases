@@ -1,10 +1,7 @@
-- The strip under the tab capsules takes clicks again.
-- Scrolling up out of a streaming reply no longer fights the bottom pin.
-- Traffic lights and the sidebar toggle survive a light/dark switch.
-- The composer and plain-text files re-ink on an appearance switch.
-- The assistant's `/` menu is complete from the first keystroke.
-- **⌘Z** in the composer undoes attaching an image.
-- Sending from up the transcript glides to the bottom.
-- The tab drop preview shows the arrangement the drop produces.
-- A retitled tab scrolls back into view.
-- File tree icons for `.rs`, `.toml` and ignore files.
+- File tree icons for `.rs`, `.toml` and ignore files
+- The tab drop preview shows the arrangement the drop produces
+- **⌘Z** in the composer undoes attaching an image
+- Traffic lights and the sidebar toggle survive a light/dark switch
+- Sending from up the transcript glides to the bottom
+- The strip under the tab capsules takes clicks again
+- The assistant's `/` menu is complete from the first keystroke
