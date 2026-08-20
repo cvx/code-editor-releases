@@ -1,0 +1,1 @@
+- A Changes row opens its diff against the branch being compared
