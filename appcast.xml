@@ -3,6 +3,23 @@
     <channel>
         <title>Code Editor</title>
         <item>
+            <title>0.9.4</title>
+            <pubDate>Thu, 20 Aug 2026 10:45:53 +0200</pubDate>
+            <sparkle:version>3485</sparkle:version>
+            <sparkle:shortVersionString>0.9.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <sparkle:releaseNotesLink>https://cvx.github.io/code-editor-releases/Cove-0.9.4.md</sparkle:releaseNotesLink>
+            <enclosure url="https://cvx.github.io/code-editor-releases/Cove-0.9.4.zip" length="15271939" type="application/octet-stream" sparkle:edSignature="QSbKd3VbqW1bMw8fbggUwQkqdLw9TS6a1idb9O/jgBSeA9j5syi5labRVX6rEi8+4n86riz+VMPYN2qq8c/DAA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://cvx.github.io/code-editor-releases/Cove3485-3291.delta" sparkle:deltaFrom="3291" length="1588978" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="KprMRP0G1oMov5g4MTDJmDdoqQ08HbCEZKE0UX2JlWgeE7QnmPmtWYG7XNLYP/TyWKWDtTdPh61A/arh1GLFAw=="/>
+                <enclosure url="https://cvx.github.io/code-editor-releases/Cove3485-3278.delta" sparkle:deltaFrom="3278" length="1636650" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="w1wT45H2REteuoj0AI6nk1DgxbJ9YKavG+SOEF7bzFoMLEB31G3PtuXjEs/A6jYuCdOw2+DX7m1LQNmTKu3vDw=="/>
+                <enclosure url="https://cvx.github.io/code-editor-releases/Cove3485-3235.delta" sparkle:deltaFrom="3235" length="1762762" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="3mB6qmSGb0Vbmg7XGq7YLfsGyB8talHJq9F+IirH1WdFHYnwgcfQC4v0xcccr4mmXaL/g6H+SF3Vz3R1+PuOCQ=="/>
+                <enclosure url="https://cvx.github.io/code-editor-releases/Cove3485-3196.delta" sparkle:deltaFrom="3196" length="1952502" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ZMm7yDEOFw1nbSlv0Kw+332yoY/hD3ODIi83ddQYnMQmGsrYWPcg4uYU/3vyG0ybR0OFlI+jUn7QZ1dhntBvCw=="/>
+                <enclosure url="https://cvx.github.io/code-editor-releases/Cove3485-2999.delta" sparkle:deltaFrom="2999" length="2392570" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="fnMhR1uBw1Fa5cU+e84ujb0EOwSUaxLPUmgjhjGNQbGg6EzF03hrVLlb57F/OIShT8LyDqeunFJiQH+rxkbuBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.3</title>
             <pubDate>Sun, 16 Aug 2026 14:18:28 +0200</pubDate>
             <sparkle:version>3291</sparkle:version>
@@ -34,23 +51,6 @@
                 <enclosure url="https://cvx.github.io/code-editor-releases/Cove3278-2999.delta" sparkle:deltaFrom="2999" length="2060594" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="SMdNAdtqql0KjLPLwMP3YT75mbL7LIHhe/xdjXIoAHY9LLkIIvJYBEi380e8kTmrtyF4A/Gbl1DCgw/Xcg/YCg=="/>
                 <enclosure url="https://cvx.github.io/code-editor-releases/Cove3278-2789.delta" sparkle:deltaFrom="2789" length="2634954" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="mtxUMCmwATsoJfPDySsp15e3A67LLWVNLMFK5DMRXRWWtJntBhucHwwK1tYh4kPjNqt+Ku13gaSGbd8pB2daBA=="/>
                 <enclosure url="https://cvx.github.io/code-editor-releases/Cove3278-2671.delta" sparkle:deltaFrom="2671" length="2884286" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="mik6W0rNpAqU7ku8PGvcQiwdbiWG2Cvy28JKn9s/xuJFqNYa+oj6djVf3KKtMkrsHW6feGY/y55Hm7/ynye4Cg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.1</title>
-            <pubDate>Fri, 14 Aug 2026 21:53:00 +0200</pubDate>
-            <sparkle:version>3235</sparkle:version>
-            <sparkle:shortVersionString>0.9.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <sparkle:releaseNotesLink>https://cvx.github.io/code-editor-releases/Cove-0.9.1.md</sparkle:releaseNotesLink>
-            <enclosure url="https://cvx.github.io/code-editor-releases/Cove-0.9.1.zip" length="15024918" type="application/octet-stream" sparkle:edSignature="TnCqA25q5N2QtVKLoDB7WEw+5O+kDJ3FKa/crwOzYbZOiFtuSqH1crI/oSe6nGojk84l/+M+NPTsofmTmsv1Cg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://cvx.github.io/code-editor-releases/Cove3235-3196.delta" sparkle:deltaFrom="3196" length="1290638" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="57UIFML1UubuWqO2PdRQFhTV474ABNhCFQOXYZocZuSzM3S5jdZmp6ddhocN7D2KB5YaDkJPGON34Srg6zciAQ=="/>
-                <enclosure url="https://cvx.github.io/code-editor-releases/Cove3235-2999.delta" sparkle:deltaFrom="2999" length="1923886" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="MaO3OZ4DfvjZlnngEvw5Z+yiQnriUDxT/cVbh3m40ml3tXWLJ5ZspTj9MPIBvng0gUTYEXcWGPG8Mn4jobLnCQ=="/>
-                <enclosure url="https://cvx.github.io/code-editor-releases/Cove3235-2789.delta" sparkle:deltaFrom="2789" length="2531002" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="U52anhL9E1skP0gVJCF9y5q1tBqjFl7aAwFXjXbQ+tOAtBF7zM7hrthuVk0Pp37i1eyj4YyaPeSaT6JX6K5BBw=="/>
-                <enclosure url="https://cvx.github.io/code-editor-releases/Cove3235-2671.delta" sparkle:deltaFrom="2671" length="2790130" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="sS/vE1Vi4vJXUV9iXx69D5d5KqS6GXWdh0qXltWUNyxgXjLrvbbqz7k2ccTBIaf6T/OhvrrAz+ageF4zbYbEBg=="/>
-                <enclosure url="https://cvx.github.io/code-editor-releases/Cove3235-2639.delta" sparkle:deltaFrom="2639" length="2841178" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="xre/b7ojR3PQNpRxbLS7bY7Nvjg9yQn/PE0Qg08tnBD5VWZ/3x0fPaXPO01JbAy7HJmsOmFShIerM+oEbrWNCA=="/>
             </sparkle:deltas>
         </item>
     </channel>

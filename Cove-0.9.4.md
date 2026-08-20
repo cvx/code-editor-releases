@@ -1,0 +1,14 @@
+- /btw in the composer asks a side question in a floating panel
+- The new-tab "+" moved to the pane title's corner
+- A streaming reply draws each block the moment it arrives
+- A click that activates a window also focuses the pane under it
+- Every pane title answers a right-click, whatever its tab holds
+- A chat can be branched from its own composer
+- Esc in the assistant composer stops the turn
+- The assistant can suggest a follow-up task as a card
+- A chat's unread mark clears when the reply is actually read
+- Recently used actions lead Quick Action
+- Markdown preview answers ⌘F
+- A model picked mid-turn takes effect on the running turn
+- A failed task run turns red in the sidebar and names its exit code
+- A pasted image no longer corrupts the message it's sent in
