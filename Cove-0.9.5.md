@@ -1,0 +1,2 @@
+- A new folder in Source Control lists its files row by row
+- Effort picked mid-turn takes effect on the running turn
