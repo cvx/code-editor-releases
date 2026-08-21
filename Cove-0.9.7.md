@@ -1,0 +1,12 @@
+- Comparing with a branch shows its Changes section
+- ⌃B hands a turn's blocking work to the background
+- A background task can be stopped from the counts popover
+- A settled background task reports itself in the transcript
+- A tool row's ⋯ menu runs, stops, copies and opens the call
+- A tool call's result is a row of its own
+- @ completes a workspace file into the prompt
+- A file ⌥-dropped on a chat goes into the draft as a path
+- A turn interrupted by a restart or a crash resumes
+- A reply in an unfocused pane is marked unread
+- The usage tooltip names the window it's filled to
+- The branches list is there on the first click
