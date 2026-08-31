@@ -69,37 +69,55 @@
     </div>
   </header>
   <p class="get">
-    <a class="dl" href="download/Cove-0.10.dmg">Download</a>
-    <span class="meta">Version 0.10 &middot; <span class="nb">Aug 31, 2026</span> &middot;
+    <a class="dl" href="download/Cove-0.10.1.dmg">Download</a>
+    <span class="meta">Version 0.10.1 &middot; <span class="nb">Aug 31, 2026</span> &middot;
       <a href="changelog.html">Release notes</a><br>15 MB &middot; macOS 26 or later
       &middot; Apple Silicon</span>
   </p>
   <section class="features">
     <h2 class="vh">Features</h2>
     <figure>
-      <figcaption>Native editor</figcaption>
-      <a href="shots/editor-light.png" aria-label="Native editor — enlarge">
+      <figcaption>macOS-native editor</figcaption>
+      <a href="shots/editor-light.png" aria-label="macOS-native editor — enlarge">
         <picture>
           <source srcset="shots/editor-dark.png" media="(prefers-color-scheme: dark)">
-          <img src="shots/editor-light.png" width="1280" height="800" alt="Syntax-highlighted code in the editor." decoding="async">
+          <img class="window" src="shots/editor-light.png" width="1280" height="800" alt="Cove's window: the file tree beside a Swift file in the editor." decoding="async">
         </picture>
       </a>
     </figure>
     <figure>
+      <figcaption>Assistant</figcaption>
+      <a href="shots/assistant-light.png" aria-label="Assistant — enlarge">
+        <picture>
+          <source srcset="shots/assistant-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="shots/assistant-light.png" width="1280" height="800" alt="A chat in a pane: a question, a tool call and a reply with code in it." decoding="async">
+        </picture>
+      </a>
+    </figure>
+    <figure>
+      <figcaption>Terminal</figcaption>
+      <a href="shots/terminal-light.png" aria-label="Terminal — enlarge">
+        <picture>
+          <source srcset="shots/terminal-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="shots/terminal-light.png" width="1280" height="800" alt="A terminal tab running the project's log and its tests." decoding="async">
+        </picture>
+      </a>
+    </figure>
+    <figure class="reveal">
       <figcaption>Split panes</figcaption>
       <a href="shots/splits-light.png" aria-label="Split panes — enlarge">
         <picture>
           <source srcset="shots/splits-dark.png" media="(prefers-color-scheme: dark)">
-          <img src="shots/splits-light.png" width="1280" height="800" alt="Two editor panes side by side." decoding="async">
+          <img class="window" src="shots/splits-light.png" width="1280" height="800" alt="Three editor panes over one sidebar, with a file being dropped into the lower left." loading="lazy" decoding="async">
         </picture>
       </a>
     </figure>
-    <figure>
+    <figure class="reveal">
       <figcaption>Source Control</figcaption>
       <a href="shots/source-control-light.png" aria-label="Source Control — enlarge">
         <picture>
           <source srcset="shots/source-control-dark.png" media="(prefers-color-scheme: dark)">
-          <img src="shots/source-control-light.png" width="1280" height="800" alt="A unified diff with staged changes." decoding="async">
+          <img src="shots/source-control-light.png" width="1280" height="800" alt="A unified diff of an uncommitted change." loading="lazy" decoding="async">
         </picture>
       </a>
     </figure>
@@ -127,24 +145,6 @@
         <picture>
           <source srcset="shots/web-preview-dark.png" media="(prefers-color-scheme: dark)">
           <img src="shots/web-preview-light.png" width="1280" height="800" alt="A static HTML page rendered beside its source." loading="lazy" decoding="async">
-        </picture>
-      </a>
-    </figure>
-    <figure class="reveal">
-      <figcaption>Terminal</figcaption>
-      <a href="shots/terminal-light.png" aria-label="Terminal — enlarge">
-        <picture>
-          <source srcset="shots/terminal-dark.png" media="(prefers-color-scheme: dark)">
-          <img src="shots/terminal-light.png" width="1280" height="800" alt="A terminal running in a tab." loading="lazy" decoding="async">
-        </picture>
-      </a>
-    </figure>
-    <figure class="reveal">
-      <figcaption>Assistant</figcaption>
-      <a href="shots/assistant-light.png" aria-label="Assistant — enlarge">
-        <picture>
-          <source srcset="shots/assistant-dark.png" media="(prefers-color-scheme: dark)">
-          <img src="shots/assistant-light.png" width="1280" height="800" alt="A chat transcript in a pane." loading="lazy" decoding="async">
         </picture>
       </a>
     </figure>
@@ -191,7 +191,7 @@
 
 <footer>
     <p class="ack reveal">
-      Thank you to the creators of TextMate, Sublime Text, Kod, and Atom, the Mac code editors that
+      Thank you to the creators of TextMate, Sublime Text, Kod, and Atom - the Mac code editors that
       made programming a pleasure over the years.
     </p>
     <p class="colophon reveal">

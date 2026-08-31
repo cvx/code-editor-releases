@@ -1,0 +1,4 @@
+- Web previews open without a white flash
+- Quick Open's typo matches land at once
+- A chat's unread marks survive a relaunch
+- A new terminal no longer garbles its first prompt
