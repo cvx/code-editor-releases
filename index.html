@@ -69,8 +69,8 @@
     </div>
   </header>
   <p class="get">
-    <a class="dl" href="download/Cove-0.10.1.dmg">Download</a>
-    <span class="meta">Version 0.10.1 &middot; <span class="nb">Aug 31, 2026</span> &middot;
+    <a class="dl" href="download/Cove-0.10.2.dmg">Download</a>
+    <span class="meta">Version 0.10.2 &middot; <span class="nb">Aug 31, 2026</span> &middot;
       <a href="changelog.html">Release notes</a><br>15 MB &middot; macOS 26 or later
       &middot; Apple Silicon</span>
   </p>
@@ -81,7 +81,11 @@
       <a href="shots/editor-light.png" aria-label="macOS-native editor — enlarge">
         <picture>
           <source srcset="shots/editor-dark.png" media="(prefers-color-scheme: dark)">
-          <img class="window" src="shots/editor-light.png" width="1280" height="800" alt="Cove's window: the file tree beside a Swift file in the editor." decoding="async">
+          <!-- The page's LCP element at every width, and the only image that gets a priority: the
+               two figures beside it are eager too (they're in the first row on a wide screen), so
+               without this they queue level with it and the one thing the visitor is waiting for
+               arrives third. -->
+          <img class="window" src="shots/editor-light.png" width="2048" height="1280" alt="Cove's window: the file tree beside a Swift file in the editor." decoding="async" fetchpriority="high">
         </picture>
       </a>
     </figure>
@@ -108,7 +112,7 @@
       <a href="shots/splits-light.png" aria-label="Split panes — enlarge">
         <picture>
           <source srcset="shots/splits-dark.png" media="(prefers-color-scheme: dark)">
-          <img class="window" src="shots/splits-light.png" width="1280" height="800" alt="Three editor panes over one sidebar, with a file being dropped into the lower left." loading="lazy" decoding="async">
+          <img class="window" src="shots/splits-light.png" width="2048" height="1280" alt="Three editor panes over one sidebar, with a file being dropped into the lower left." loading="lazy" decoding="async">
         </picture>
       </a>
     </figure>
@@ -118,6 +122,24 @@
         <picture>
           <source srcset="shots/source-control-dark.png" media="(prefers-color-scheme: dark)">
           <img src="shots/source-control-light.png" width="1280" height="800" alt="A unified diff of an uncommitted change." loading="lazy" decoding="async">
+        </picture>
+      </a>
+    </figure>
+    <figure class="reveal">
+      <figcaption>Tasks and Skills</figcaption>
+      <a href="shots/tasks-light.png" aria-label="Tasks and Skills — enlarge">
+        <picture>
+          <source srcset="shots/tasks-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="shots/tasks-light.png" width="2048" height="1280" alt="The Tasks navigator: a task running, its live output beside it, and the workspace's skills." loading="lazy" decoding="async">
+        </picture>
+      </a>
+    </figure>
+    <figure class="reveal">
+      <figcaption>Quick Open</figcaption>
+      <a href="shots/quick-open-light.png" aria-label="Quick Open — enlarge">
+        <picture>
+          <source srcset="shots/quick-open-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="shots/quick-open-light.png" width="1280" height="800" alt="Quick Open over the editor, its hits ranked and the matched letters picked out." loading="lazy" decoding="async">
         </picture>
       </a>
     </figure>
@@ -144,7 +166,7 @@
       <a href="shots/web-preview-light.png" aria-label="Web preview — enlarge">
         <picture>
           <source srcset="shots/web-preview-dark.png" media="(prefers-color-scheme: dark)">
-          <img src="shots/web-preview-light.png" width="1280" height="800" alt="A static HTML page rendered beside its source." loading="lazy" decoding="async">
+          <img class="window" src="shots/web-preview-light.png" width="2048" height="1280" alt="A static HTML page rendered beside its source." loading="lazy" decoding="async">
         </picture>
       </a>
     </figure>
@@ -153,7 +175,7 @@
       <a href="shots/settings-light.png" aria-label="Settings — enlarge">
         <picture>
           <source srcset="shots/settings-dark.png" media="(prefers-color-scheme: dark)">
-          <img src="shots/settings-light.png" width="1280" height="800" alt="Cove's Settings window, an AppKit split view with a tracking separator." loading="lazy" decoding="async">
+          <img class="window" src="shots/settings-light.png" width="2048" height="1280" alt="Cove's Settings window, an AppKit split view with a tracking separator." loading="lazy" decoding="async">
         </picture>
       </a>
     </figure>

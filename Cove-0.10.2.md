@@ -1,0 +1,3 @@
+- Scrolling is smoother in chats, lists and the editor
+- The pointer no longer flickers while a chat scrolls
+- Web previews no longer flash white before the page appears
