@@ -1,29 +1,207 @@
 <!doctype html>
+<html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cove 0.9.7</title>
-<style>
-  :root { color-scheme: light dark; --fg: #1c1c1e; --dim: #6b6b70; --bg: #fbfbfd; --accent: #0b6bcb; }
-  @media (prefers-color-scheme: dark) {
-    :root { --fg: #f2f2f7; --dim: #98989f; --bg: #131316; --accent: #4c9ffe; }
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; padding: 8vh 6vw; background: var(--bg); color: var(--fg);
-         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
-  main { max-width: 34rem; margin: 0 auto; }
-  header { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
-  h1 { font-size: 2rem; letter-spacing: -0.02em; margin: 0; }
-  a.dl { background: var(--accent); color: #fff; text-decoration: none; font-weight: 600;
-         font-size: .95rem; padding: .5rem 1.1rem; border-radius: 8px; white-space: nowrap; }
-  a.dl:hover { filter: brightness(1.08); }
-  .meta { color: var(--dim); font-size: .875rem; margin: .5rem 0 0; }
-  .note { color: var(--dim); font-size: .9rem; margin: 1.75rem 0 0; }
-</style>
+<title>Cove — Code editor for Mac</title>
+<link rel="icon" href="cove.png">
+<link rel="stylesheet" href="cove.css">
+<meta name="description" content="Cove is a native code editor for Mac.">
+<link rel="canonical" href="https://covecode.app/">
+<!-- The only absolute URLs on the page, and they have to be: a scraper resolves neither og:image
+     nor og:url against the document, so a relative one is simply dropped and the link unfurls as
+     bare text. Everything else stays relative, so the site still works opened off the filesystem.
+     codecove.app is an alias that redirects here, which is why the canonical names this one. -->
+<meta property="og:url" content="https://covecode.app/">
+<meta property="og:title" content="Cove — Code editor for Mac">
+<meta property="og:description" content="A native code editor for Mac. Free to use.">
+<meta property="og:image" content="https://covecode.app/cove.png">
+<meta property="og:image:width" content="288">
+<meta property="og:image:height" content="288">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<!-- A stored appearance has to land before the first paint or the page flashes the other one.
+     Note what is NOT here: the `js` class the reveals' hidden state hangs off. That is set by
+     cove.js itself, so the class can only exist if the script that reveals things also ran — a
+     blocked or broken cove.js leaves the page fully visible instead of two thirds blank. -->
+<script>
+  try {
+    if (localStorage.theme === 'flip') {
+      document.documentElement.dataset.theme =
+        matchMedia('(prefers-color-scheme: dark)').matches ? 'light' : 'dark';
+    }
+  } catch {}
+</script>
+<script src="cove.js" defer></script>
+<div class="wash" aria-hidden="true"></div>
+<div class="sheet">
 <main>
-  <header>
-    <h1>Cove</h1>
-    <a class="dl" href="download/Cove-0.9.7.dmg">Download</a>
+  <header class="mast">
+    <span class="glyph">
+      <!-- Two ring sets, each flat-stroked and masked to its own side of the icon's two-tone
+           boundary -- a radial ray below and a straight chord above, which is why the masks in
+           cove.css take two layers and why there is no gradient here any more. The circles must
+           stay identical between the sets: they are one ring drawn in two colours, not two. -->
+      <span class="ripplefield warm">
+        <svg class="ripples" viewBox="-120 -120 240 240" aria-hidden="true">
+          <circle r="45.67" style="--i: 1; --amp: 0.00000"/>
+          <circle r="54.70" style="--i: 2; --amp: 0.01280"/>
+          <circle r="63.74" style="--i: 3; --amp: 0.02196"/>
+          <circle r="72.78" style="--i: 4; --amp: 0.02885"/>
+          <circle r="81.81" style="--i: 5; --amp: 0.03423"/>
+          <circle r="90.85" style="--i: 6; --amp: 0.03853"/>
+        </svg>
+      </span>
+      <span class="ripplefield cool">
+        <svg class="ripples" viewBox="-120 -120 240 240" aria-hidden="true">
+          <circle r="45.67" style="--i: 1; --amp: 0.00000"/>
+          <circle r="54.70" style="--i: 2; --amp: 0.01280"/>
+          <circle r="63.74" style="--i: 3; --amp: 0.02196"/>
+          <circle r="72.78" style="--i: 4; --amp: 0.02885"/>
+          <circle r="81.81" style="--i: 5; --amp: 0.03423"/>
+          <circle r="90.85" style="--i: 6; --amp: 0.03853"/>
+        </svg>
+      </span>
+      <span class="plate"><img src="cove.png" width="144" height="144" alt=""></span>
+    </span>
+    <div>
+      <h1>Cove</h1>
+      <p class="tagline">Code editor for Mac</p>
+    </div>
   </header>
-  <p class="meta">Version 0.9.7 &middot; 14 MB &middot; macOS 26 or later</p>
-  <p class="note">Open the disk image and drag <strong>Cove</strong> to your Applications folder.</p>
+  <p class="get">
+    <a class="dl" href="download/Cove-0.10.dmg">Download</a>
+    <span class="meta">Version 0.10 &middot; <span class="nb">Aug 31, 2026</span> &middot;
+      <a href="changelog.html">Release notes</a><br>15 MB &middot; macOS 26 or later
+      &middot; Apple Silicon</span>
+  </p>
+  <section class="features">
+    <h2 class="vh">Features</h2>
+    <figure>
+      <figcaption>Native editor</figcaption>
+      <a href="shots/editor-light.png" aria-label="Native editor — enlarge">
+        <picture>
+          <source srcset="shots/editor-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="shots/editor-light.png" width="1280" height="800" alt="Syntax-highlighted code in the editor." decoding="async">
+        </picture>
+      </a>
+    </figure>
+    <figure>
+      <figcaption>Split panes</figcaption>
+      <a href="shots/splits-light.png" aria-label="Split panes — enlarge">
+        <picture>
+          <source srcset="shots/splits-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="shots/splits-light.png" width="1280" height="800" alt="Two editor panes side by side." decoding="async">
+        </picture>
+      </a>
+    </figure>
+    <figure>
+      <figcaption>Source Control</figcaption>
+      <a href="shots/source-control-light.png" aria-label="Source Control — enlarge">
+        <picture>
+          <source srcset="shots/source-control-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="shots/source-control-light.png" width="1280" height="800" alt="A unified diff with staged changes." decoding="async">
+        </picture>
+      </a>
+    </figure>
+    <figure class="reveal">
+      <figcaption>Language servers</figcaption>
+      <a href="shots/language-servers-light.png" aria-label="Language servers — enlarge">
+        <picture>
+          <source srcset="shots/language-servers-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="shots/language-servers-light.png" width="1280" height="800" alt="A hover popover over a symbol." loading="lazy" decoding="async">
+        </picture>
+      </a>
+    </figure>
+    <figure class="reveal">
+      <figcaption>Markdown Preview</figcaption>
+      <a href="shots/markdown-light.png" aria-label="Markdown Preview — enlarge">
+        <picture>
+          <source srcset="shots/markdown-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="shots/markdown-light.png" width="1280" height="800" alt="A rendered markdown file beside its source." loading="lazy" decoding="async">
+        </picture>
+      </a>
+    </figure>
+    <figure class="reveal">
+      <figcaption>Web preview</figcaption>
+      <a href="shots/web-preview-light.png" aria-label="Web preview — enlarge">
+        <picture>
+          <source srcset="shots/web-preview-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="shots/web-preview-light.png" width="1280" height="800" alt="A static HTML page rendered beside its source." loading="lazy" decoding="async">
+        </picture>
+      </a>
+    </figure>
+    <figure class="reveal">
+      <figcaption>Terminal</figcaption>
+      <a href="shots/terminal-light.png" aria-label="Terminal — enlarge">
+        <picture>
+          <source srcset="shots/terminal-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="shots/terminal-light.png" width="1280" height="800" alt="A terminal running in a tab." loading="lazy" decoding="async">
+        </picture>
+      </a>
+    </figure>
+    <figure class="reveal">
+      <figcaption>Assistant</figcaption>
+      <a href="shots/assistant-light.png" aria-label="Assistant — enlarge">
+        <picture>
+          <source srcset="shots/assistant-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="shots/assistant-light.png" width="1280" height="800" alt="A chat transcript in a pane." loading="lazy" decoding="async">
+        </picture>
+      </a>
+    </figure>
+    <figure class="reveal">
+      <figcaption>Settings</figcaption>
+      <a href="shots/settings-light.png" aria-label="Settings — enlarge">
+        <picture>
+          <source srcset="shots/settings-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="shots/settings-light.png" width="1280" height="800" alt="Cove's Settings window, an AppKit split view with a tracking separator." loading="lazy" decoding="async">
+        </picture>
+      </a>
+    </figure>
+  </section>
+
+  <h2 class="vh">Also in Cove</h2>
+  <ul class="more reveal">
+    <li>Sessions and shells survive a restart</li>
+    <li>Switch org, billed correctly</li>
+    <li>Agent-suggested tasks</li>
+    <li>Tasks and skills</li>
+    <li>Typo-tolerant Quick Open</li>
+    <li>Unsaved buffers in search</li>
+    <li>Search hits survive edits</li>
+    <li>Cross-language highlighting</li>
+    <li>Shebang and modeline detection</li>
+    <li>&#8984;F in terminals and chats</li>
+    <li>&#8984;-click paths in output</li>
+    <li>Install dependencies from the tree</li>
+    <li>Extensive drag and drop</li>
+    <li>Inline git blame</li>
+    <li>License detection</li>
+    <li>Image viewer</li>
+    <li><code>cove --wait</code> as your <code>$EDITOR</code></li>
+    <li>Editorconfig support</li>
+    <li>Linters and formatters</li>
+    <li>Liquid Glass throughout</li>
+    <li>Quick Action</li>
+    <li>Multiple cursors</li>
+    <li>Highlight matching brackets</li>
+    <li>No analytics</li>
+  </ul>
+
 </main>
+
+<footer>
+    <p class="ack reveal">
+      Thank you to the creators of TextMate, Sublime Text, Kod, and Atom, the Mac code editors that
+      made programming a pleasure over the years.
+    </p>
+    <p class="colophon reveal">
+      Free to use under the <a href="license.txt">Elastic License 2.0</a>. Source not published.
+      &copy; 2026 cvx.
+    </p>
+    <p class="llm reveal">LLMs were used, regrettably, in the making of this app.</p>
+</footer>
+</div>
+
+<dialog id="big"><img alt=""></dialog>
+
+</html>

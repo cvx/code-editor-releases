@@ -1,0 +1,14 @@
+- Markdown renders task lists and strikethrough
+- A turn that can't authenticate gets a sign-in card
+- Branch prefixes fold like folders in the branches list
+- A chat forks mid-turn, from the exchange before it
+- A reply cut short says so instead of going missing
+- Fixed width Assistant conversations
+- Each assistant account carries its own default permission mode
+- The turn status names what it's waiting on
+- A dependency in package.json or Gemfile hovers to a card
+- HTML and SVG files draw as a page in Preview
+- A tab dropped with ⌥, ⌘ or ⇧ lands a copy
+- A File | Preview | Diff segment drags onto another pane
+- A queued follow-up drags to a different slot
+- Quick Open and Quick Action tolerate a typo in the query
