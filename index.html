@@ -84,8 +84,15 @@
           <!-- The page's LCP element at every width, and the only image that gets a priority: the
                two figures beside it are eager too (they're in the first row on a wide screen), so
                without this they queue level with it and the one thing the visitor is waiting for
-               arrives third. -->
-          <img class="window" src="shots/editor-light.png" width="2048" height="1280" alt="Cove's window: the file tree beside a Swift file in the editor." decoding="async" fetchpriority="high">
+               arrives third.
+               `decoding` follows `loading` and is not its own decision: eager shots are `sync`,
+               lazy ones are `async`, and a new figure gets whichever pair its `loading` puts it in.
+               `async` is a licence to present the page WITHOUT the image and swap it in once
+               decoded — right for a shot arriving as you scroll to it, and on an eager one exactly
+               the flash on a reload: the pictures went missing for a frame and came back. It buys
+               nothing on the eager three either, measured: first paint 9-16ms with `sync` against
+               18-19ms with `async`, warm reload, three runs each. -->
+          <img class="window" src="shots/editor-light.png" width="2048" height="1280" alt="Cove's window: the file tree beside a Swift file in the editor." decoding="sync" fetchpriority="high">
         </picture>
       </a>
     </figure>
@@ -94,7 +101,7 @@
       <a href="shots/assistant-light.png" aria-label="Assistant — enlarge">
         <picture>
           <source srcset="shots/assistant-dark.png" media="(prefers-color-scheme: dark)">
-          <img src="shots/assistant-light.png" width="1280" height="800" alt="A chat in a pane: a question, a tool call and a reply with code in it." decoding="async">
+          <img src="shots/assistant-light.png" width="1280" height="800" alt="A chat in a pane: a question, a tool call and a reply with code in it." decoding="sync">
         </picture>
       </a>
     </figure>
@@ -103,7 +110,7 @@
       <a href="shots/terminal-light.png" aria-label="Terminal — enlarge">
         <picture>
           <source srcset="shots/terminal-dark.png" media="(prefers-color-scheme: dark)">
-          <img src="shots/terminal-light.png" width="1280" height="800" alt="A terminal tab running the project's log and its tests." decoding="async">
+          <img src="shots/terminal-light.png" width="1280" height="800" alt="A terminal tab running the project's log and its tests." decoding="sync">
         </picture>
       </a>
     </figure>
