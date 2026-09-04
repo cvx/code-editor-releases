@@ -1,0 +1,18 @@
+- A diff tab is editable, with undo, multiple cursors and the line commands
+- The gaps between a diff's hunks expand to the lines around them
+- ⌘F, Wrap Lines and Hide Whitespace work in a diff
+- ⌘/ takes its comment marks from the language at each line
+- Markdown bold and italic are set in real bold and italic
+- Selected text offers an Ask pill that puts it to the assistant
+- Sidebar lists narrow from a filter field at their foot
+- Each assistant account carries its own default model and effort
+- A chat still working in the background reads as busy
+- A chat reopens scrolled where it was left
+- The sidebar's blank space drags the window
+- Scrolling a terminal up stays up while output arrives
+- A terminal's mouse and wheel reach the program running in it
+- Right-click a terminal for Copy, Paste, Clear and Reset
+- The terminal has its own font, bell and Option-as-Meta settings
+- An input method's composition draws in the terminal
+- Install Dependencies runs at the manifest's row, not in a terminal tab
+- Scrolling a long markdown file no longer stutters

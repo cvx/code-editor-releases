@@ -3,6 +3,23 @@
     <channel>
         <title>Code Editor</title>
         <item>
+            <title>0.11</title>
+            <pubDate>Fri, 04 Sep 2026 02:53:12 +0200</pubDate>
+            <sparkle:version>4339</sparkle:version>
+            <sparkle:shortVersionString>0.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <sparkle:releaseNotesLink>https://covecode.app/Cove-0.11.md</sparkle:releaseNotesLink>
+            <enclosure url="https://covecode.app/Cove-0.11.zip" length="16092604" type="application/octet-stream" sparkle:edSignature="StSebb0W2lpoVuIREPMIY04fJC5sL2qoykIateWDoUVrcR71p9yfqWKw3jvrNP/LYv5nhQAOPtTRgK59V6nACA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://covecode.app/Cove4339-4069.delta" sparkle:deltaFrom="4069" length="2221002" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="T27vMGU4QGVeMC3Zc5OVfEbXM20JSd6WzGxKuuSKf6uuzrh2dHwXPNOTolXOq5BebLFSjcL2W00o1vbdq5NrAw=="/>
+                <enclosure url="https://covecode.app/Cove4339-4050.delta" sparkle:deltaFrom="4050" length="2230822" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="XxUS1pOX23qr1FJVJuqvj+qgl1MgoE5EfEdMrvA2gWeDCw+wPAAL0n0v6TInRO1Tk8ixGuhOW2kPiv2BUIV9CQ=="/>
+                <enclosure url="https://covecode.app/Cove4339-4026.delta" sparkle:deltaFrom="4026" length="2274694" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Opqb6s83sYb6b9z38ABB8lQYg+JZLMOaSt8E0X0ovhTrSI1qcQewO+J/JbIqcdmM1TUCUNrAhyu5sotGEc+/Cw=="/>
+                <enclosure url="https://covecode.app/Cove4339-3553.delta" sparkle:deltaFrom="3553" length="2988946" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="+ETXb+0YIGMbZEt6PxT8pHgv3Ydbz3ES4EN6SRCOyl/T9/62/OAZCCNHL1e5VvEhud1IC/5WQaPdkdZ+1K0bAQ=="/>
+                <enclosure url="https://covecode.app/Cove4339-3491.delta" sparkle:deltaFrom="3491" length="3099434" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gGcLn2oK7j9q355e9nOkiEsKXlKTtCHFMkE3ZfzvmgtCpjNiVJZzkuVilj6d64n7Pnoaco63K4fazw4Xl53OCA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.10.2</title>
             <pubDate>Mon, 31 Aug 2026 17:12:56 +0200</pubDate>
             <sparkle:version>4069</sparkle:version>
@@ -34,23 +51,6 @@
                 <enclosure url="https://covecode.app/Cove4050-3491.delta" sparkle:deltaFrom="3491" length="2490378" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="fG5hezbR0p5HHHoCaoM4lxzLZV26QInLGrMHXKdG8x357IXvWmJJvLNSkDs60Q+g/R/KszB1bvI+BCu8jRFIDw=="/>
                 <enclosure url="https://covecode.app/Cove4050-3489.delta" sparkle:deltaFrom="3489" length="2498986" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="e9XbyupfaoSQejgFnD1DRWKWgotNYYELKSL3/KamGLIiHcr2pf82EKGloZ1LTxtpUgro5mLdzL8pxGi03dLpCQ=="/>
                 <enclosure url="https://covecode.app/Cove4050-3485.delta" sparkle:deltaFrom="3485" length="2524262" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="qwmXkm3gzuOrTxAI7/qYuzpzyHLsUUESt0Fj/WGQZjxwUzJtIYIYSw842VmAxq2NwyVEM4tiQlg2U1UPX+h+AQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.10</title>
-            <pubDate>Mon, 31 Aug 2026 09:24:15 +0200</pubDate>
-            <sparkle:version>4026</sparkle:version>
-            <sparkle:shortVersionString>0.10</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <sparkle:releaseNotesLink>https://covecode.app/Cove-0.10.md</sparkle:releaseNotesLink>
-            <enclosure url="https://covecode.app/Cove-0.10.zip" length="15805642" type="application/octet-stream" sparkle:edSignature="xUDP4y9u4YhQxLjwu5COmO1rJwCMLPHgY8v1WweLAm+kODDKzXdjbpumzreP/liMp8TZiiOA8uEW0SSAwFonDA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://covecode.app/Cove4026-3553.delta" sparkle:deltaFrom="3553" length="2326154" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Zzj/7h6GRGw6ZuBwBe9poN92PCjHFvNuth6uHC5g7AKHMLLWtJTZ7bkDbnEvhRxRncL0Ag+xUv1gNEIuhNT0Cg=="/>
-                <enclosure url="https://covecode.app/Cove4026-3491.delta" sparkle:deltaFrom="3491" length="2470334" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="BnuG+QSlqHGkTHi1dJ3gBJdz+3bst5lDp5acbAs3pwE9WozVDp4FsgDJt3uYvmJ1Lfbzv1e/ig9PCbQEW8rYCg=="/>
-                <enclosure url="https://covecode.app/Cove4026-3489.delta" sparkle:deltaFrom="3489" length="2483258" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="6+nunyXDUPTwiKPs1IQREtIqB3fuLEhKBNodNY9DwniDNeyQL+yAMuSEvedbZqtiOSE5vLYXsQlWwo0FYLhTBA=="/>
-                <enclosure url="https://covecode.app/Cove4026-3485.delta" sparkle:deltaFrom="3485" length="2499270" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="jF6C6ojfN1JAHRhXyp7dmERT0X6knl3N8uhnPSpE/XECg57vFLTwLtdvc6s61Sp4WFGmHzN3x49yliVCEMtvCA=="/>
-                <enclosure url="https://covecode.app/Cove4026-3291.delta" sparkle:deltaFrom="3291" length="2704754" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="4IGVUv+KV3DnHDfeQO/zvvpK3WvGLCNm9HMTcGc0f0Yq7vik9KPghKVEZlQGzNU+t6nV+g1suMlod5mWe8yxDQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
