@@ -1,0 +1,17 @@
+- Ask Assistant is in every selection's right-click menu
+- Saving a file updates its gutter marks and Diff toggle
+- Indentation typed onto a line left blank is cleared
+- Focusing the content takes the find marks down
+- A chat's selection raises the system's text menu
+- Quick Open ranks a name's own words above its extension's
+- A search result's file row offers the full file menu
+- Find shows the wrap panel when it comes round the end
+- Settings' refresh glyph spins on its ring
+- Settings has an Appearance pane for theme and font
+- Follow-up suggestions arrive sooner and read as next steps
+- Find marks every hit in a chat, images and summaries included
+- A diff's hunk band reads clearly in both appearances
+- A chat's Summary mode renders its lines as markdown
+- A chat recovers from a Claude CLI too old for its model
+- A checklist item renders its markdown
+- An emptied search query clears the selection it made
