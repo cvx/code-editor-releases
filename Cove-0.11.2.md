@@ -1,0 +1,4 @@
+- Double-clicking a blank part of the title row zooms the window
+- Switching to a chat lands at its place without a flash
+- A blank new tab gives way to what opens in its pane
+- The Tasks pane's add and edit forms survive leaving the app
