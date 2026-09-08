@@ -23,382 +23,402 @@
   </header>
   <div class="log">
   <section>
-    <h2>0.11.2<span class="when">September 2026</span></h2>
+    <h2><span class="v">0.12</span><span class="when">September 2026</span></h2>
     <ul>
-      <li>Double-clicking a blank part of the title row zooms the window</li>
-      <li>Switching to a chat lands at its place without a flash</li>
-      <li>A blank new tab gives way to what opens in its pane</li>
-      <li>The Tasks pane&#x27;s add and edit forms survive leaving the app</li>
+      <li class="added"><span class="tag">Added</span>Codex joins Claude Code as an assistant backend</li>
+      <li class="fixed"><span class="tag">Fixed</span>Plain JavaScript projects no longer raise a language server fault</li>
+      <li class="fixed"><span class="tag">Fixed</span>Switching branches no longer flashes phantom changes</li>
+      <li class="added"><span class="tag">Added</span>Web previews tint the pane with the page&#x27;s colour</li>
+      <li class="added"><span class="tag">Added</span>Lint disable directives link each rule to its docs</li>
+      <li class="improved"><span class="tag">Improved</span>Quick Open ranks names that start with the query first</li>
+      <li class="added"><span class="tag">Added</span>Force clicking a word in a chat or composer defines it</li>
+      <li class="added"><span class="tag">Added</span>⇧-clicking extends a chat&#x27;s selection from the last press</li>
+      <li class="added"><span class="tag">Added</span>Markdown previews reopen scrolled where they were left</li>
+      <li class="fixed"><span class="tag">Fixed</span>Tasks run without a terminal load .zshrc</li>
+      <li class="improved"><span class="tag">Improved</span>The background tasks popover summarizes and stops them all</li>
+      <li class="improved"><span class="tag">Improved</span>Settings splits General into Editor and Terminal</li>
+      <li class="fixed"><span class="tag">Fixed</span>Chats working in the background no longer mark themselves unread</li>
+      <li class="improved"><span class="tag">Improved</span>Markdown headings and lists are set at clearer sizes</li>
+      <li class="added"><span class="tag">Added</span>Assistant accounts rename in place</li>
     </ul>
   </section>
   <section>
-    <h2>0.11.1<span class="when">September 2026</span></h2>
+    <h2><span class="v">0.11.2</span><span class="when">September 2026</span></h2>
     <ul>
-      <li>Ask Assistant is in every selection&#x27;s right-click menu</li>
-      <li>Saving a file updates its gutter marks and Diff toggle</li>
-      <li>Indentation typed onto a line left blank is cleared</li>
-      <li>Focusing the content takes the find marks down</li>
-      <li>A chat&#x27;s selection raises the system&#x27;s text menu</li>
-      <li>Quick Open ranks a name&#x27;s own words above its extension&#x27;s</li>
-      <li>A search result&#x27;s file row offers the full file menu</li>
-      <li>Find shows the wrap panel when it comes round the end</li>
-      <li>Settings&#x27; refresh glyph spins on its ring</li>
-      <li>Settings has an Appearance pane for theme and font</li>
-      <li>Follow-up suggestions arrive sooner and read as next steps</li>
-      <li>Find marks every hit in a chat, images and summaries included</li>
-      <li>A diff&#x27;s hunk band reads clearly in both appearances</li>
-      <li>A chat&#x27;s Summary mode renders its lines as markdown</li>
-      <li>A chat recovers from a Claude CLI too old for its model</li>
-      <li>A checklist item renders its markdown</li>
-      <li>An emptied search query clears the selection it made</li>
+      <li class="added"><span class="tag">Added</span>Double-clicking a blank part of the title row zooms the window</li>
+      <li class="fixed"><span class="tag">Fixed</span>Switching to a chat lands at its place without a flash</li>
+      <li class="improved"><span class="tag">Improved</span>Blank new tabs give way to what opens in their pane</li>
+      <li class="fixed"><span class="tag">Fixed</span>The Tasks pane&#x27;s add and edit forms survive leaving the app</li>
     </ul>
   </section>
   <section>
-    <h2>0.11<span class="when">September 2026</span></h2>
+    <h2><span class="v">0.11.1</span><span class="when">September 2026</span></h2>
     <ul>
-      <li>A diff tab is editable, with undo, multiple cursors and the line commands</li>
-      <li>The gaps between a diff&#x27;s hunks expand to the lines around them</li>
-      <li>⌘F, Wrap Lines and Hide Whitespace work in a diff</li>
-      <li>⌘/ takes its comment marks from the language at each line</li>
-      <li>Markdown bold and italic are set in real bold and italic</li>
-      <li>Selected text offers an Ask pill that puts it to the assistant</li>
-      <li>Sidebar lists narrow from a filter field at their foot</li>
-      <li>Each assistant account carries its own default model and effort</li>
-      <li>A chat still working in the background reads as busy</li>
-      <li>A chat reopens scrolled where it was left</li>
-      <li>The sidebar&#x27;s blank space drags the window</li>
-      <li>Scrolling a terminal up stays up while output arrives</li>
-      <li>A terminal&#x27;s mouse and wheel reach the program running in it</li>
-      <li>Right-click a terminal for Copy, Paste, Clear and Reset</li>
-      <li>The terminal has its own font, bell and Option-as-Meta settings</li>
-      <li>An input method&#x27;s composition draws in the terminal</li>
-      <li>Install Dependencies runs at the manifest&#x27;s row, not in a terminal tab</li>
-      <li>Scrolling a long markdown file no longer stutters</li>
+      <li class="added"><span class="tag">Added</span>Ask Assistant is in every selection&#x27;s right-click menu</li>
+      <li class="fixed"><span class="tag">Fixed</span>Saving a file updates its gutter marks and Diff toggle</li>
+      <li class="improved"><span class="tag">Improved</span>Indentation typed onto a line left blank is cleared</li>
+      <li class="improved"><span class="tag">Improved</span>Focusing the content takes the find marks down</li>
+      <li class="added"><span class="tag">Added</span>Chat selections raise the system&#x27;s text menu</li>
+      <li class="improved"><span class="tag">Improved</span>Quick Open ranks a name&#x27;s own words above its extension&#x27;s</li>
+      <li class="improved"><span class="tag">Improved</span>Search result rows offer the full file menu</li>
+      <li class="added"><span class="tag">Added</span>Find shows the wrap panel when it comes round the end</li>
+      <li class="fixed"><span class="tag">Fixed</span>Settings&#x27; refresh glyph spins on its ring</li>
+      <li class="added"><span class="tag">Added</span>Settings has an Appearance pane for theme and font</li>
+      <li class="improved"><span class="tag">Improved</span>Follow-up suggestions arrive sooner and read as next steps</li>
+      <li class="fixed"><span class="tag">Fixed</span>Find marks every hit in a chat, images and summaries included</li>
+      <li class="fixed"><span class="tag">Fixed</span>Diff hunk bands read clearly in both appearances</li>
+      <li class="improved"><span class="tag">Improved</span>Summary mode renders chat lines as markdown</li>
+      <li class="fixed"><span class="tag">Fixed</span>Chats recover from a Claude CLI too old for their model</li>
+      <li class="improved"><span class="tag">Improved</span>Checklist items render their markdown</li>
+      <li class="fixed"><span class="tag">Fixed</span>Emptying a search query clears the selection it made</li>
     </ul>
   </section>
   <section>
-    <h2>0.10.2<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.11</span><span class="when">September 2026</span></h2>
     <ul>
-      <li>Scrolling is smoother in chats, lists and the editor</li>
-      <li>The pointer no longer flickers while a chat scrolls</li>
-      <li>Web previews no longer flash white before the page appears</li>
+      <li class="added"><span class="tag">Added</span>Diff tabs are editable, with undo, multiple cursors, and the line commands</li>
+      <li class="added"><span class="tag">Added</span>The gaps between diff hunks expand to the lines around them</li>
+      <li class="added"><span class="tag">Added</span>⌘F, Wrap Lines, and Hide Whitespace work in a diff</li>
+      <li class="improved"><span class="tag">Improved</span>⌘/ takes its comment marks from the language at each line</li>
+      <li class="improved"><span class="tag">Improved</span>Markdown bold and italic are set in real bold and italic</li>
+      <li class="added"><span class="tag">Added</span>Selected text offers an Ask pill that puts it to the assistant</li>
+      <li class="added"><span class="tag">Added</span>Sidebar lists narrow from a filter field at their foot</li>
+      <li class="added"><span class="tag">Added</span>Each assistant account carries its own default model and effort</li>
+      <li class="improved"><span class="tag">Improved</span>Chats still working in the background read as busy</li>
+      <li class="added"><span class="tag">Added</span>Chats reopen scrolled where they were left</li>
+      <li class="added"><span class="tag">Added</span>The sidebar&#x27;s blank space drags the window</li>
+      <li class="fixed"><span class="tag">Fixed</span>Scrolling a terminal up stays up while output arrives</li>
+      <li class="fixed"><span class="tag">Fixed</span>Mouse and wheel reach the program running in a terminal</li>
+      <li class="added"><span class="tag">Added</span>Terminals right-click to Copy, Paste, Clear, and Reset</li>
+      <li class="added"><span class="tag">Added</span>The terminal has its own font, bell, and Option-as-Meta settings</li>
+      <li class="fixed"><span class="tag">Fixed</span>Input method composition draws in the terminal</li>
+      <li class="improved"><span class="tag">Improved</span>Install Dependencies runs at the manifest&#x27;s row, not in a terminal tab</li>
+      <li class="fixed"><span class="tag">Fixed</span>Scrolling a long markdown file no longer stutters</li>
     </ul>
   </section>
   <section>
-    <h2>0.10.1<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.10.2</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>Web previews open without a white flash</li>
-      <li>Quick Open&#x27;s typo matches land at once</li>
-      <li>A chat&#x27;s unread marks survive a relaunch</li>
-      <li>A new terminal no longer garbles its first prompt</li>
+      <li class="improved"><span class="tag">Improved</span>Scrolling is smoother in chats, lists, and the editor</li>
+      <li class="fixed"><span class="tag">Fixed</span>The pointer no longer flickers while a chat scrolls</li>
+      <li class="fixed"><span class="tag">Fixed</span>Web previews no longer flash white before the page appears</li>
     </ul>
   </section>
   <section>
-    <h2>0.10<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.10.1</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>Markdown renders task lists and strikethrough</li>
-      <li>A turn that can&#x27;t authenticate gets a sign-in card</li>
-      <li>Branch prefixes fold like folders in the branches list</li>
-      <li>A chat forks mid-turn, from the exchange before it</li>
-      <li>A reply cut short says so instead of going missing</li>
-      <li>Fixed width Assistant conversations</li>
-      <li>Each assistant account carries its own default permission mode</li>
-      <li>The turn status names what it&#x27;s waiting on</li>
-      <li>A dependency in package.json or Gemfile hovers to a card</li>
-      <li>HTML and SVG files draw as a page in Preview</li>
-      <li>A tab dropped with ⌥, ⌘ or ⇧ lands a copy</li>
-      <li>A File | Preview | Diff segment drags onto another pane</li>
-      <li>A queued follow-up drags to a different slot</li>
-      <li>Quick Open and Quick Action tolerate a typo in the query</li>
+      <li class="fixed"><span class="tag">Fixed</span>Web previews open without a white flash</li>
+      <li class="improved"><span class="tag">Improved</span>Quick Open&#x27;s typo matches land at once</li>
+      <li class="fixed"><span class="tag">Fixed</span>Chats keep their unread marks across a relaunch</li>
+      <li class="fixed"><span class="tag">Fixed</span>New terminals no longer garble their first prompt</li>
     </ul>
   </section>
   <section>
-    <h2>0.9.7<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.10</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>Comparing with a branch shows its Changes section</li>
-      <li>⌃B hands a turn&#x27;s blocking work to the background</li>
-      <li>A background task can be stopped from the counts popover</li>
-      <li>A settled background task reports itself in the transcript</li>
-      <li>A tool row&#x27;s ⋯ menu runs, stops, copies and opens the call</li>
-      <li>A tool call&#x27;s result is a row of its own</li>
-      <li>@ completes a workspace file into the prompt</li>
-      <li>A file ⌥-dropped on a chat goes into the draft as a path</li>
-      <li>A turn interrupted by a restart or a crash resumes</li>
-      <li>A reply in an unfocused pane is marked unread</li>
-      <li>The usage tooltip names the window it&#x27;s filled to</li>
-      <li>The branches list is there on the first click</li>
+      <li class="added"><span class="tag">Added</span>Markdown renders task lists and strikethrough</li>
+      <li class="added"><span class="tag">Added</span>Turns that can&#x27;t authenticate get a sign-in card</li>
+      <li class="added"><span class="tag">Added</span>Branch prefixes fold like folders in the branches list</li>
+      <li class="improved"><span class="tag">Improved</span>Chats fork mid-turn, from the exchange before</li>
+      <li class="fixed"><span class="tag">Fixed</span>Replies cut short say so instead of going missing</li>
+      <li class="improved"><span class="tag">Improved</span>Fixed width Assistant conversations</li>
+      <li class="added"><span class="tag">Added</span>Each assistant account carries its own default permission mode</li>
+      <li class="improved"><span class="tag">Improved</span>The turn status names what it&#x27;s waiting on</li>
+      <li class="added"><span class="tag">Added</span>Dependencies in package.json or Gemfile hover to a card</li>
+      <li class="added"><span class="tag">Added</span>HTML and SVG files draw as a page in Preview</li>
+      <li class="added"><span class="tag">Added</span>Tabs dropped with ⌥, ⌘, or ⇧ land a copy</li>
+      <li class="added"><span class="tag">Added</span>File | Preview | Diff segments drag onto another pane</li>
+      <li class="added"><span class="tag">Added</span>Queued follow-ups drag to a different slot</li>
+      <li class="added"><span class="tag">Added</span>Quick Open and Quick Action tolerate a typo in the query</li>
     </ul>
   </section>
   <section>
-    <h2>0.9.6<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.9.7</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>A Changes row opens its diff against the branch being compared</li>
+      <li class="added"><span class="tag">Added</span>Comparing with a branch shows its Changes section</li>
+      <li class="added"><span class="tag">Added</span>⌃B hands a turn&#x27;s blocking work to the background</li>
+      <li class="added"><span class="tag">Added</span>Background tasks stop from the counts popover</li>
+      <li class="added"><span class="tag">Added</span>Settled background tasks report themselves in the transcript</li>
+      <li class="added"><span class="tag">Added</span>Each tool row&#x27;s ⋯ menu runs, stops, copies, and opens the call</li>
+      <li class="improved"><span class="tag">Improved</span>Tool call results are a row of their own</li>
+      <li class="added"><span class="tag">Added</span>@ completes a workspace file into the prompt</li>
+      <li class="added"><span class="tag">Added</span>Files ⌥-dropped on a chat go into the draft as a path</li>
+      <li class="fixed"><span class="tag">Fixed</span>Turns interrupted by a restart or a crash resume</li>
+      <li class="improved"><span class="tag">Improved</span>Replies in an unfocused pane are marked unread</li>
+      <li class="improved"><span class="tag">Improved</span>The usage tooltip names the window it&#x27;s filled to</li>
+      <li class="fixed"><span class="tag">Fixed</span>The branches list is there on the first click</li>
     </ul>
   </section>
   <section>
-    <h2>0.9.5<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.9.6</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>A new folder in Source Control lists its files row by row</li>
-      <li>Effort picked mid-turn takes effect on the running turn</li>
+      <li class="fixed"><span class="tag">Fixed</span>Changes rows open their diff against the branch being compared</li>
     </ul>
   </section>
   <section>
-    <h2>0.9.4<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.9.5</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>/btw in the composer asks a side question in a floating panel</li>
-      <li>The new-tab &quot;+&quot; moved to the pane title&#x27;s corner</li>
-      <li>A streaming reply draws each block the moment it arrives</li>
-      <li>A click that activates a window also focuses the pane under it</li>
-      <li>Every pane title answers a right-click, whatever its tab holds</li>
-      <li>A chat can be branched from its own composer</li>
-      <li>Esc in the assistant composer stops the turn</li>
-      <li>The assistant can suggest a follow-up task as a card</li>
-      <li>A chat&#x27;s unread mark clears when the reply is actually read</li>
-      <li>Recently used actions lead Quick Action</li>
-      <li>Markdown preview answers ⌘F</li>
-      <li>A model picked mid-turn takes effect on the running turn</li>
-      <li>A failed task run turns red in the sidebar and names its exit code</li>
-      <li>A pasted image no longer corrupts the message it&#x27;s sent in</li>
+      <li class="fixed"><span class="tag">Fixed</span>New folders in Source Control list their files row by row</li>
+      <li class="improved"><span class="tag">Improved</span>Picking an effort mid-turn takes effect on the running turn</li>
     </ul>
   </section>
   <section>
-    <h2>0.9.3<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.9.4</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>New commits arrive at the top of the Commits list without reloading it</li>
-      <li>Quick Action lists the workspace&#x27;s tasks and skills</li>
-      <li>Running a task shows it in the Tasks sidebar, selected</li>
-      <li>A tab moved to another pane lands after that pane&#x27;s active tab</li>
-      <li>A streaming reply grows smoothly instead of jumping</li>
+      <li class="added"><span class="tag">Added</span>/btw in the composer asks a side question in a floating panel</li>
+      <li class="improved"><span class="tag">Improved</span>The new-tab &quot;+&quot; moved to the pane title&#x27;s corner</li>
+      <li class="improved"><span class="tag">Improved</span>Streaming replies draw each block the moment it arrives</li>
+      <li class="improved"><span class="tag">Improved</span>Clicks that activate a window also focus the pane under them</li>
+      <li class="improved"><span class="tag">Improved</span>Every pane title answers a right-click, whatever its tab holds</li>
+      <li class="added"><span class="tag">Added</span>Chats branch from their own composer</li>
+      <li class="added"><span class="tag">Added</span>Esc in the assistant composer stops the turn</li>
+      <li class="added"><span class="tag">Added</span>The assistant can suggest a follow-up task as a card</li>
+      <li class="fixed"><span class="tag">Fixed</span>Chat unread marks clear when the reply is actually read</li>
+      <li class="improved"><span class="tag">Improved</span>Recently used actions lead Quick Action</li>
+      <li class="added"><span class="tag">Added</span>Markdown preview answers ⌘F</li>
+      <li class="improved"><span class="tag">Improved</span>Picking a model mid-turn takes effect on the running turn</li>
+      <li class="added"><span class="tag">Added</span>Failed task runs turn red in the sidebar and name their exit code</li>
+      <li class="fixed"><span class="tag">Fixed</span>Pasted images no longer corrupt the message they&#x27;re sent in</li>
     </ul>
   </section>
   <section>
-    <h2>0.9.2<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.9.3</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>Tasks sidebar now has an Assistant Skills section</li>
-      <li>A headless task&#x27;s output follows live in a popover</li>
-      <li>More menu commands and aliases in Quick Action</li>
-      <li>⌘F in a terminal or a chat opens on the last match</li>
-      <li>A streaming reply is followed on a lag, not pinned</li>
-      <li>Smoother scrolling over open tool groups</li>
-      <li>A markdown preview keeps its scroll position</li>
+      <li class="improved"><span class="tag">Improved</span>New commits arrive at the top of the Commits list without reloading it</li>
+      <li class="added"><span class="tag">Added</span>Quick Action lists the workspace&#x27;s tasks and skills</li>
+      <li class="improved"><span class="tag">Improved</span>Running a task shows it in the Tasks sidebar, selected</li>
+      <li class="improved"><span class="tag">Improved</span>Tabs moved to another pane land after that pane&#x27;s active tab</li>
+      <li class="improved"><span class="tag">Improved</span>Streaming replies grow smoothly instead of jumping</li>
     </ul>
   </section>
   <section>
-    <h2>0.9.1<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.9.2</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>Markdown files render as prose, with <strong>File | Preview | Diff</strong> on the pane title</li>
-      <li>One find chip across the editor, terminal and chat</li>
-      <li>An assistant account can run its CLI in a container</li>
-      <li>Terminal links have one look, declared links included</li>
-      <li>A restored terminal keeps its shell and its screen</li>
-      <li>Every window opens at its own size</li>
-      <li>Transcript links drag out as file chips</li>
-      <li>A transcript link opens on the mouse up</li>
-      <li>Rename…, Move… and the copy verbs in Quick Action</li>
+      <li class="added"><span class="tag">Added</span>Tasks sidebar now has an Assistant Skills section</li>
+      <li class="added"><span class="tag">Added</span>Headless task output follows live in a popover</li>
+      <li class="improved"><span class="tag">Improved</span>More menu commands and aliases in Quick Action</li>
+      <li class="improved"><span class="tag">Improved</span>⌘F in a terminal or a chat opens on the last match</li>
+      <li class="improved"><span class="tag">Improved</span>Streaming replies are followed on a lag, not pinned</li>
+      <li class="improved"><span class="tag">Improved</span>Smoother scrolling over open tool groups</li>
+      <li class="improved"><span class="tag">Improved</span>Markdown previews keep their scroll position</li>
     </ul>
   </section>
   <section>
-    <h2>0.9<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.9.1</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>Source Control&#x27;s branches are a pane section: <strong>Branches | Commits | Changes</strong></li>
-      <li>A commit composer at the foot of the change list</li>
-      <li>Staging, with a diff per half and <strong>Stage All / Unstage All</strong></li>
-      <li>A manifest in the file tree installs its dependencies</li>
-      <li>Shell integration for bash and fish</li>
-      <li>Terminal links open in Cove</li>
-      <li>The terminal&#x27;s ANSI colours are readable on the light canvas</li>
-      <li>A Permissions panel for the assistant</li>
-      <li>Ultracode, fast mode, and pills that follow the model</li>
-      <li>/usage, /status, /plan, /rename and /memory answer in the chat</li>
-      <li><strong>Quick Action</strong> (⇧⌘P), a command palette in the Quick Open panel</li>
-      <li>An open file reloads when it changes on disk</li>
-      <li>Find in Workspace keeps its results when files change</li>
-      <li>A pane mounts only its frontmost tab</li>
-      <li>A live frame-rate readout in the titlebar (Settings ▸ General)</li>
-      <li>Updates download in the background and install on quit</li>
-      <li>Transcripts scroll smoother and mount faster</li>
+      <li class="added"><span class="tag">Added</span>Markdown files render as prose, with File | Preview | Diff on the pane title</li>
+      <li class="improved"><span class="tag">Improved</span>One find chip across the editor, terminal, and chat</li>
+      <li class="added"><span class="tag">Added</span>Assistant accounts can run their CLI in a container</li>
+      <li class="improved"><span class="tag">Improved</span>Terminal links have one look, declared links included</li>
+      <li class="fixed"><span class="tag">Fixed</span>Restored terminals keep their shell and screen</li>
+      <li class="fixed"><span class="tag">Fixed</span>Every window opens at its own size</li>
+      <li class="added"><span class="tag">Added</span>Transcript links drag out as file chips</li>
+      <li class="improved"><span class="tag">Improved</span>Transcript links open on the mouse up</li>
+      <li class="added"><span class="tag">Added</span>Rename…, Move…, and the copy verbs in Quick Action</li>
     </ul>
   </section>
   <section>
-    <h2>0.8<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.9</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>Source Control&#x27;s branch pill opens local and remote branches as one tree</li>
-      <li>A <strong>Changes | History</strong> switch (⇧⌘Y) pages through the branch&#x27;s commits</li>
-      <li><strong>File ▸ Discard Changes</strong> (⇧⌘⌫)</li>
-      <li><strong>Open as Workspace</strong> on a folder in the file tree</li>
-      <li>A workspace never opens twice</li>
-      <li>Find in Workspace searches unsaved buffers</li>
-      <li>Find in Workspace is much faster on large workspaces</li>
-      <li>A search hit is anchored on its line text</li>
-      <li>JavaScript and TypeScript work with no install</li>
-      <li>Tasks and Source Control take the file tree&#x27;s keys</li>
-      <li>An archived chat or a terminal task drags from the sidebar onto a pane</li>
-      <li>A drag held over the section selector springs it open</li>
-      <li>A tab dropped at a divider&#x27;s corner makes a pane that long</li>
-      <li>A queued message can be edited by clicking it</li>
-      <li>The assistant hears the state of the checkout each turn</li>
-      <li>Chats open faster, scroll smoother, and hold their place</li>
-      <li>Three text lines per mouse-wheel notch</li>
-      <li>An update can install itself on quit</li>
+      <li class="added"><span class="tag">Added</span>Source Control&#x27;s branches are a pane section: Branches | Commits | Changes</li>
+      <li class="added"><span class="tag">Added</span>A commit composer at the foot of the change list</li>
+      <li class="added"><span class="tag">Added</span>Staging, with a diff per half and Stage All / Unstage All</li>
+      <li class="added"><span class="tag">Added</span>Manifests in the file tree install their dependencies</li>
+      <li class="added"><span class="tag">Added</span>Shell integration for bash and fish</li>
+      <li class="added"><span class="tag">Added</span>Terminal links open in Cove</li>
+      <li class="fixed"><span class="tag">Fixed</span>The terminal&#x27;s ANSI colours are readable on the light canvas</li>
+      <li class="added"><span class="tag">Added</span>A Permissions panel for the assistant</li>
+      <li class="added"><span class="tag">Added</span>Ultracode, fast mode, and pills that follow the model</li>
+      <li class="added"><span class="tag">Added</span>/usage, /status, /plan, /rename, and /memory answer in the chat</li>
+      <li class="added"><span class="tag">Added</span>Quick Action (⇧⌘P), a command palette in the Quick Open panel</li>
+      <li class="added"><span class="tag">Added</span>Open files reload when they change on disk</li>
+      <li class="fixed"><span class="tag">Fixed</span>Find in Workspace keeps its results when files change</li>
+      <li class="improved"><span class="tag">Improved</span>Panes mount only their frontmost tab</li>
+      <li class="added"><span class="tag">Added</span>A live frame-rate readout in the titlebar (Settings ▸ General)</li>
+      <li class="added"><span class="tag">Added</span>Updates download in the background and install on quit</li>
+      <li class="improved"><span class="tag">Improved</span>Transcripts scroll smoother and mount faster</li>
     </ul>
   </section>
   <section>
-    <h2>0.7<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.8</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>Terminals survive a restart, scrollback and shell intact</li>
-      <li>A terminal resize keeps exactly one prompt</li>
-      <li>⌘F in a terminal counts every hit in the buffer</li>
-      <li>A modern overlay scrollbar in the terminal</li>
-      <li>⌘-hovering a path in terminal output points a hand</li>
-      <li>An assistant turn survives a restart</li>
-      <li>Replies stream with the newest words fading in</li>
-      <li>Background shells, subagents and workflows on the actions pill</li>
-      <li>Settings shows plan usage per organization</li>
-      <li>A window with no folder open persists across launches</li>
-      <li>A Source Control row dropped on a pane opens its diff there</li>
-      <li>A dragged search hit opens centred on the match</li>
-      <li>Assistant sidebar lists take the file tree&#x27;s keys</li>
-      <li>The workspace dropdown opens on press</li>
-      <li>←/→ steps between a message&#x27;s images</li>
-      <li>The About window wears the app icon&#x27;s colours</li>
+      <li class="added"><span class="tag">Added</span>Source Control&#x27;s branch pill opens local and remote branches as one tree</li>
+      <li class="added"><span class="tag">Added</span>A Changes | History switch (⇧⌘Y) pages through the branch&#x27;s commits</li>
+      <li class="added"><span class="tag">Added</span>File ▸ Discard Changes (⇧⌘⌫)</li>
+      <li class="added"><span class="tag">Added</span>Open as Workspace on a folder in the file tree</li>
+      <li class="fixed"><span class="tag">Fixed</span>Workspaces never open twice</li>
+      <li class="added"><span class="tag">Added</span>Find in Workspace searches unsaved buffers</li>
+      <li class="improved"><span class="tag">Improved</span>Find in Workspace is much faster on large workspaces</li>
+      <li class="improved"><span class="tag">Improved</span>Search hits are anchored on their line text</li>
+      <li class="improved"><span class="tag">Improved</span>JavaScript and TypeScript work with no install</li>
+      <li class="improved"><span class="tag">Improved</span>Tasks and Source Control take the file tree&#x27;s keys</li>
+      <li class="added"><span class="tag">Added</span>Archived chats and terminal tasks drag from the sidebar onto a pane</li>
+      <li class="added"><span class="tag">Added</span>Drags held over the section selector spring it open</li>
+      <li class="added"><span class="tag">Added</span>Tabs dropped at a divider&#x27;s corner make a pane that long</li>
+      <li class="added"><span class="tag">Added</span>Clicking a queued message edits it</li>
+      <li class="added"><span class="tag">Added</span>The assistant hears the state of the checkout each turn</li>
+      <li class="improved"><span class="tag">Improved</span>Chats open faster, scroll smoother, and hold their place</li>
+      <li class="improved"><span class="tag">Improved</span>Three text lines per mouse-wheel notch</li>
+      <li class="added"><span class="tag">Added</span>Updates can install themselves on quit</li>
     </ul>
   </section>
   <section>
-    <h2>0.6.3<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.7</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>File tree icons for <code>.rs</code>, <code>.toml</code> and ignore files</li>
-      <li>The tab drop preview shows the arrangement the drop produces</li>
-      <li><strong>⌘Z</strong> in the composer undoes attaching an image</li>
-      <li>Traffic lights and the sidebar toggle survive a light/dark switch</li>
-      <li>Sending from up the transcript glides to the bottom</li>
-      <li>The strip under the tab capsules takes clicks again</li>
-      <li>The assistant&#x27;s <code>/</code> menu is complete from the first keystroke</li>
+      <li class="added"><span class="tag">Added</span>Terminals survive a restart, scrollback and shell intact</li>
+      <li class="fixed"><span class="tag">Fixed</span>Terminal resizes keep exactly one prompt</li>
+      <li class="improved"><span class="tag">Improved</span>⌘F in a terminal counts every hit in the buffer</li>
+      <li class="improved"><span class="tag">Improved</span>A modern overlay scrollbar in the terminal</li>
+      <li class="improved"><span class="tag">Improved</span>⌘-hovering a path in terminal output points a hand</li>
+      <li class="added"><span class="tag">Added</span>Assistant turns survive a restart</li>
+      <li class="added"><span class="tag">Added</span>Replies stream with the newest words fading in</li>
+      <li class="added"><span class="tag">Added</span>Background shells, subagents, and workflows on the actions pill</li>
+      <li class="added"><span class="tag">Added</span>Settings shows plan usage per organization</li>
+      <li class="fixed"><span class="tag">Fixed</span>Windows with no folder open persist across launches</li>
+      <li class="added"><span class="tag">Added</span>Source Control rows dropped on a pane open their diff there</li>
+      <li class="improved"><span class="tag">Improved</span>Dragged search hits open centred on the match</li>
+      <li class="improved"><span class="tag">Improved</span>Assistant sidebar lists take the file tree&#x27;s keys</li>
+      <li class="improved"><span class="tag">Improved</span>The workspace dropdown opens on press</li>
+      <li class="added"><span class="tag">Added</span>←/→ steps between a message&#x27;s images</li>
+      <li class="improved"><span class="tag">Improved</span>The About window wears the app icon&#x27;s colours</li>
     </ul>
   </section>
   <section>
-    <h2>0.6.2<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.6.3</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>⌘-click a path in terminal output to open it</li>
-      <li>⌃` cycles through the idle terminals</li>
-      <li>Problems and file errors fold into the pane&#x27;s corner pills</li>
-      <li>A new tab opens beside the active one</li>
-      <li>Bare <code>cove</code> opens the current directory</li>
-      <li>Language servers and linters run in the file&#x27;s own project</li>
-      <li>The glint plugin is bundled, so no per-project install</li>
-      <li>Cleaner hover popovers for Ruby documentation</li>
-      <li>Occurrence matching is case-insensitive</li>
-      <li>Case-preserving typing only with multiple cursors</li>
+      <li class="added"><span class="tag">Added</span>File tree icons for <code>.rs</code>, <code>.toml</code>, and ignore files</li>
+      <li class="improved"><span class="tag">Improved</span>The tab drop preview shows the arrangement the drop produces</li>
+      <li class="added"><span class="tag">Added</span>⌘Z in the composer undoes attaching an image</li>
+      <li class="fixed"><span class="tag">Fixed</span>Traffic lights and the sidebar toggle survive a light/dark switch</li>
+      <li class="improved"><span class="tag">Improved</span>Sending from up the transcript glides to the bottom</li>
+      <li class="fixed"><span class="tag">Fixed</span>The strip under the tab capsules takes clicks again</li>
+      <li class="fixed"><span class="tag">Fixed</span>The assistant&#x27;s <code>/</code> menu is complete from the first keystroke</li>
     </ul>
   </section>
   <section>
-    <h2>0.6.1<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.6.2</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>A permission card grows to fit its command</li>
-      <li>Even spacing above the question and permission cards</li>
-      <li>A terminal tracks its pane through a divider drag</li>
-      <li>The divider detents at the stand-in threshold on the way in</li>
-      <li>Plan mode&#x27;s chip is tinted green</li>
+      <li class="added"><span class="tag">Added</span>⌘-clicking a path in terminal output opens it</li>
+      <li class="improved"><span class="tag">Improved</span>⌃` cycles through the idle terminals</li>
+      <li class="improved"><span class="tag">Improved</span>Problems and file errors fold into the pane&#x27;s corner pills</li>
+      <li class="improved"><span class="tag">Improved</span>New tabs open beside the active one</li>
+      <li class="added"><span class="tag">Added</span>Bare <code>cove</code> opens the current directory</li>
+      <li class="fixed"><span class="tag">Fixed</span>Language servers and linters run in the file&#x27;s own project</li>
+      <li class="improved"><span class="tag">Improved</span>The glint plugin is bundled, so no per-project install</li>
+      <li class="improved"><span class="tag">Improved</span>Cleaner hover popovers for Ruby documentation</li>
+      <li class="improved"><span class="tag">Improved</span>Occurrence matching is case-insensitive</li>
+      <li class="fixed"><span class="tag">Fixed</span>Case-preserving typing only with multiple cursors</li>
     </ul>
   </section>
   <section>
-    <h2>0.6<span class="when">August 2026</span></h2>
+    <h2><span class="v">0.6.1</span><span class="when">August 2026</span></h2>
     <ul>
-      <li><strong>Help</strong> menu reports an issue, copies diagnostics and reveals the log</li>
-      <li>Formatters and the Claude Code CLI are found under fish</li>
-      <li>A terminal squeezed small and back keeps one prompt</li>
-      <li>A missing language server says how to install it</li>
-      <li>Only ripgrep is bundled, not the language servers or formatters</li>
+      <li class="fixed"><span class="tag">Fixed</span>Permission cards grow to fit their command</li>
+      <li class="fixed"><span class="tag">Fixed</span>Even spacing above the question and permission cards</li>
+      <li class="fixed"><span class="tag">Fixed</span>Terminals track their pane through a divider drag</li>
+      <li class="improved"><span class="tag">Improved</span>Dividers detent at the stand-in threshold on the way in</li>
+      <li class="improved"><span class="tag">Improved</span>Plan mode&#x27;s chip is tinted green</li>
     </ul>
   </section>
   <section>
-    <h2>0.5<span class="when">July 2026</span></h2>
+    <h2><span class="v">0.6</span><span class="when">August 2026</span></h2>
     <ul>
-      <li>Open one file in two panes</li>
-      <li>A file dropped on a pane opens there</li>
-      <li>Clone a repository from the Open dialog</li>
-      <li>A pane&#x27;s <strong>+</strong> opens New File, Assistant or Terminal</li>
-      <li>Queued messages can be edited from the composer</li>
-      <li>Markdown images render in the transcript</li>
-      <li>Each chat is stored in its own file</li>
-      <li>Wrapped lines that start at column 0 hang-indent</li>
-      <li>A missing backend CLI is reported instead of failing quietly</li>
-      <li>Smoother tab-bar scrolling</li>
-      <li>Every build is Developer ID-signed</li>
+      <li class="added"><span class="tag">Added</span>Help menu reports an issue, copies diagnostics, and reveals the log</li>
+      <li class="fixed"><span class="tag">Fixed</span>Formatters and the Claude Code CLI are found under fish</li>
+      <li class="fixed"><span class="tag">Fixed</span>Terminals squeezed small and back keep one prompt</li>
+      <li class="improved"><span class="tag">Improved</span>Missing language servers say how to install them</li>
+      <li class="improved"><span class="tag">Improved</span>Only ripgrep is bundled, not the language servers or formatters</li>
     </ul>
   </section>
   <section>
-    <h2>0.4<span class="when">July 2026</span></h2>
+    <h2><span class="v">0.5</span><span class="when">July 2026</span></h2>
     <ul>
-      <li>Several assistant tabs at once, each its own chat</li>
-      <li>Replies render markdown: tables, lists, code, images and links</li>
-      <li>Tool runs render as blocks, grouped and collapsible</li>
-      <li>Interactive question cards, and a live task checklist</li>
-      <li>Paste or drop images into the composer</li>
-      <li>An in-app zoomable image preview</li>
-      <li>Inline git blame beside the code</li>
-      <li>A Run pane for saved commands, headless or in a terminal</li>
-      <li>Session titles, prompt suggestions and a chat history menu</li>
-      <li>A message sent mid-turn queues instead of interrupting</li>
-      <li>Unread replies badge the Dock icon</li>
-      <li>Go to Line (⌃G)</li>
-      <li>Arrow-key navigation glides the file tree</li>
-      <li>The panes are laid out by AppKit now, dividers included</li>
+      <li class="added"><span class="tag">Added</span>One file open in two panes</li>
+      <li class="added"><span class="tag">Added</span>Files dropped on a pane open there</li>
+      <li class="added"><span class="tag">Added</span>Repositories clone from the Open dialog</li>
+      <li class="added"><span class="tag">Added</span>Each pane&#x27;s + opens New File, Assistant, or Terminal</li>
+      <li class="added"><span class="tag">Added</span>Queued messages can be edited from the composer</li>
+      <li class="added"><span class="tag">Added</span>Markdown images render in the transcript</li>
+      <li class="improved"><span class="tag">Improved</span>Each chat is stored in its own file</li>
+      <li class="improved"><span class="tag">Improved</span>Wrapped lines that start at column 0 hang-indent</li>
+      <li class="fixed"><span class="tag">Fixed</span>Missing backend CLIs are reported instead of failing quietly</li>
+      <li class="improved"><span class="tag">Improved</span>Smoother tab-bar scrolling</li>
+      <li class="improved"><span class="tag">Improved</span>Every build is Developer ID-signed</li>
     </ul>
   </section>
   <section>
-    <h2>0.3<span class="when">July 2026</span></h2>
+    <h2><span class="v">0.4</span><span class="when">July 2026</span></h2>
     <ul>
-      <li>Language servers: typescript, glint, ruby-lsp, yaml and css</li>
-      <li>Hover popovers, go to definition, code actions and completion</li>
-      <li>A GitHub-style unified diff tab per changed file</li>
-      <li>Staging checkboxes in Source Control</li>
-      <li>Auto-updates, with a signed release pipeline</li>
-      <li>One long-lived Claude Code process per chat</li>
-      <li>Live turn status, token stats and a context-window gauge</li>
-      <li>Plan usage per account</li>
-      <li>Interactive permission prompts, with a mode selector</li>
-      <li>Transcript view modes: normal, thinking, verbose, summary</li>
-      <li>Auto-close brackets, quotes and backticks</li>
-      <li>Full-line colouring for <code>.diff</code> and <code>.patch</code> files</li>
-      <li>The <code>ce</code> command installs into PATH</li>
-      <li>Single-child folder chains compact into one row</li>
-      <li>Monster single-line files open without stalling</li>
+      <li class="added"><span class="tag">Added</span>Several assistant tabs at once, each its own chat</li>
+      <li class="added"><span class="tag">Added</span>Replies render markdown: tables, lists, code, images, and links</li>
+      <li class="added"><span class="tag">Added</span>Tool runs render as blocks, grouped and collapsible</li>
+      <li class="added"><span class="tag">Added</span>Interactive question cards, and a live task checklist</li>
+      <li class="added"><span class="tag">Added</span>Images paste or drop into the composer</li>
+      <li class="added"><span class="tag">Added</span>Zoomable image previews in the app</li>
+      <li class="added"><span class="tag">Added</span>Inline git blame beside the code</li>
+      <li class="added"><span class="tag">Added</span>A Run pane for saved commands, headless or in a terminal</li>
+      <li class="added"><span class="tag">Added</span>Session titles, prompt suggestions, and a chat history menu</li>
+      <li class="added"><span class="tag">Added</span>Messages sent mid-turn queue instead of interrupting</li>
+      <li class="added"><span class="tag">Added</span>Unread replies badge the Dock icon</li>
+      <li class="added"><span class="tag">Added</span>Go to Line (⌃G)</li>
+      <li class="improved"><span class="tag">Improved</span>Arrow-key navigation glides the file tree</li>
+      <li class="improved"><span class="tag">Improved</span>The panes are laid out by AppKit now, dividers included</li>
     </ul>
   </section>
   <section>
-    <h2>0.2<span class="when">July 2026</span></h2>
+    <h2><span class="v">0.3</span><span class="when">July 2026</span></h2>
     <ul>
-      <li>A Claude chat in the bottom panel</li>
-      <li>Stacked editor panes, and nested 2+1 and 2+2 layouts</li>
-      <li>Drop a tab on a pane&#x27;s edge to open a pane there</li>
-      <li>Drag tabs to reorder them, or into another pane</li>
-      <li>Git change markers in the gutter and the scroll track</li>
-      <li>A Source Control pane listing the changed files</li>
-      <li>Git status badges in the file tree</li>
-      <li>Other appearances of the selected text are boxed</li>
-      <li>Caret ticks and find marks in the scroll overview</li>
-      <li>Accent-derived light and dark themes</li>
-      <li>Toggle Block Comment (⌥⇧A) and case-preserving replace</li>
-      <li>An image preview with dimensions and type</li>
+      <li class="added"><span class="tag">Added</span>Language servers: typescript, glint, ruby-lsp, yaml, and css</li>
+      <li class="added"><span class="tag">Added</span>Hover popovers, go to definition, code actions, and completion</li>
+      <li class="added"><span class="tag">Added</span>GitHub-style unified diff tabs, one per changed file</li>
+      <li class="added"><span class="tag">Added</span>Staging checkboxes in Source Control</li>
+      <li class="added"><span class="tag">Added</span>Auto-updates, with a signed release pipeline</li>
+      <li class="added"><span class="tag">Added</span>One long-lived Claude Code process per chat</li>
+      <li class="added"><span class="tag">Added</span>Live turn status, token stats, and a context-window gauge</li>
+      <li class="added"><span class="tag">Added</span>Plan usage per account</li>
+      <li class="added"><span class="tag">Added</span>Interactive permission prompts, with a mode selector</li>
+      <li class="added"><span class="tag">Added</span>Transcript view modes: normal, thinking, verbose, summary</li>
+      <li class="added"><span class="tag">Added</span>Auto-close brackets, quotes, and backticks</li>
+      <li class="added"><span class="tag">Added</span>Full-line colouring for <code>.diff</code> and <code>.patch</code> files</li>
+      <li class="added"><span class="tag">Added</span>The <code>ce</code> command installs into PATH</li>
+      <li class="added"><span class="tag">Added</span>Single-child folder chains compact into one row</li>
+      <li class="fixed"><span class="tag">Fixed</span>Massive single-line files open without stalling</li>
     </ul>
   </section>
   <section>
-    <h2>0.1<span class="when">July 2026</span></h2>
+    <h2><span class="v">0.2</span><span class="when">July 2026</span></h2>
     <ul>
-      <li>The first build of the editor</li>
-      <li>Tree-Sitter syntax highlighting</li>
-      <li>File tree, tabs, and a split into two editor columns</li>
-      <li>Find and replace, and multi-cursor editing</li>
-      <li><strong>Find in Workspace</strong> (⇧⌘F) over a bundled ripgrep</li>
-      <li><strong>Quick Open</strong> (⌘T), a fuzzy file finder</li>
-      <li>A terminal panel below the editor</li>
-      <li>Display lint problems from eslint, rubocop, ruff, stylelint and Biome</li>
-      <li>Format on save, using the project&#x27;s own tooling</li>
-      <li>Syntax themes for light and dark</li>
-      <li><code>.editorconfig</code> drives indentation and saving</li>
-      <li>Smart indent, the line commands and bracket matching</li>
-      <li>Go Back / Forward, and Open on GitHub or GitLab</li>
-      <li>Session restore across windows and workspaces</li>
+      <li class="added"><span class="tag">Added</span>A Claude chat in the bottom panel</li>
+      <li class="added"><span class="tag">Added</span>Stacked editor panes, and nested 2+1 and 2+2 layouts</li>
+      <li class="added"><span class="tag">Added</span>Tabs dropped on a pane&#x27;s edge open a pane there</li>
+      <li class="added"><span class="tag">Added</span>Tabs drag to reorder, or into another pane</li>
+      <li class="added"><span class="tag">Added</span>Git change markers in the gutter and the scroll track</li>
+      <li class="added"><span class="tag">Added</span>A Source Control pane listing the changed files</li>
+      <li class="added"><span class="tag">Added</span>Git status badges in the file tree</li>
+      <li class="added"><span class="tag">Added</span>Other appearances of the selected text are boxed</li>
+      <li class="added"><span class="tag">Added</span>Caret ticks and find marks in the scroll overview</li>
+      <li class="added"><span class="tag">Added</span>Accent-derived light and dark themes</li>
+      <li class="added"><span class="tag">Added</span>Toggle Block Comment (⌥⇧A) and case-preserving replace</li>
+      <li class="added"><span class="tag">Added</span>Image previews with dimensions and type</li>
+    </ul>
+  </section>
+  <section>
+    <h2><span class="v">0.1</span><span class="when">July 2026</span></h2>
+    <ul>
+      <li class="added"><span class="tag">Added</span>The first build of the editor</li>
+      <li class="added"><span class="tag">Added</span>Tree-Sitter syntax highlighting</li>
+      <li class="added"><span class="tag">Added</span>File tree, tabs, and a split into two editor columns</li>
+      <li class="added"><span class="tag">Added</span>Find and replace, and multi-cursor editing</li>
+      <li class="added"><span class="tag">Added</span>Find in Workspace (⇧⌘F) over a bundled ripgrep</li>
+      <li class="added"><span class="tag">Added</span>Quick Open (⌘T), a fuzzy file finder</li>
+      <li class="added"><span class="tag">Added</span>A terminal panel below the editor</li>
+      <li class="added"><span class="tag">Added</span>Display lint problems from eslint, rubocop, ruff, stylelint, and Biome</li>
+      <li class="added"><span class="tag">Added</span>Format on save, using the project&#x27;s own tooling</li>
+      <li class="added"><span class="tag">Added</span>Syntax themes for light and dark</li>
+      <li class="added"><span class="tag">Added</span><code>.editorconfig</code> drives indentation and saving</li>
+      <li class="added"><span class="tag">Added</span>Smart indent, the line commands, and bracket matching</li>
+      <li class="added"><span class="tag">Added</span>Go Back / Forward, and Open on GitHub or GitLab</li>
+      <li class="added"><span class="tag">Added</span>Session restore across windows and workspaces</li>
     </ul>
   </section>
   </div>

@@ -1,0 +1,39 @@
+<style>
+.cove-notes { margin: 0; padding: 0; list-style: none;
+              font: 13px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif; }
+.cove-notes li { position: relative; margin: 0 0 8px; padding-left: 71px; }
+.cove-notes .tag {
+  position: absolute; left: 0; top: 1px; padding: 1px 7px 2px; border-radius: 999px;
+  font-size: 11px; font-weight: 600; letter-spacing: -0.005em; white-space: nowrap;
+  box-sizing: border-box; min-width: 46px; text-align: center;
+}
+.cove-notes li.added .tag { min-width: 53px; }
+.cove-notes li.improved .tag { letter-spacing: -0.02em; }
+.cove-notes li.added .tag { background: rgba(255, 144,   0, .62); color: #3b2202; }
+.cove-notes li.fixed .tag { background: rgba( 30, 184,  81, .45); color: #022c10; }
+.cove-notes li.improved .tag { background: rgba(10, 186, 245, .45); color: #033040; }
+@media (prefers-color-scheme: dark) {
+  .cove-notes li.added .tag { background: rgba(255, 156,  26, .85); color: #ffffff; }
+  .cove-notes li.fixed .tag { background: rgba(  0, 184,  61, .60); color: #f0fff5; }
+  .cove-notes li.improved .tag { background: rgba(0, 184, 245, .60); color: #f0fbff; }
+}
+.cove-notes code { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+                   font-size: .93em; }
+</style>
+<ul class="cove-notes">
+  <li class="added"><span class="tag">Added</span>Codex joins Claude Code as an assistant backend</li>
+  <li class="fixed"><span class="tag">Fixed</span>Plain JavaScript projects no longer raise a language server fault</li>
+  <li class="fixed"><span class="tag">Fixed</span>Switching branches no longer flashes phantom changes</li>
+  <li class="added"><span class="tag">Added</span>Web previews tint the pane with the page&#x27;s colour</li>
+  <li class="added"><span class="tag">Added</span>Lint disable directives link each rule to its docs</li>
+  <li class="improved"><span class="tag">Improved</span>Quick Open ranks names that start with the query first</li>
+  <li class="added"><span class="tag">Added</span>Force clicking a word in a chat or composer defines it</li>
+  <li class="added"><span class="tag">Added</span>⇧-clicking extends a chat&#x27;s selection from the last press</li>
+  <li class="added"><span class="tag">Added</span>Markdown previews reopen scrolled where they were left</li>
+  <li class="fixed"><span class="tag">Fixed</span>Tasks run without a terminal load .zshrc</li>
+  <li class="improved"><span class="tag">Improved</span>The background tasks popover summarizes and stops them all</li>
+  <li class="improved"><span class="tag">Improved</span>Settings splits General into Editor and Terminal</li>
+  <li class="fixed"><span class="tag">Fixed</span>Chats working in the background no longer mark themselves unread</li>
+  <li class="improved"><span class="tag">Improved</span>Markdown headings and lists are set at clearer sizes</li>
+  <li class="added"><span class="tag">Added</span>Assistant accounts rename in place</li>
+</ul>
