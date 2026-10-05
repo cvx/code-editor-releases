@@ -1,0 +1,134 @@
+<style>
+.cove-notes { margin: 0; padding: 0; list-style: none;
+              font: 13px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+              color: color-mix(in srgb, currentColor 90%, transparent); }
+.cove-notes li { position: relative; margin: 0 0 8px; padding-left: 75px; }
+.cove-notes .tag {
+  position: absolute; left: 0; top: 1px; padding: 1px 7px 2px; border-radius: 999px;
+  font-size: 10.5px; font-weight: 600; line-height: 1.44; letter-spacing: -0.005em;
+  white-space: nowrap; box-sizing: border-box; min-width: 50.5px; text-align: center;
+}
+.cove-notes li:is(.added, .fixed) .tag { letter-spacing: 0.01em; }
+.cove-notes li.added .tag { min-width: 54px; }
+.cove-notes li.improved .tag { letter-spacing: -0.02em; padding-inline: 6px; }
+.cove-notes li.added .tag { background: rgba(255, 144,   0, .59); color: #472b07; }
+.cove-notes li.fixed .tag { background: rgba( 30, 184,  81, .42); color: #0b3619; }
+.cove-notes li.improved .tag { background: rgba(10, 186, 245, .42); color: #0b3a4b; }
+@media (prefers-color-scheme: dark) {
+  .cove-notes li.added .tag { background: rgba(255, 156,  26, .80); color: #fbf5ed; }
+  .cove-notes li.fixed .tag { background: rgba(  0, 184,  61, .52); color: #d4eddd; }
+  .cove-notes li.improved .tag { background: rgba(0, 184, 245, .52); color: #d4eaf1; }
+}
+.cove-notes code { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+                   font-size: .93em; }
+.cove-log h2 { margin: 16px 0 6px 8px; letter-spacing: -0.014em;
+               font: 600 15px/1.3 "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif; }
+.cove-log h2 .v { display: inline-block; box-sizing: border-box;
+                  min-width: 67px; padding-right: 8px; }
+.cove-log h2 .when { letter-spacing: -0.014em; opacity: .6;
+                     font: 400 11px/1.3 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif; }
+.cove-log > :first-child { margin-top: 0; }
+</style>
+<div class="cove-log">
+  <h2><span class="v">0.15</span><span class="when">September 27, 2026</span></h2>
+  <ul class="cove-notes">
+    <li class="added"><span class="tag">Added</span>nginx configs get coloring, hovers, completion, and ⌘-click</li>
+    <li class="added"><span class="tag">Added</span>GitHub Actions workflows get hovers and completion</li>
+    <li class="added"><span class="tag">Added</span>oxlint, stylelint, ember-template-lint, and shellcheck lint alongside ESLint</li>
+    <li class="added"><span class="tag">Added</span>Working chats shimmer in their tab and sidebar row</li>
+    <li class="improved"><span class="tag">Improved</span>Chats awaiting an answer wear an amber gradient</li>
+    <li class="added"><span class="tag">Added</span>Commit lists show author avatars and co-authors</li>
+    <li class="added"><span class="tag">Added</span>Diffs can hide whitespace, from the facts pill</li>
+    <li class="added"><span class="tag">Added</span>The chat sidebar filter searches each chat&#x27;s first message</li>
+    <li class="added"><span class="tag">Added</span>oxfmt formats on save where it takes the file</li>
+    <li class="added"><span class="tag">Added</span>Vue files get syntax coloring</li>
+    <li class="added"><span class="tag">Added</span>TypeScript 7 projects run their own tsc language server</li>
+    <li class="added"><span class="tag">Added</span>Repository tag actions, with a confirm before deleting</li>
+    <li class="added"><span class="tag">Added</span>Source Control has its own section for conflicts</li>
+    <li class="added"><span class="tag">Added</span>SHAs in chat prose hover to their commit</li>
+    <li class="improved"><span class="tag">Improved</span>Source Control pins the branch above the list, with Browse Repository</li>
+    <li class="improved"><span class="tag">Improved</span>Diverged branches offer Rebase… rather than a Pull that can&#x27;t fast-forward</li>
+    <li class="improved"><span class="tag">Improved</span>Merges, cherry-picks, and reverts prefill the commit message</li>
+    <li class="improved"><span class="tag">Improved</span>Thinking mode lifts reasoning out of its card</li>
+    <li class="improved"><span class="tag">Improved</span>Suggestion cards fold to a bar and step between suggestions</li>
+    <li class="improved"><span class="tag">Improved</span>Format on save touches only the lines it changes</li>
+    <li class="improved"><span class="tag">Improved</span>Jumps to a line or search hit land clear of the toolbar</li>
+    <li class="improved"><span class="tag">Improved</span>Tabs reopen at the same text, not the same pixel offset</li>
+    <li class="improved"><span class="tag">Improved</span>Lint rules link to their docs</li>
+    <li class="improved"><span class="tag">Improved</span>Wake-ups and cron jobs share one schedule list</li>
+    <li class="improved"><span class="tag">Improved</span>Tab bulk closes live in a Close Multiple submenu</li>
+    <li class="improved"><span class="tag">Improved</span>The find bar folds its controls in narrow panes</li>
+    <li class="improved"><span class="tag">Improved</span>Summary leads the transcript view modes</li>
+    <li class="improved"><span class="tag">Improved</span>The editor mode toggle reads File, Diff, Preview</li>
+    <li class="improved"><span class="tag">Improved</span>Elapsed times show hours past the hour mark</li>
+    <li class="improved"><span class="tag">Improved</span>Chat times follow the system&#x27;s time format</li>
+    <li class="improved"><span class="tag">Improved</span>Quota notices come once per burst, with a Resume</li>
+    <li class="improved"><span class="tag">Improved</span>Chats, tab switches, and the sidebar toggle run smoother</li>
+    <li class="improved"><span class="tag">Improved</span>Closed windows give their memory back at once</li>
+    <li class="improved"><span class="tag">Improved</span>⌥⌘. opens About, ⌥⌘, opens Settings ▸ Assistant</li>
+    <li class="fixed"><span class="tag">Fixed</span>Stopped turns read interrupted, not as an error</li>
+    <li class="fixed"><span class="tag">Fixed</span>Cron jobs and wake-ups due mid-turn still fire</li>
+    <li class="fixed"><span class="tag">Fixed</span>Rejecting a plan the agent started leaves plan mode</li>
+    <li class="fixed"><span class="tag">Fixed</span>Renaming a change edits its own row, not the one above</li>
+    <li class="fixed"><span class="tag">Fixed</span>Search results follow saves and edits in place</li>
+    <li class="fixed"><span class="tag">Fixed</span>Hover popovers no longer steal focus from the editor</li>
+    <li class="fixed"><span class="tag">Fixed</span>Code blocks size emoji as two cells</li>
+    <li class="fixed"><span class="tag">Fixed</span>Paragraphs after nested list items belong to the outer item</li>
+    <li class="fixed"><span class="tag">Fixed</span>The block caret in the terminal shows its character in white</li>
+    <li class="fixed"><span class="tag">Fixed</span>Terminal selections move one row when a line is trimmed</li>
+    <li class="fixed"><span class="tag">Fixed</span>TypeScript hovers stop showing a bare any for unknown names</li>
+  </ul>
+  <h2><span class="v">0.14</span><span class="when">September 22, 2026</span></h2>
+  <ul class="cove-notes">
+    <li class="added"><span class="tag">Added</span>Cove says when Claude Code or Codex is out of date, and updates it</li>
+    <li class="improved"><span class="tag">Improved</span>Chats stream, scroll, and switch tabs faster</li>
+    <li class="improved"><span class="tag">Improved</span>Model menus list each account&#x27;s own lineup, best models first</li>
+    <li class="improved"><span class="tag">Improved</span>Source Control is one list, with Repository and Changes sections</li>
+    <li class="improved"><span class="tag">Improved</span>The transcript view mode is app-wide, with a row in Settings ▸ Assistant</li>
+    <li class="improved"><span class="tag">Improved</span>Thinking mode gives every tool run its own row</li>
+    <li class="added"><span class="tag">Added</span>⌥-clicks in a markdown file open the path it names, at the line it cites</li>
+    <li class="added"><span class="tag">Added</span>Chat tab and title menus can delete the chat</li>
+    <li class="improved"><span class="tag">Improved</span>Code blocks and tool output scroll sideways unless Wrap Lines is on</li>
+    <li class="improved"><span class="tag">Improved</span>Chats streaming in a covered or minimized window stop stealing frames</li>
+    <li class="improved"><span class="tag">Improved</span>Pictures a tool returned draw in one strip under the run</li>
+    <li class="improved"><span class="tag">Improved</span>Grayed account rows say why they can&#x27;t be picked</li>
+    <li class="improved"><span class="tag">Improved</span>Settings says when the default account can&#x27;t send</li>
+    <li class="improved"><span class="tag">Improved</span>File links read paths holding a space, a +, or an @</li>
+    <li class="improved"><span class="tag">Improved</span>Folded tool runs lead with what they did to files</li>
+    <li class="improved"><span class="tag">Improved</span>Card headers wear one circled glyph, at one size</li>
+    <li class="fixed"><span class="tag">Fixed</span>Scheduled wake-ups resume a chat later, and survive a restart</li>
+    <li class="fixed"><span class="tag">Fixed</span>Git, formatters, and language servers resolve the way a login shell does</li>
+    <li class="fixed"><span class="tag">Fixed</span>Staging and branch actions say when git is missing</li>
+    <li class="fixed"><span class="tag">Fixed</span>Codex sign-in ends in Cove, not in the ChatGPT app</li>
+    <li class="fixed"><span class="tag">Fixed</span>Failed sign-ins keep their row, with the reason and a Try Again</li>
+    <li class="fixed"><span class="tag">Fixed</span>Accounts stop offering Sign In after a sign-in that worked</li>
+    <li class="fixed"><span class="tag">Fixed</span>Adding an account no longer takes the default</li>
+    <li class="fixed"><span class="tag">Fixed</span>Question and plan cards no longer stand as empty boxes</li>
+    <li class="fixed"><span class="tag">Fixed</span>Reopened chats no longer leave blank gaps where a run&#x27;s images were</li>
+    <li class="fixed"><span class="tag">Fixed</span>Vertical scrolls over a code block move the chat again</li>
+    <li class="fixed"><span class="tag">Fixed</span>Code fences under a list item draw as code while they stream</li>
+    <li class="fixed"><span class="tag">Fixed</span>Tool cards take Wrap Lines, and keep it across a tab switch</li>
+    <li class="fixed"><span class="tag">Fixed</span>Card verbs leave the composer&#x27;s attachments and highlight alone</li>
+    <li class="fixed"><span class="tag">Fixed</span>Queued follow-ups send the images they were written with</li>
+    <li class="fixed"><span class="tag">Fixed</span>Answering a card takes the chat&#x27;s unread mark down</li>
+    <li class="fixed"><span class="tag">Fixed</span>Resume no longer offers itself beside a live turn</li>
+    <li class="fixed"><span class="tag">Fixed</span>Parked cards answer as the account just picked</li>
+    <li class="fixed"><span class="tag">Fixed</span>Composer text follows a light↔dark switch</li>
+    <li class="fixed"><span class="tag">Fixed</span>Group boxes stop drawing an end cap mid-run</li>
+    <li class="fixed"><span class="tag">Fixed</span>Tool card titles stop truncating with room to spare</li>
+    <li class="fixed"><span class="tag">Fixed</span>Renamed chats stop leaving their title spark mid-name</li>
+    <li class="fixed"><span class="tag">Fixed</span>Restored terminals keep their name</li>
+    <li class="fixed"><span class="tag">Fixed</span>Cleared terminals come back cleared after a restart</li>
+    <li class="fixed"><span class="tag">Fixed</span>⌃L leaves nothing drawn above the cleared page</li>
+    <li class="fixed"><span class="tag">Fixed</span>Hovers renew the terminal&#x27;s scrollbar rather than summoning one</li>
+    <li class="fixed"><span class="tag">Fixed</span>Skill folders in Tasks remember their fold</li>
+    <li class="fixed"><span class="tag">Fixed</span>Branch rows stop clipping the last digit of their commit count</li>
+    <li class="fixed"><span class="tag">Fixed</span>Diffs draw a deleted trailing blank line</li>
+    <li class="fixed"><span class="tag">Fixed</span>Pane dividers and panel seams draw whole in both appearances</li>
+    <li class="fixed"><span class="tag">Fixed</span>The pointer stops going stale under another app&#x27;s menu</li>
+    <li class="fixed"><span class="tag">Fixed</span>Files copied in Finder paste as files, not as their name</li>
+    <li class="fixed"><span class="tag">Fixed</span>⌘V in a composer with no attachment strip pastes the text</li>
+    <li class="fixed"><span class="tag">Fixed</span>Identifiers that merely contain a TLD stop linking</li>
+    <li class="fixed"><span class="tag">Fixed</span>The image preview&#x27;s zoom readout stops shifting the bar beside it</li>
+  </ul>
+</div>
