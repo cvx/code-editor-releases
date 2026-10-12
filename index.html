@@ -40,26 +40,27 @@
       <!-- Two ring sets, each flat-stroked and masked to its own side of the icon's two-tone
            boundary -- a radial ray below and a straight chord above, which is why the masks in
            cove.css take two layers and why there is no gradient here any more. The circles must
-           stay identical between the sets: they are one ring drawn in two colours, not two. -->
+           stay identical between the sets: they are one ring drawn in two colours, not two. One
+           ring per <svg>, so each scales as a box the compositor can animate (see cove.css). -->
       <span class="ripplefield warm">
-        <svg class="ripples" viewBox="-120 -120 240 240" aria-hidden="true">
-          <circle r="45.67" style="--i: 1; --amp: 0.00000"/>
-          <circle r="54.70" style="--i: 2; --amp: 0.01280"/>
-          <circle r="63.74" style="--i: 3; --amp: 0.02196"/>
-          <circle r="72.78" style="--i: 4; --amp: 0.02885"/>
-          <circle r="81.81" style="--i: 5; --amp: 0.03423"/>
-          <circle r="90.85" style="--i: 6; --amp: 0.03853"/>
-        </svg>
+        <span class="fade">
+          <svg class="ripples" viewBox="-120 -120 240 240" style="--i: 1; --amp: 0.00000" aria-hidden="true"><circle r="45.67"/></svg>
+          <svg class="ripples" viewBox="-120 -120 240 240" style="--i: 2; --amp: 0.01280" aria-hidden="true"><circle r="54.70"/></svg>
+          <svg class="ripples" viewBox="-120 -120 240 240" style="--i: 3; --amp: 0.02196" aria-hidden="true"><circle r="63.74"/></svg>
+          <svg class="ripples" viewBox="-120 -120 240 240" style="--i: 4; --amp: 0.02885" aria-hidden="true"><circle r="72.78"/></svg>
+          <svg class="ripples" viewBox="-120 -120 240 240" style="--i: 5; --amp: 0.03423" aria-hidden="true"><circle r="81.81"/></svg>
+          <svg class="ripples" viewBox="-120 -120 240 240" style="--i: 6; --amp: 0.03853" aria-hidden="true"><circle r="90.85"/></svg>
+        </span>
       </span>
       <span class="ripplefield cool">
-        <svg class="ripples" viewBox="-120 -120 240 240" aria-hidden="true">
-          <circle r="45.67" style="--i: 1; --amp: 0.00000"/>
-          <circle r="54.70" style="--i: 2; --amp: 0.01280"/>
-          <circle r="63.74" style="--i: 3; --amp: 0.02196"/>
-          <circle r="72.78" style="--i: 4; --amp: 0.02885"/>
-          <circle r="81.81" style="--i: 5; --amp: 0.03423"/>
-          <circle r="90.85" style="--i: 6; --amp: 0.03853"/>
-        </svg>
+        <span class="fade">
+          <svg class="ripples" viewBox="-120 -120 240 240" style="--i: 1; --amp: 0.00000" aria-hidden="true"><circle r="45.67"/></svg>
+          <svg class="ripples" viewBox="-120 -120 240 240" style="--i: 2; --amp: 0.01280" aria-hidden="true"><circle r="54.70"/></svg>
+          <svg class="ripples" viewBox="-120 -120 240 240" style="--i: 3; --amp: 0.02196" aria-hidden="true"><circle r="63.74"/></svg>
+          <svg class="ripples" viewBox="-120 -120 240 240" style="--i: 4; --amp: 0.02885" aria-hidden="true"><circle r="72.78"/></svg>
+          <svg class="ripples" viewBox="-120 -120 240 240" style="--i: 5; --amp: 0.03423" aria-hidden="true"><circle r="81.81"/></svg>
+          <svg class="ripples" viewBox="-120 -120 240 240" style="--i: 6; --amp: 0.03853" aria-hidden="true"><circle r="90.85"/></svg>
+        </span>
       </span>
       <span class="plate"><img src="cove.png" width="144" height="144" alt=""></span>
     </span>
@@ -229,17 +230,17 @@
       Thank you to the creators of <a href="https://macromates.com/">TextMate</a>,
       <a href="https://www.sublimetext.com/">Sublime Text</a>,
       <a href="https://github.com/rsms/kod">Kod</a>, and
-      <a href="https://atom-editor.cc/">Atom</a> - the Mac code editors that
-      made programming a pleasure over the years.
+      <a href="https://atom-editor.cc/">Atom</a> -<br class="wide">
+      the Mac code editors that made programming a pleasure over the years.
     </p>
     <p class="colophon reveal">
-      Free to use under the <a href="license.txt">Elastic License 2.0</a>. Source not published.
-      &copy; 2026 cvx.
+      &copy; 2026 cvx.<br class="narrow"> Free to use under the <a href="license.txt">Elastic License 2.0</a>.
+      Source not published.
     </p>
-    <p class="llm reveal">LLMs were used, regrettably, in the making of this app.</p>
+    <p class="llm reveal">LLMs have been used, regrettably, in the making of this app.</p>
 </footer>
 </div>
 
-<dialog id="big"><img alt=""></dialog>
+<dialog id="big"><img alt="" draggable="false"></dialog>
 
 </html>
