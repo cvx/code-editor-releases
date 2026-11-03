@@ -1,6 +1,6 @@
 Cove — License
 
-Copyright © 2026 cvx. Distributed by Discourse (Civilized Discourse Construction Kit, Inc.).
+Copyright © 2026 cvx.
 
 Cove is free to download and use, under the Elastic License 2.0, reproduced below verbatim as
 SPDX publishes it for the identifier Elastic-2.0. The source code is not published at this time:
