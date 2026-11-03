@@ -1,0 +1,202 @@
+<style>
+.cove-log { box-sizing: border-box; max-width: 680px; margin: 0 auto; padding: 6px 16px; }
+.cove-notes { margin: 0; padding: 0; list-style: none;
+              font: 13px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+              color: color-mix(in srgb, currentColor 90%, transparent); }
+.cove-notes li { position: relative; margin: 0 0 8px; padding-left: 75px; }
+.cove-notes .tag {
+  position: absolute; left: 0; top: 1px; padding: 1px 7px 2px; border-radius: 999px;
+  font-size: 10.5px; font-weight: 600; line-height: 1.44; letter-spacing: -0.005em;
+  white-space: nowrap; box-sizing: border-box; min-width: 50.5px; text-align: center;
+}
+.cove-notes li:is(.added, .fixed) .tag { letter-spacing: 0.01em; }
+.cove-notes li.added .tag { min-width: 54px; }
+.cove-notes li.improved .tag { letter-spacing: -0.02em; padding-inline: 6px; }
+.cove-notes li.added .tag { background: rgba(255, 144,   0, .59); color: #472b07; }
+.cove-notes li.fixed .tag { background: rgba( 30, 184,  81, .42); color: #0b3619; }
+.cove-notes li.improved .tag { background: rgba(10, 186, 245, .42); color: #0b3a4b; }
+@media (prefers-color-scheme: dark) {
+  .cove-notes li.added .tag { background: rgba(255, 156,  26, .80); color: #fbf5ed; }
+  .cove-notes li.fixed .tag { background: rgba(  0, 184,  61, .52); color: #d4eddd; }
+  .cove-notes li.improved .tag { background: rgba(0, 184, 245, .52); color: #d4eaf1; }
+}
+.cove-notes code { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+                   font-size: .93em; }
+.cove-log h2 { margin: 16px 0 3px; letter-spacing: -0.014em;
+               font: 600 15px/1.3 "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif; }
+.cove-log h2 .v { display: inline-block; box-sizing: border-box;
+                  min-width: 75px; padding: 0 8px 0 6px; }
+.cove-log h2 .when { letter-spacing: -0.014em; opacity: .6;
+                     font: 400 11px/1.3 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif; }
+.cove-log > :first-child { margin-top: 0; }
+</style>
+<div class="cove-log">
+  <h2><span class="v">0.17</span><span class="when">November 3, 2026</span></h2>
+  <ul class="cove-notes">
+    <li class="added"><span class="tag">Added</span>Replace in Workspace, with a preview and Undo Replace</li>
+    <li class="added"><span class="tag">Added</span>Snippets in completion, per language and from language servers</li>
+    <li class="added"><span class="tag">Added</span>TypeScript completions bring their imports</li>
+    <li class="added"><span class="tag">Added</span>JSON files validate against SchemaStore schemas, with hover and completion</li>
+    <li class="added"><span class="tag">Added</span>SSH configs get coloring, keyword hover, completion, and indenting</li>
+    <li class="added"><span class="tag">Added</span>Dockerfile instructions and flags hover and complete</li>
+    <li class="added"><span class="tag">Added</span>EditorConfig keys hover and complete</li>
+    <li class="added"><span class="tag">Added</span>A search field in Settings</li>
+    <li class="improved"><span class="tag">Improved</span>VoiceOver reads the editor, file tree, tabs, diffs, and chats</li>
+    <li class="improved"><span class="tag">Improved</span>Large files open faster in far less memory</li>
+    <li class="improved"><span class="tag">Improved</span>Chats, diffs, editors, and sidebar lists scroll smoother</li>
+    <li class="improved"><span class="tag">Improved</span>Sidebar sections switch faster</li>
+    <li class="improved"><span class="tag">Improved</span>Saves write in the background, and quit waits for them</li>
+    <li class="added"><span class="tag">Added</span>Crash and hang reports, offered after a bad run and sent only on request</li>
+    <li class="added"><span class="tag">Added</span>Claude and Codex install from Settings when missing</li>
+    <li class="added"><span class="tag">Added</span>Model and account switches draw a divider in chats</li>
+    <li class="added"><span class="tag">Added</span>Source Control offers Initialize Repository in folders without git</li>
+    <li class="added"><span class="tag">Added</span>Temporary clones wear a tag with Keep Clone and Show in Finder</li>
+    <li class="added"><span class="tag">Added</span>Window closes ask before losing unsaved work or running commands</li>
+    <li class="added"><span class="tag">Added</span>Launches after two crashes ask before reopening the session</li>
+    <li class="added"><span class="tag">Added</span>Slow file reads show their progress and can be stopped</li>
+    <li class="added"><span class="tag">Added</span>Tasks failing out of view put a red dot on the Tasks button</li>
+    <li class="added"><span class="tag">Added</span>Trust Folder, Reset Terminal, and Expand Diff Context menu items</li>
+    <li class="improved"><span class="tag">Improved</span>Accent colors tint carets, links, and selections</li>
+    <li class="improved"><span class="tag">Improved</span>Glass controls react to presses</li>
+    <li class="improved"><span class="tag">Improved</span>Animations and glass honor Reduce Motion and Reduce Transparency</li>
+    <li class="improved"><span class="tag">Improved</span>Workspaces restore in less memory, reading other tabs when shown</li>
+    <li class="improved"><span class="tag">Improved</span>Unsaved typing and the last tab switch survive a crash</li>
+    <li class="improved"><span class="tag">Improved</span>Find in Workspace matches Windows-1252 files and non-ASCII text</li>
+    <li class="improved"><span class="tag">Improved</span>Every tab keeps its own find bar</li>
+    <li class="improved"><span class="tag">Improved</span>Find bar arrows step to the previous and next match</li>
+    <li class="improved"><span class="tag">Improved</span>Quick Action reaches every menu bar command</li>
+    <li class="improved"><span class="tag">Improved</span>Quick Open ranks word starts and directory matches higher</li>
+    <li class="improved"><span class="tag">Improved</span>C, C++, and Swift indent more like their formatters</li>
+    <li class="improved"><span class="tag">Improved</span>.h headers color as C++ or Objective-C when their text says so</li>
+    <li class="improved"><span class="tag">Improved</span>Question cards and chat checklists use native checkboxes</li>
+    <li class="improved"><span class="tag">Improved</span>Failed turns offer Resume or Retry on the turn</li>
+    <li class="improved"><span class="tag">Improved</span>Each thinking block streams as its own block</li>
+    <li class="improved"><span class="tag">Improved</span>Agent cards show their model and effort</li>
+    <li class="improved"><span class="tag">Improved</span>Codex chats run four sub-agents at once</li>
+    <li class="improved"><span class="tag">Improved</span>Messages between chats name the other chat</li>
+    <li class="improved"><span class="tag">Improved</span>Issue and commit cards show their body</li>
+    <li class="improved"><span class="tag">Improved</span>Diff gutters mark lines with + and −</li>
+    <li class="improved"><span class="tag">Improved</span>Diff selections keep syntax colors</li>
+    <li class="improved"><span class="tag">Improved</span>Edit cards and diff blocks highlight changed words</li>
+    <li class="improved"><span class="tag">Improved</span>Composers grow to eight lines</li>
+    <li class="improved"><span class="tag">Improved</span>Sends no longer scroll the chat</li>
+    <li class="improved"><span class="tag">Improved</span>Recent chats sort by their last message</li>
+    <li class="improved"><span class="tag">Improved</span>Folder trust moves to the workspace menu, with Trust All</li>
+    <li class="improved"><span class="tag">Improved</span>Settings sections regrouped, opening on Appearance</li>
+    <li class="improved"><span class="tag">Improved</span>Open and save panels attach to their window as sheets</li>
+    <li class="improved"><span class="tag">Improved</span>Sync failures open beside the control that started them</li>
+    <li class="improved"><span class="tag">Improved</span>Homebrew and npm installs of Claude and Codex update through their own tool</li>
+    <li class="improved"><span class="tag">Improved</span>Settings show the installed Claude and Codex versions</li>
+    <li class="improved"><span class="tag">Improved</span>Chats take less disk space and stay out of Spotlight</li>
+    <li class="improved"><span class="tag">Improved</span>Windows reopen in full screen and on connected displays</li>
+    <li class="improved"><span class="tag">Improved</span>Fresh clones open their README</li>
+    <li class="improved"><span class="tag">Improved</span>Chat tabs with queued messages confirm before closing</li>
+    <li class="improved"><span class="tag">Improved</span>Image previews swipe between images</li>
+    <li class="improved"><span class="tag">Improved</span>Editor font sizes can be typed</li>
+    <li class="improved"><span class="tag">Improved</span>Menu titles match Xcode, Safari, and Finder</li>
+    <li class="improved"><span class="tag">Improved</span>Disk-image and installed copies of Cove no longer run side by side</li>
+    <li class="fixed"><span class="tag">Fixed</span>Chats with a lost transcript rebuild from the CLI&#x27;s copy</li>
+    <li class="fixed"><span class="tag">Fixed</span>Held chats survive a Force Quit</li>
+    <li class="fixed"><span class="tag">Fixed</span>Network shares that stop answering no longer hang Cove</li>
+    <li class="fixed"><span class="tag">Fixed</span>⌘Z after a split stays in its own file</li>
+    <li class="fixed"><span class="tag">Fixed</span>Input method compositions survive chat and commit field updates</li>
+    <li class="fixed"><span class="tag">Fixed</span>Copied chat text keeps its blank lines</li>
+    <li class="fixed"><span class="tag">Fixed</span>Carets show only in the key window</li>
+    <li class="fixed"><span class="tag">Fixed</span>RuboCop no longer leaves an extra Dock icon after quit</li>
+    <li class="fixed"><span class="tag">Fixed</span>Files opened into a restored workspace land as its tabs</li>
+    <li class="fixed"><span class="tag">Fixed</span>Workspaces on ejected disks stay in the session</li>
+    <li class="fixed"><span class="tag">Fixed</span>Failed renames and moves keep their tabs open</li>
+  </ul>
+  <h2><span class="v">0.16.1</span><span class="when">October 20, 2026</span></h2>
+  <ul class="cove-notes">
+    <li class="added"><span class="tag">Added</span>← and → step between open composer menus</li>
+    <li class="fixed"><span class="tag">Fixed</span>Quick Open keeps its selection as files change</li>
+    <li class="improved"><span class="tag">Improved</span>Codex&#x27;s gpt-6-luna opens at High effort</li>
+    <li class="improved"><span class="tag">Improved</span>Codex replies that only announce a step suggest &quot;go ahead&quot;</li>
+    <li class="fixed"><span class="tag">Fixed</span>Hover cards stay open as their chat scrolls</li>
+    <li class="improved"><span class="tag">Improved</span>Dockerfile RUN lines indent by shell rules</li>
+  </ul>
+  <h2><span class="v">0.16</span><span class="when">October 20, 2026</span></h2>
+  <ul class="cove-notes">
+    <li class="added"><span class="tag">Added</span>GitHub issue and PR references in chats hover to their cards</li>
+    <li class="added"><span class="tag">Added</span>TypeScript 7 serves .gjs and .gts files</li>
+    <li class="added"><span class="tag">Added</span>The assistant shows files in the editor, rendered, or as a diff</li>
+    <li class="added"><span class="tag">Added</span>Prompt ticks beside chat scrollers, stepped by ⌃⌘↑ and ⌃⌘↓</li>
+    <li class="added"><span class="tag">Added</span>Hex colors in chats hover to a swatch</li>
+    <li class="added"><span class="tag">Added</span>Return, paste, and Re-Indent Lines (⌃I) indent like each language&#x27;s formatter</li>
+    <li class="improved"><span class="tag">Improved</span>File icons for C, C++, Go, Java, PHP, Lua, SQL, and more</li>
+    <li class="improved"><span class="tag">Improved</span>Terminals scroll smoothly by trackpad</li>
+    <li class="added"><span class="tag">Added</span>New themes, from GitHub to Gruvbox, each in light and dark</li>
+    <li class="added"><span class="tag">Added</span>Untitled buffers color as the language their text looks like</li>
+    <li class="added"><span class="tag">Added</span>Markdown lists and quotes continue on Return and renumber</li>
+    <li class="added"><span class="tag">Added</span>Ruby blocks get their end as they open</li>
+    <li class="added"><span class="tag">Added</span>Image previews step through every image in the chat</li>
+    <li class="added"><span class="tag">Added</span>Codex sub-agents draw as agent cards</li>
+    <li class="added"><span class="tag">Added</span>Tab double-clicks expand their pane, as does ⌃⌘↩</li>
+    <li class="improved"><span class="tag">Improved</span>Shell commands in chats get plain-language titles</li>
+    <li class="improved"><span class="tag">Improved</span>WebFetch and WebSearch results render as markdown and links</li>
+    <li class="improved"><span class="tag">Improved</span>Subagent cards show their prompt and link to the report</li>
+    <li class="improved"><span class="tag">Improved</span>Chats, editors, and terminals scroll and type smoother</li>
+    <li class="added"><span class="tag">Added</span>Queued messages can pause the queue before or after them</li>
+    <li class="added"><span class="tag">Added</span>Executables dropped on the Tasks list become tasks</li>
+    <li class="added"><span class="tag">Added</span>Deno, Yarn PnP, and monorepo projects get the right TypeScript server</li>
+    <li class="added"><span class="tag">Added</span>View ▸ Files (⇧⌘E) reveals the current file in the sidebar</li>
+    <li class="added"><span class="tag">Added</span>Mouse buttons navigate back and forward, and middle-click closes tabs</li>
+    <li class="added"><span class="tag">Added</span>⌥⎋ and F5 open completion</li>
+    <li class="improved"><span class="tag">Improved</span>Plan cards resize from their top edge and drag into any pane</li>
+    <li class="improved"><span class="tag">Improved</span>Typed brackets, quotes, <code>*</code>, and <code>_</code> wrap a selection</li>
+    <li class="improved"><span class="tag">Improved</span>@, /, and $ menus answer typos with near matches</li>
+    <li class="improved"><span class="tag">Improved</span>Clicking a commit SHA opens Repository on it</li>
+    <li class="improved"><span class="tag">Improved</span>Removed lines in diffs are selectable</li>
+    <li class="improved"><span class="tag">Improved</span>Repository shows submodules and shallow boundaries</li>
+    <li class="added"><span class="tag">Added</span>Turns a restart cut off offer Retry</li>
+    <li class="added"><span class="tag">Added</span>Chat sidebar rows count their open cards</li>
+    <li class="added"><span class="tag">Added</span>Queued messages wait out a quota refusal and send at reset</li>
+    <li class="added"><span class="tag">Added</span>Failed or signed-out MCP servers get a card with sign-in</li>
+    <li class="added"><span class="tag">Added</span>Language servers restart after a crash, or by Restart Language Server</li>
+    <li class="added"><span class="tag">Added</span>Workspaces pin the Python environment their tools run from</li>
+    <li class="added"><span class="tag">Added</span>An Updates section in Settings</li>
+    <li class="improved"><span class="tag">Improved</span>Shortcuts work on AZERTY, Dvorak, and non-Latin layouts</li>
+    <li class="improved"><span class="tag">Improved</span>Input methods compose properly in the editor and composer</li>
+    <li class="improved"><span class="tag">Improved</span>Toggle Block Comment moves to ⌥⌘/, Format Document to ⇧⌥⌘F</li>
+    <li class="improved"><span class="tag">Improved</span>Git syncs time out with a Stop, and failures say why</li>
+    <li class="improved"><span class="tag">Improved</span>Fast mode and permission rules apply without restarting chats</li>
+    <li class="improved"><span class="tag">Improved</span>Chat selectors fold into a ⋯ menu in narrow panes</li>
+    <li class="improved"><span class="tag">Improved</span>Queues past three messages draw as a stack</li>
+    <li class="improved"><span class="tag">Improved</span>The find bar grows with long queries</li>
+    <li class="improved"><span class="tag">Improved</span>Replace All folds into a split Replace button</li>
+    <li class="improved"><span class="tag">Improved</span>Clicking anywhere on a hunk row expands it</li>
+    <li class="improved"><span class="tag">Improved</span>Triple-click selects a whole code block in chats</li>
+    <li class="improved"><span class="tag">Improved</span>Space toggles a Source Control row&#x27;s staged tick</li>
+    <li class="improved"><span class="tag">Improved</span>⌘↑ and ⌘↓ at the draft&#x27;s ends scroll the chat</li>
+    <li class="improved"><span class="tag">Improved</span>Drag selections autoscroll in editors and diffs</li>
+    <li class="improved"><span class="tag">Improved</span>⇧Return adds a newline in plan and question card fields</li>
+    <li class="improved"><span class="tag">Improved</span>Saves keep extended attributes and symlinks, and ask over read-only files</li>
+    <li class="improved"><span class="tag">Improved</span>Formatters honor their ignore files and excludes</li>
+    <li class="improved"><span class="tag">Improved</span>Settings reopens on the last viewed section</li>
+    <li class="improved"><span class="tag">Improved</span>Quick Open says when its results are limited</li>
+    <li class="added"><span class="tag">Added</span>Untrusted folders run no project tools until trusted</li>
+    <li class="added"><span class="tag">Added</span>Files keep their encoding, with File ▸ Reopen with Encoding</li>
+    <li class="added"><span class="tag">Added</span>Codex signs in with an API key</li>
+    <li class="added"><span class="tag">Added</span>Images already in a chat warn before attaching again</li>
+    <li class="added"><span class="tag">Added</span>Cove offers to move itself to Applications</li>
+    <li class="improved"><span class="tag">Improved</span>Git, diff, and Tasks icons have tooltips</li>
+    <li class="fixed"><span class="tag">Fixed</span>An inherited <code>ANTHROPIC_API_KEY</code> no longer bills every account</li>
+    <li class="fixed"><span class="tag">Fixed</span>Line-ending and LFS files no longer show as all changed</li>
+    <li class="fixed"><span class="tag">Fixed</span>Diffs ignore external diff tools, textconv, and <code>color.ui=always</code></li>
+    <li class="fixed"><span class="tag">Fixed</span>Chats waiting on a card no longer block quitting</li>
+    <li class="fixed"><span class="tag">Fixed</span>Very narrow panes no longer hang text wrapping</li>
+    <li class="fixed"><span class="tag">Fixed</span>Version-manager shims no longer break Claude or Codex</li>
+    <li class="fixed"><span class="tag">Fixed</span>Ruby LSP follows edits, renames, and moves made in Cove</li>
+    <li class="fixed"><span class="tag">Fixed</span>Format on save writes the tab the save started from</li>
+    <li class="fixed"><span class="tag">Fixed</span>Save As and rename re-detect a file&#x27;s language</li>
+    <li class="fixed"><span class="tag">Fixed</span>Rapid Source Control staging ticks no longer get lost</li>
+    <li class="fixed"><span class="tag">Fixed</span>Files caught mid-rewrite no longer load half-written</li>
+    <li class="fixed"><span class="tag">Fixed</span>Stalled clones report instead of hanging</li>
+    <li class="fixed"><span class="tag">Fixed</span>Terminals keep a custom ZDOTDIR&#x27;s .zshrc and .zprofile</li>
+    <li class="fixed"><span class="tag">Fixed</span>Closing a terminal tab hangs up its shell</li>
+    <li class="fixed"><span class="tag">Fixed</span>Programs run in Cove can ask for the mic and camera</li>
+    <li class="fixed"><span class="tag">Fixed</span><code>cove -w</code> no longer crashes when its window closes</li>
+    <li class="fixed"><span class="tag">Fixed</span>Tooltips no longer close while a chat streams</li>
+  </ul>
+</div>
