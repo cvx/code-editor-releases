@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="home">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cove - Code editor for Mac</title>
 <link rel="icon" href="cove.png?v=39b0242a51">
-<link rel="stylesheet" href="cove.css?v=21d0a7fce8">
+<link rel="stylesheet" href="cove.css?v=834310f215">
 <meta name="description" content="Cove is a code editor for macOS, with Assistant, Terminal, and Source Control built in.">
 <link rel="canonical" href="https://covecode.app/">
 <!-- The only absolute URLs on the page, and they have to be: a scraper resolves neither og:image
@@ -31,7 +31,7 @@
     }
   } catch {}
 </script>
-<script src="cove.js?v=f8db14eb51" defer></script>
+<script src="cove.js?v=ad2bf7cb15" defer></script>
 <div class="wash" aria-hidden="true"></div>
 <div class="sheet">
 <main>
@@ -40,7 +40,7 @@
       <!-- Two ring sets, each flat-stroked and masked to its own side of the icon's two-tone
            boundary -- a radial ray below and a straight chord above, which is why the masks in
            cove.css take two layers and why there is no gradient here any more. The circles must
-           stay identical between the sets: they are one ring drawn in two colours, not two. One
+           stay identical between the sets: they are one ring drawn in two colors, not two. One
            ring per <svg>, so each scales as a box the compositor can animate (see cove.css). -->
       <span class="ripplefield warm">
         <span class="fade">
@@ -71,181 +71,84 @@
   </header>
   <p class="get">
     <a class="dl" href="download/Cove-0.17.dmg">Download&nbsp;<span class="ver">0.17</span></a>
-    <span class="meta"><a href="release-notes">Release notes</a>
-      (<span class="nb">Nov 3, 2026</span>)<span class="joint"> &middot; </span><br class="split">16 MB &middot; macOS 26 or later
-      &middot; Apple Silicon</span>
+    <span class="meta"><span class="meta-item"><a href="release-notes">Release notes</a> (<span class="nb">Nov 3, 2026</span>)</span><span class="meta-item">16 MB</span><span class="meta-item">macOS 26 or later</span><span class="meta-item">Apple Silicon</span></span>
   </p>
   <section class="features">
     <h2 class="vh">Features</h2>
     <figure>
-      <figcaption>Editor<span>A native Mac editor for the languages you work in.</span></figcaption>
-      <a href="shots/editor-light.png?v=a4283fb057" aria-label="Editor — enlarge">
-        <picture>
-          <source srcset="shots/editor-dark.png?v=45be11f776" media="(prefers-color-scheme: dark)">
-          <!-- The page's LCP element at every width, and the only image that gets a priority: the
-               two figures beside it are eager too (they're in the first row on a wide screen), so
-               without this they queue level with it and the one thing the visitor is waiting for
-               arrives third.
-               `decoding` follows `loading` and is not its own decision: eager shots are `sync`,
-               lazy ones are `async`, and a new figure gets whichever pair its `loading` puts it in.
-               `async` is a licence to present the page WITHOUT the image and swap it in once
-               decoded — right for a shot arriving as you scroll to it, and on an eager one exactly
-               the flash on a reload: the pictures went missing for a frame and came back. It buys
-               nothing on the eager three either, measured: first paint 9-16ms with `sync` against
-               18-19ms with `async`, warm reload, three runs each. -->
-          <img class="window" src="shots/editor-light.png?v=a4283fb057" width="2048" height="1280" alt="Cove's window: the file tree beside a JavaScript file in the editor." decoding="sync" fetchpriority="high">
-        </picture>
-      </a>
+      <figcaption><strong>Editor</strong><span>Your project’s linters and formatters, with support for EditorConfig.</span><p>Language detection also works in untitled files. Highlighting covers embedded languages and code fences.</p></figcaption>
+      <a href="shots/editor-light.png?v=054b27743e" aria-label="Editor — enlarge"><picture><source srcset="shots/editor-dark.png?v=85a4271e14" media="(prefers-color-scheme: dark)"><img class="window" src="shots/editor-light.png?v=054b27743e" width="2048" height="1280" alt="Cove's window: the file tree beside a JavaScript file in the editor." decoding="sync" fetchpriority="high"></picture></a>
+    </figure>
+    <figure class="flip">
+      <figcaption><strong>Assistant</strong><span>Claude Code and Codex, with your own accounts.</span><p>Ask about selected code. Keep personal and team accounts separate, with usage, model, and effort settings for each.</p><div class="gallery-buttons" role="group" hidden aria-label="Choose screenshot"><button type="button" data-view="0" aria-pressed="true">Chat</button><button type="button" data-view="1" aria-pressed="false">Accounts</button></div></figcaption>
+      <div class="gallery-views"><div><a href="shots/assistant-light.png?v=03478d5bd5" aria-label="Assistant — enlarge"><picture><source srcset="shots/assistant-dark.png?v=a66b2d9b2f" media="(prefers-color-scheme: dark)"><img class="window" src="shots/assistant-light.png?v=03478d5bd5" width="2048" height="1280" alt="An Assistant window: a question, a tool call, and a reply with code in it." loading="lazy" decoding="async"></picture></a></div><div><a href="shots/settings-light.png?v=f1b073f5e6" aria-label="Multiple accounts — enlarge"><picture><source srcset="shots/settings-dark.png?v=be66c8e0cf" media="(prefers-color-scheme: dark)"><img class="window" src="shots/settings-light.png?v=f1b073f5e6" width="2048" height="1280" alt="Settings: two Claude accounts and a Codex account, each with its own usage, model, and effort level." loading="lazy" decoding="async"></picture></a></div></div>
     </figure>
     <figure>
-      <figcaption>Assistant<span>Claude Code and Codex, with your own accounts.</span></figcaption>
-      <a href="shots/assistant-light.png?v=8f8b8ac6c1" aria-label="Assistant — enlarge">
-        <picture>
-          <source srcset="shots/assistant-dark.png?v=dc787bb9c8" media="(prefers-color-scheme: dark)">
-          <img class="window" src="shots/assistant-light.png?v=8f8b8ac6c1" width="2048" height="1280" alt="An Assistant window: a question, a tool call and a reply with code in it." decoding="sync">
-        </picture>
-      </a>
+      <figcaption><strong>Terminal</strong><span>Shells and their screens survive an app restart.</span><p>Search scrollback with ⌘F and open paths in output with ⌘-click.</p></figcaption>
+      <a href="shots/terminal-light.png?v=8bd55e30bb" aria-label="Terminal — enlarge"><picture><source srcset="shots/terminal-dark.png?v=e3789843b1" media="(prefers-color-scheme: dark)"><img class="window" src="shots/terminal-light.png?v=8bd55e30bb" width="2048" height="1280" alt="A terminal tab running the project's log and its tests." loading="lazy" decoding="async"></picture></a>
+    </figure>
+    <figure class="flip">
+      <figcaption><strong>Split panes</strong><span>Code, chats, terminals, and previews in any pane.</span><p>Each pane has its own tabs. Drag tabs between panes or into a new split.</p></figcaption>
+      <a href="shots/splits-light.png?v=5c122f3d1c" aria-label="Split panes — enlarge"><picture><source srcset="shots/splits-dark.png?v=889d5e4825" media="(prefers-color-scheme: dark)"><img class="window" src="shots/splits-light.png?v=5c122f3d1c" width="2048" height="1280" alt="Five panes over one sidebar: a Rust file and a rendered README across the top, a chat and two terminals below." loading="lazy" decoding="async"></picture></a>
     </figure>
     <figure>
-      <figcaption>Terminal<span>Shells and their screens survive an app restart.</span></figcaption>
-      <a href="shots/terminal-light.png?v=d14fda2757" aria-label="Terminal — enlarge">
-        <picture>
-          <source srcset="shots/terminal-dark.png?v=2956a3c350" media="(prefers-color-scheme: dark)">
-          <img class="window" src="shots/terminal-light.png?v=d14fda2757" width="2048" height="1280" alt="A terminal tab running the project's log and its tests." decoding="sync">
-        </picture>
-      </a>
+      <figcaption><strong>Previews</strong><span>Markdown, HTML, and SVG beside the source.</span><p>Markdown includes tables and highlighted code blocks. HTML and SVG previews update as you edit.</p><div class="gallery-buttons" role="group" hidden aria-label="Choose screenshot"><button type="button" data-view="0" aria-pressed="true">Markdown</button><button type="button" data-view="1" aria-pressed="false">HTML &amp; SVG</button></div></figcaption>
+      <div class="gallery-views"><div><a href="shots/markdown-light.png?v=41a2a4526e" aria-label="Markdown Preview — enlarge"><picture><source srcset="shots/markdown-dark.png?v=2c4ecd92e8" media="(prefers-color-scheme: dark)"><img class="window" src="shots/markdown-light.png?v=41a2a4526e" width="2048" height="1280" alt="A rendered markdown file in a window of its own." loading="lazy" decoding="async"></picture></a></div><div><a href="shots/web-preview-light.png?v=db30a5de1b" aria-label="Web preview — enlarge"><picture><source srcset="shots/web-preview-dark.png?v=edf8a08f87" media="(prefers-color-scheme: dark)"><img class="window" src="shots/web-preview-light.png?v=db30a5de1b" width="2048" height="1280" alt="A static HTML page rendered beside its source." loading="lazy" decoding="async"></picture></a></div></div>
     </figure>
-    <figure class="reveal">
-      <figcaption>Split panes<span>Arrange code, chats, previews and terminals together.</span></figcaption>
-      <a href="shots/splits-light.png?v=3a9e8ec942" aria-label="Split panes — enlarge">
-        <picture>
-          <source srcset="shots/splits-dark.png?v=5d28fdf4ef" media="(prefers-color-scheme: dark)">
-          <img class="window" src="shots/splits-light.png?v=3a9e8ec942" width="2048" height="1280" alt="Five panes over one sidebar: a Rust file and a rendered README across the top, a chat and two terminals below." loading="lazy" decoding="async">
-        </picture>
-      </a>
+    <figure class="flip">
+      <figcaption><strong>Tasks and Skills</strong><span>Project commands and reusable assistant instructions.</span><p>Run tasks with live output, or start a chat from a skill. Drag executable scripts into Tasks, and drop tasks or skills into a pane.</p></figcaption>
+      <a href="shots/tasks-light.png?v=01f82c05d0" aria-label="Tasks and Skills — enlarge"><picture><source srcset="shots/tasks-dark.png?v=9cf10ad027" media="(prefers-color-scheme: dark)"><img src="shots/tasks-light.png?v=01f82c05d0" width="2048" height="1280" alt="The Tasks navigator: a task running, its live output beside it, and the workspace's skills." loading="lazy" decoding="async"></picture></a>
     </figure>
-    <figure class="reveal">
-      <figcaption>Markdown Preview<span>Read prose, tables and highlighted code as a page.</span></figcaption>
-      <a href="shots/markdown-light.png?v=75a52cf3e8" aria-label="Markdown Preview — enlarge">
-        <picture>
-          <source srcset="shots/markdown-dark.png?v=027b5059e5" media="(prefers-color-scheme: dark)">
-          <img class="window" src="shots/markdown-light.png?v=75a52cf3e8" width="2048" height="1280" alt="A rendered markdown file in a window of its own." loading="lazy" decoding="async">
-        </picture>
-      </a>
+    <figure>
+      <figcaption><strong>Source Control</strong><span>Branches, tags, and commit history in one view.</span><p>Compare with your working tree. Edit working changes directly in the diff, then stage and commit files.</p><div class="gallery-buttons" role="group" hidden aria-label="Choose screenshot"><button type="button" data-view="0" aria-pressed="true">History</button><button type="button" data-view="1" aria-pressed="false">Working changes</button></div></figcaption>
+      <div class="gallery-views"><div><a href="shots/repository-light.png?v=34a2bf3146" aria-label="Repository — enlarge"><picture><source srcset="shots/repository-dark.png?v=a2f382b94c" media="(prefers-color-scheme: dark)"><img class="window" src="shots/repository-light.png?v=34a2bf3146" width="2048" height="1280" alt="The Repository window showing branches, tags, commit history, and a selected commit’s changes." loading="lazy" decoding="async"></picture></a></div><div><a href="shots/source-control-light.png?v=2598d8e670" aria-label="Source Control — enlarge"><picture><source srcset="shots/source-control-dark.png?v=4432fc59e8" media="(prefers-color-scheme: dark)"><img class="window" src="shots/source-control-light.png?v=2598d8e670" width="2048" height="1280" alt="The Source Control navigator beside a unified diff of an uncommitted change." loading="lazy" decoding="async"></picture></a></div></div>
     </figure>
-    <figure class="reveal">
-      <figcaption>Tasks and Skills<span>Run commands with live output, or start a chat from a skill.</span></figcaption>
-      <a href="shots/tasks-light.png?v=cfddeeaa18" aria-label="Tasks and Skills — enlarge">
-        <picture>
-          <source srcset="shots/tasks-dark.png?v=a9c8f766b8" media="(prefers-color-scheme: dark)">
-          <img src="shots/tasks-light.png?v=cfddeeaa18" width="2048" height="1280" alt="The Tasks navigator: a task running, its live output beside it, and the workspace's skills." loading="lazy" decoding="async">
-        </picture>
-      </a>
+    <figure class="flip">
+      <figcaption><strong>Language servers</strong><span>Completion, diagnostics, definitions, and code actions.</span><p>Read symbol documentation on hover or alongside completion suggestions.</p></figcaption>
+      <a href="shots/language-servers-light.png?v=d7f324be91" aria-label="Language servers — enlarge"><picture><source srcset="shots/language-servers-dark.png?v=5d837ae988" media="(prefers-color-scheme: dark)"><img src="shots/language-servers-light.png?v=d7f324be91" width="1280" height="800" alt="A hover popover over a symbol." loading="lazy" decoding="async"></picture></a>
     </figure>
-    <figure class="reveal">
-      <figcaption>Source Control<span>Stage and commit files. Edit working changes in the diff.</span></figcaption>
-      <a href="shots/source-control-light.png?v=9e39fd3abc" aria-label="Source Control — enlarge">
-        <picture>
-          <source srcset="shots/source-control-dark.png?v=c4d8ce10bd" media="(prefers-color-scheme: dark)">
-          <img class="window" src="shots/source-control-light.png?v=9e39fd3abc" width="2048" height="1280" alt="The Source Control navigator beside a unified diff of an uncommitted change." loading="lazy" decoding="async">
-        </picture>
-      </a>
+    <figure>
+      <figcaption><strong>Find in Workspace</strong><span>Search includes unsaved text in literal mode.</span><p>Use regular expressions or filter by path. Results open beside the matching file.</p></figcaption>
+      <a href="shots/search-light.png?v=1adec56bb4" aria-label="Find in Workspace — enlarge"><picture><source srcset="shots/search-dark.png?v=1d4ba4d310" media="(prefers-color-scheme: dark)"><img class="window" src="shots/search-light.png?v=1adec56bb4" width="2048" height="1280" alt="Workspace search results beside a matching source file, with search filters visible." loading="lazy" decoding="async"></picture></a>
     </figure>
-    <figure class="reveal">
-      <figcaption>Find in Workspace<span>Search across files, then jump straight to a match.</span></figcaption>
-      <a href="shots/search-light.png?v=291223b1fe" aria-label="Find in Workspace — enlarge">
-        <picture>
-          <source srcset="shots/search-dark.png?v=1349aea3bc" media="(prefers-color-scheme: dark)">
-          <img class="window" src="shots/search-light.png?v=291223b1fe" width="2048" height="1280" alt="Workspace search results beside a matching source file, with search filters visible." loading="lazy" decoding="async">
-        </picture>
-      </a>
-    </figure>
-    <figure class="reveal">
-      <figcaption>Repository<span>Browse branches, tags and history; compare with your working tree.</span></figcaption>
-      <a href="shots/repository-light.png?v=1c651aeb30" aria-label="Repository — enlarge">
-        <picture>
-          <source srcset="shots/repository-dark.png?v=5bf076f89d" media="(prefers-color-scheme: dark)">
-          <img class="window" src="shots/repository-light.png?v=1c651aeb30" width="2048" height="1280" alt="The Repository window showing branches, tags, commit history and a selected commit’s changes." loading="lazy" decoding="async">
-        </picture>
-      </a>
-    </figure>
-    <figure class="reveal">
-      <figcaption>Quick Open<span>Find the file you meant, even with a typo.</span></figcaption>
-      <a href="shots/quick-open-light.png?v=e7ce941ccc" aria-label="Quick Open — enlarge">
-        <picture>
-          <source srcset="shots/quick-open-dark.png?v=1c94efdf3f" media="(prefers-color-scheme: dark)">
-          <img src="shots/quick-open-light.png?v=e7ce941ccc" width="1280" height="800" alt="Quick Open over the editor: a misspelt path, the five files it meant found anyway, the matched letters picked out." loading="lazy" decoding="async">
-        </picture>
-      </a>
-    </figure>
-    <figure class="reveal">
-      <figcaption>Language servers<span>Completion, diagnostics, definitions and code actions.</span></figcaption>
-      <a href="shots/language-servers-light.png?v=a61ff34e35" aria-label="Language servers — enlarge">
-        <picture>
-          <source srcset="shots/language-servers-dark.png?v=8f772946ef" media="(prefers-color-scheme: dark)">
-          <img src="shots/language-servers-light.png?v=a61ff34e35" width="1280" height="800" alt="A hover popover over a symbol." loading="lazy" decoding="async">
-        </picture>
-      </a>
-    </figure>
-    <figure class="reveal">
-      <figcaption>Web preview<span>Preview HTML and SVG beside the source.</span></figcaption>
-      <a href="shots/web-preview-light.png?v=cef13a1ba4" aria-label="Web preview — enlarge">
-        <picture>
-          <source srcset="shots/web-preview-dark.png?v=ef489f8594" media="(prefers-color-scheme: dark)">
-          <img class="window" src="shots/web-preview-light.png?v=cef13a1ba4" width="2048" height="1280" alt="A static HTML page rendered beside its source." loading="lazy" decoding="async">
-        </picture>
-      </a>
-    </figure>
-    <figure class="reveal">
-      <figcaption>Multiple accounts<span>Keep personal and team accounts, usage and defaults separate.</span></figcaption>
-      <a href="shots/settings-light.png?v=5731d0b12d" aria-label="Multiple accounts — enlarge">
-        <picture>
-          <source srcset="shots/settings-dark.png?v=b7dff5e49b" media="(prefers-color-scheme: dark)">
-          <img class="window" src="shots/settings-light.png?v=5731d0b12d" width="2048" height="1280" alt="Settings: two Claude accounts and a Codex account, each with its own usage, model and effort level." loading="lazy" decoding="async">
-        </picture>
-      </a>
+    <figure class="flip">
+      <figcaption><strong>Quick Open</strong><span>File matching tolerates typos.</span><p>Search by part of a name or path. Quick Action also finds commands, tasks, and skills.</p><div class="gallery-buttons" role="group" hidden aria-label="Choose screenshot"><button type="button" data-view="0" aria-pressed="true">Files</button><button type="button" data-view="1" aria-pressed="false">Quick Action</button></div></figcaption>
+      <div class="gallery-views"><div><a href="shots/quick-open-light.png?v=9ad47bbcb1" aria-label="Quick Open — enlarge"><picture><source srcset="shots/quick-open-dark.png?v=06f53eb953" media="(prefers-color-scheme: dark)"><img src="shots/quick-open-light.png?v=9ad47bbcb1" width="1280" height="800" alt="Quick Open over the editor: a misspelled path, the five files it meant found anyway, the matched letters picked out." loading="lazy" decoding="async"></picture></a></div><div><a href="shots/quick-action-light.png?v=e7873211f1" aria-label="Quick Action — enlarge"><picture><source srcset="shots/quick-action-dark.png?v=9417f2f0f0" media="(prefers-color-scheme: dark)"><img src="shots/quick-action-light.png?v=e7873211f1" width="1280" height="800" alt="Quick Action showing matching commands." loading="lazy" decoding="async"></picture></a></div></div>
     </figure>
   </section>
 
   <h2 class="vh">Also in Cove</h2>
   <ul class="more reveal">
-    <li>Restore tabs, selections and scroll positions</li>
-    <li>Agent-suggested tasks</li>
-    <li>Quick Action for commands, tasks and skills</li>
-    <li>Automatic language detection in untitled tabs</li>
-    <li>Find unsaved text with literal search</li>
-    <li>Highlight embedded languages and code fences</li>
-    <li>Shebang and modeline detection</li>
-    <li>&#8984;F in terminals and chats</li>
-    <li>&#8984;-click paths in output</li>
-    <li>Install dependencies from the tree</li>
-    <li>Drag executable scripts into Tasks</li>
-    <li>Inline git blame</li>
-    <li>Ask Assistant about selected code</li>
-    <li>Image viewer</li>
-    <li><code>cove --wait</code> as your <code>$EDITOR</code></li>
-    <li>Editorconfig support</li>
-    <li>Use your project’s linters and formatters</li>
-    <li>Drop tasks and skills into any pane</li>
-    <li>Multiple cursors</li>
+    <li>Restore tabs, selections, and scroll positions</li>
     <li>No analytics</li>
+    <li>Search unsaved text in literal mode</li>
+    <li>Highlight embedded languages and code fences</li>
+    <li><code>cove --wait</code> as your <code>$EDITOR</code></li>
+    <li>Detect languages in untitled tabs</li>
+    <li>Agent-suggested tasks</li>
+    <li>Shebang and modeline detection</li>
+    <li>Install dependencies from the tree</li>
+    <li>Inline git blame</li>
+    <li>EditorConfig support</li>
+    <li>Multiple cursors</li>
+    <li>Image viewer</li>
   </ul>
 
 </main>
 
 <footer>
-    <p class="ack reveal">
-      Thank you to the creators of <a href="https://macromates.com/">TextMate</a>,
-      <a href="https://www.sublimetext.com/">Sublime Text</a>,
-      <a href="https://github.com/rsms/kod">Kod</a>, and
-      <a href="https://atom-editor.cc/">Atom</a> -<br class="wide">
-      the Mac code editors that made programming a pleasure over the years.
-    </p>
-    <p class="colophon reveal">
-      &copy; 2026 cvx<span class="wide">.</span><br class="narrow"> Free to use under the <a href="license.txt">Elastic License 2.0</a>.
-      Source not published.
-    </p>
-    <p class="llm reveal">LLMs have been used, regrettably, in the making of this app.</p>
+  <p class="ack reveal">
+    Thank you to the creators of <a href="https://macromates.com/">TextMate</a>,
+    <a href="https://www.sublimetext.com/">Sublime Text</a>,
+    <a href="https://github.com/rsms/kod">Kod</a>, and
+    <a href="https://atom-editor.cc/">Atom</a> -<br class="wide">
+    the Mac code editors that made programming a pleasure over the years.
+  </p>
+  <p class="colophon reveal">
+    &copy; 2026 cvx<span class="wide">.</span><br class="narrow"> Free to use under the <a href="license.txt">Elastic License 2.0</a>.
+    Source not published.
+  </p>
+  <p class="llm reveal">LLMs have been used, regrettably, in the making of this app.</p>
 </footer>
 </div>
 
