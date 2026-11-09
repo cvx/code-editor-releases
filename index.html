@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cove - Code editor for Mac</title>
 <link rel="icon" href="cove.png?v=740dd99590">
-<link rel="stylesheet" href="cove.css?v=bdf3abc4a9">
+<link rel="stylesheet" href="cove.css?v=d5095aa012">
 <meta name="description" content="Cove is a code editor for macOS, with Assistant, Terminal, and Source Control built in.">
 <link rel="canonical" href="https://covecode.app/">
 <!-- The only absolute URLs on the page, and they have to be: a scraper resolves neither og:image
@@ -73,6 +73,14 @@
     <a class="dl" href="download/Cove-0.17.dmg">Download&nbsp;<span class="ver">0.17</span></a>
     <span class="meta"><span class="meta-item"><a href="release-notes">Release notes</a> (<span class="nb">Nov 3, 2026</span>)</span><span class="meta-item">16 MB</span><span class="meta-item">macOS 26 or later</span><span class="meta-item">Apple Silicon</span></span>
   </p>
+  <!-- A phone can't run the app, so there the download comes down to what a reader there wants of
+       it: which version is out, when, and its notes, with the download and its requirements a level
+       under. Markup of its own, since .get's button holds the version. -->
+  <p class="get-brief">
+    <span class="line"><span class="item">v0.17</span><span class="item">Nov 3, 2026</span><span class="item"><a href="release-notes">Release notes</a></span></span>
+    <span class="line fine"><span class="item"><a href="download/Cove-0.17.dmg">Download for Mac</a></span><span class="item">16 MB</span></span>
+    <span class="line fine"><span class="item">macOS 26 or later</span><span class="item">Apple Silicon</span></span>
+  </p>
   <section class="features">
     <h2 class="vh">Features</h2>
     <figure>
@@ -81,7 +89,7 @@
     </figure>
     <figure class="flip">
       <figcaption><strong>Assistant</strong><span>Claude Code and Codex, with your own accounts.</span><p>Ask about selected code. Keep personal and team accounts separate, with usage, model, and effort settings for each.</p><div class="gallery-buttons" role="group" hidden aria-label="Choose screenshot"><button type="button" data-view="0" aria-pressed="true">Chat</button><button type="button" data-view="1" aria-pressed="false">Accounts</button></div></figcaption>
-      <div class="gallery-views"><div><a href="shots/assistant-light.png?v=ce3ad27435" aria-label="Assistant — enlarge"><picture><source srcset="shots/assistant-dark.png?v=b23a9ac150" media="(prefers-color-scheme: dark)"><img class="window" src="shots/assistant-light.png?v=ce3ad27435" width="2048" height="1280" alt="An Assistant window: a question, a tool call, and a reply with code in it." loading="lazy" decoding="async"></picture></a></div><div><a href="shots/settings-light.png?v=5bf86625c0" aria-label="Multiple accounts — enlarge"><picture><source srcset="shots/settings-dark.png?v=1a9804e685" media="(prefers-color-scheme: dark)"><img class="window" src="shots/settings-light.png?v=5bf86625c0" width="2048" height="1280" alt="Settings: two Claude accounts and a Codex account, each with its own usage, model, and effort level." loading="lazy" decoding="async"></picture></a></div></div>
+      <div class="gallery-views"><div><a href="shots/assistant-light.png?v=f09443b9d7" aria-label="Assistant — enlarge"><picture><source srcset="shots/assistant-dark.png?v=ff527681f0" media="(prefers-color-scheme: dark)"><img class="window" src="shots/assistant-light.png?v=f09443b9d7" width="2048" height="1280" alt="An Assistant window: a question, a tool call, and a reply with code in it." loading="lazy" decoding="async"></picture></a></div><div><a href="shots/settings-light.png?v=5bf86625c0" aria-label="Multiple accounts — enlarge"><picture><source srcset="shots/settings-dark.png?v=1a9804e685" media="(prefers-color-scheme: dark)"><img class="window" src="shots/settings-light.png?v=5bf86625c0" width="2048" height="1280" alt="Settings: two Claude accounts and a Codex account, each with its own usage, model, and effort level." loading="lazy" decoding="async"></picture></a></div></div>
     </figure>
     <figure>
       <figcaption><strong>Terminal</strong><span>Shells and their screens survive an app restart.</span><p>Search scrollback with ⌘F and open paths in output with ⌘-click.</p></figcaption>
@@ -93,11 +101,11 @@
     </figure>
     <figure>
       <figcaption><strong>Previews</strong><span>Markdown, HTML, and SVG beside the source.</span><p>Markdown includes tables and highlighted code blocks. HTML and SVG previews update as you edit.</p><div class="gallery-buttons" role="group" hidden aria-label="Choose screenshot"><button type="button" data-view="0" aria-pressed="true">Markdown</button><button type="button" data-view="1" aria-pressed="false">HTML &amp; SVG</button></div></figcaption>
-      <div class="gallery-views"><div><a href="shots/markdown-light.png?v=f48539ec41" aria-label="Markdown Preview — enlarge"><picture><source srcset="shots/markdown-dark.png?v=96abbfe5ac" media="(prefers-color-scheme: dark)"><img class="window" src="shots/markdown-light.png?v=f48539ec41" width="2048" height="1280" alt="A rendered markdown file in a window of its own." loading="lazy" decoding="async"></picture></a></div><div><a href="shots/web-preview-light.png?v=a2722d08f8" aria-label="Web preview — enlarge"><picture><source srcset="shots/web-preview-dark.png?v=5afd25ca6f" media="(prefers-color-scheme: dark)"><img class="window" src="shots/web-preview-light.png?v=a2722d08f8" width="2048" height="1280" alt="A static HTML page rendered beside its source." loading="lazy" decoding="async"></picture></a></div></div>
+      <div class="gallery-views"><div><a href="shots/markdown-light.png?v=f48539ec41" aria-label="Markdown Preview — enlarge"><picture><source srcset="shots/markdown-dark.png?v=96abbfe5ac" media="(prefers-color-scheme: dark)"><img class="window" src="shots/markdown-light.png?v=f48539ec41" width="2048" height="1280" alt="A rendered markdown file in a window of its own." loading="lazy" decoding="async"></picture></a></div><div><a href="shots/web-preview-light.png?v=204b10a183" aria-label="Web preview — enlarge"><picture><source srcset="shots/web-preview-dark.png?v=6cf460c488" media="(prefers-color-scheme: dark)"><img class="window" src="shots/web-preview-light.png?v=204b10a183" width="2048" height="1280" alt="A static HTML page rendered beside its source." loading="lazy" decoding="async"></picture></a></div></div>
     </figure>
     <figure class="flip">
       <figcaption><strong>Tasks and Skills</strong><span>Project commands and reusable assistant instructions.</span><p>Run tasks with live output, or start a chat from a skill. Drag executable scripts into Tasks, and drop tasks or skills into a pane.</p></figcaption>
-      <a href="shots/tasks-light.png?v=ec2d127428" aria-label="Tasks and Skills — enlarge"><picture><source srcset="shots/tasks-dark.png?v=44da2eb833" media="(prefers-color-scheme: dark)"><img src="shots/tasks-light.png?v=ec2d127428" width="2048" height="1280" alt="The Tasks navigator: a task running, its live output beside it, and the workspace's skills." loading="lazy" decoding="async"></picture></a>
+      <a href="shots/tasks-light.png?v=45fb2c6257" aria-label="Tasks and Skills — enlarge"><picture><source srcset="shots/tasks-dark.png?v=bbe19e782f" media="(prefers-color-scheme: dark)"><img src="shots/tasks-light.png?v=45fb2c6257" width="2048" height="1280" alt="The Tasks navigator: a task running, its live output beside it, and the workspace's skills." loading="lazy" decoding="async"></picture></a>
     </figure>
     <figure>
       <figcaption><strong>Source Control</strong><span>Branches, tags, and commit history in one view.</span><p>Compare with your working tree. Edit working changes directly in the diff, then stage and commit files.</p><div class="gallery-buttons" role="group" hidden aria-label="Choose screenshot"><button type="button" data-view="0" aria-pressed="true">History</button><button type="button" data-view="1" aria-pressed="false">Working changes</button></div></figcaption>
