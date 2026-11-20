@@ -26,9 +26,9 @@
     <h2><span class="v">0.19</span><span class="when">November 18, 2026</span></h2>
     <ul>
       <li class="added"><span class="tag">Added</span>An MCP Servers panel for chats, opened by /mcp</li>
-      <li class="added"><span class="tag">Added</span>Merging and cherry-picking in the Source Control window, by menu or drag</li>
+      <li class="added"><span class="tag">Added</span>Merging branches and cherry-picking commits in the Source Control window, via menu or by dragging</li>
       <li class="added"><span class="tag">Added</span>Squashing and rewording commits in place, in the Source Control window</li>
-      <li class="added"><span class="tag">Added</span>Gutter marks stage, unstage, or discard their change</li>
+      <li class="added"><span class="tag">Added</span>Staging, unstaging, or discarding changes from their gutter marks</li>
       <li class="added"><span class="tag">Added</span>Show File History in the Source Control window, from tree, tabs, and menus</li>
       <li class="added"><span class="tag">Added</span>Search in the Source Control window by message, author, committer, or added text</li>
       <li class="added"><span class="tag">Added</span>Filtering history by file or date range in the Source Control window</li>
@@ -66,9 +66,9 @@
     <h2><span class="v">0.18</span><span class="when">November 11, 2026</span></h2>
     <ul>
       <li class="added"><span class="tag">Added</span>Chats continue on Codex, Claude, or another account, with a recap</li>
-      <li class="added"><span class="tag">Added</span>Diffs stage, unstage, and discard single hunks or lines</li>
+      <li class="added"><span class="tag">Added</span>Staging, unstaging, and discarding single hunks or lines in diffs</li>
       <li class="added"><span class="tag">Added</span>Chats message each other across Claude and Codex, even mid-turn</li>
-      <li class="added"><span class="tag">Added</span>Multiple selection with ⌘ and ⇧ in sidebar lists and the Source Control window</li>
+      <li class="added"><span class="tag">Added</span>Selecting multiple rows with ⌘ and ⇧ in sidebar lists and the Source Control window</li>
       <li class="added"><span class="tag">Added</span>Swift language server, with Set Up Swift for Xcode projects</li>
       <li class="added"><span class="tag">Added</span>A Stashes section in Source Control</li>
       <li class="added"><span class="tag">Added</span>Comparing branches, or any two commits, in the Source Control window</li>
@@ -162,8 +162,8 @@
       <li class="added"><span class="tag">Added</span>TypeScript completions bring their imports</li>
       <li class="added"><span class="tag">Added</span>JSON files validate against SchemaStore schemas, with hover and completion</li>
       <li class="added"><span class="tag">Added</span>SSH configs get coloring, keyword hover, completion, and indenting</li>
-      <li class="added"><span class="tag">Added</span>Dockerfile instructions and flags hover and complete</li>
-      <li class="added"><span class="tag">Added</span>EditorConfig keys hover and complete</li>
+      <li class="added"><span class="tag">Added</span>Hover and completion for Dockerfile instructions and flags</li>
+      <li class="added"><span class="tag">Added</span>Hover and completion for EditorConfig keys</li>
       <li class="added"><span class="tag">Added</span>A search field in Settings</li>
       <li class="improved"><span class="tag">Improved</span>VoiceOver reads the editor, file tree, tabs, diffs, and chats</li>
       <li class="improved"><span class="tag">Improved</span>Large files open faster in far less memory</li>
@@ -246,11 +246,11 @@
   <section>
     <h2><span class="v">0.16</span><span class="when">October 20, 2026</span></h2>
     <ul>
-      <li class="added"><span class="tag">Added</span>GitHub issue and PR references in chats hover to their cards</li>
+      <li class="added"><span class="tag">Added</span>Hover cards for GitHub issue and PR references in chats</li>
       <li class="added"><span class="tag">Added</span>TypeScript 7 serves .gjs and .gts files</li>
       <li class="added"><span class="tag">Added</span>The assistant shows files in the editor, rendered, or as a diff</li>
       <li class="added"><span class="tag">Added</span>Prompt ticks beside chat scrollers, stepped by ⌃⌘↑ and ⌃⌘↓</li>
-      <li class="added"><span class="tag">Added</span>Hex colors in chats hover to a swatch</li>
+      <li class="added"><span class="tag">Added</span>Color swatches on hover for hex colors in chats</li>
       <li class="added"><span class="tag">Added</span>Return, paste, and Re-Indent Lines (⌃I) indent like each language&#x27;s formatter</li>
       <li class="improved"><span class="tag">Improved</span>File icons for C, C++, Go, Java, PHP, Lua, SQL, and more</li>
       <li class="improved"><span class="tag">Improved</span>Terminals scroll smoothly by trackpad</li>
@@ -342,9 +342,9 @@
       <li class="added"><span class="tag">Added</span>oxfmt formats on save where it takes the file</li>
       <li class="added"><span class="tag">Added</span>Vue files get syntax coloring</li>
       <li class="added"><span class="tag">Added</span>TypeScript 7 projects run their own tsc language server</li>
-      <li class="added"><span class="tag">Added</span>Tag actions in the Source Control window, with a confirm before deleting</li>
+      <li class="added"><span class="tag">Added</span>Creating, copying, and deleting tags in the Source Control window, with a confirm before deleting</li>
       <li class="added"><span class="tag">Added</span>Source Control has its own section for conflicts</li>
-      <li class="added"><span class="tag">Added</span>SHAs in chat prose hover to their commit</li>
+      <li class="added"><span class="tag">Added</span>Hover cards for commit SHAs in chat prose</li>
       <li class="improved"><span class="tag">Improved</span>Source Control pins the branch above the list, with Browse Repository</li>
       <li class="improved"><span class="tag">Improved</span>Diverged branches offer Rebase… rather than a Pull that can&#x27;t fast-forward</li>
       <li class="improved"><span class="tag">Improved</span>Merges, cherry-picks, and reverts prefill the commit message</li>
@@ -388,7 +388,7 @@
       <li class="improved"><span class="tag">Improved</span>The transcript view mode is app-wide, with a row in Settings ▸ Assistant</li>
       <li class="improved"><span class="tag">Improved</span>Thinking mode gives every tool run its own row</li>
       <li class="added"><span class="tag">Added</span>⌥-clicks in a markdown file open the path it names, at the line it cites</li>
-      <li class="added"><span class="tag">Added</span>Chat tab and title menus can delete the chat</li>
+      <li class="added"><span class="tag">Added</span>Deleting chats from their tab and title menus</li>
       <li class="improved"><span class="tag">Improved</span>Code blocks and tool output scroll sideways unless Wrap Lines is on</li>
       <li class="improved"><span class="tag">Improved</span>Chats streaming in a covered or minimized window stop stealing frames</li>
       <li class="improved"><span class="tag">Improved</span>Pictures a tool returned draw in one strip under the run</li>
@@ -437,7 +437,7 @@
     <h2><span class="v">0.13</span><span class="when">September 15, 2026</span></h2>
     <ul>
       <li class="added"><span class="tag">Added</span>A Source Control window (⇧⌘Y) for branches, commits, and diffs</li>
-      <li class="added"><span class="tag">Added</span>Plan cards reject, revise, or accept into a permission mode</li>
+      <li class="added"><span class="tag">Added</span>Rejecting, revising, or accepting plans into a permission mode from plan cards</li>
       <li class="improved"><span class="tag">Improved</span>Working-copy changes in the sidebar, history in the Source Control window</li>
       <li class="added"><span class="tag">Added</span>Commit options for amend, sign-off, bypass hooks, and Commit and Push</li>
       <li class="added"><span class="tag">Added</span>An operation banner for a rebase, merge, or cherry-pick under way</li>
@@ -460,7 +460,7 @@
       <li class="improved"><span class="tag">Improved</span>A failed turn is a record in the transcript, not a reply</li>
       <li class="improved"><span class="tag">Improved</span>Permission cards read clearer, and keep Allow primary when unfocused</li>
       <li class="improved"><span class="tag">Improved</span>Chat titles name a session after its first exchange</li>
-      <li class="improved"><span class="tag">Improved</span>The provider menu grades every account it lists</li>
+      <li class="improved"><span class="tag">Improved</span>Accounts in the composer&#x27;s account menu show their usage rings</li>
       <li class="improved"><span class="tag">Improved</span>⌘-clicking an address opens it without raising the browser</li>
       <li class="improved"><span class="tag">Improved</span>Hover popovers fold types nested past two levels</li>
       <li class="improved"><span class="tag">Improved</span>The usage popover&#x27;s Spent section folds, and names fresh input</li>
@@ -586,7 +586,7 @@
       <li class="added"><span class="tag">Added</span>⌘F, Wrap Lines, and Hide Whitespace work in a diff</li>
       <li class="added"><span class="tag">Added</span>Sidebar lists narrow from a filter field at their foot</li>
       <li class="added"><span class="tag">Added</span>Selected text offers an Ask pill that puts it to the assistant</li>
-      <li class="added"><span class="tag">Added</span>Terminals right-click to Copy, Paste, Clear, and Reset</li>
+      <li class="added"><span class="tag">Added</span>Copy, Paste, Clear, and Reset in the terminal&#x27;s right-click menu</li>
       <li class="added"><span class="tag">Added</span>The terminal has its own font, bell, and Option-as-Meta settings</li>
       <li class="added"><span class="tag">Added</span>Selection drags past a terminal&#x27;s edge scroll it</li>
       <li class="fixed"><span class="tag">Fixed</span>Mouse and wheel reach the program running in a terminal</li>
@@ -641,7 +641,7 @@
     <ul>
       <li class="added"><span class="tag">Added</span>HTML and SVG files draw as a page in Preview</li>
       <li class="added"><span class="tag">Added</span>Quick Open and Quick Action tolerate a typo in the query</li>
-      <li class="added"><span class="tag">Added</span>Dependencies in package.json or Gemfile hover to a card</li>
+      <li class="added"><span class="tag">Added</span>Hover cards for dependencies in package.json or Gemfile</li>
       <li class="added"><span class="tag">Added</span>Turns that can&#x27;t authenticate get a sign-in card</li>
       <li class="added"><span class="tag">Added</span>Each assistant account carries its own default permission mode</li>
       <li class="improved"><span class="tag">Improved</span>Chats fork mid-turn, from the exchange before</li>
@@ -650,7 +650,7 @@
       <li class="added"><span class="tag">Added</span>Queued follow-ups drag to a different slot</li>
       <li class="added"><span class="tag">Added</span>File | Preview | Diff segments drag onto another pane</li>
       <li class="added"><span class="tag">Added</span>Markdown renders task lists and strikethrough</li>
-      <li class="improved"><span class="tag">Improved</span>Fixed width Assistant conversations</li>
+      <li class="improved"><span class="tag">Improved</span>Fixed-width Assistant conversations</li>
       <li class="improved"><span class="tag">Improved</span>The turn status names what it&#x27;s waiting on</li>
       <li class="fixed"><span class="tag">Fixed</span>Replies cut short say so instead of going missing</li>
     </ul>
@@ -662,8 +662,8 @@
       <li class="added"><span class="tag">Added</span>@ completes a workspace file into the prompt</li>
       <li class="added"><span class="tag">Added</span>Comparing with a branch shows its Changes section</li>
       <li class="fixed"><span class="tag">Fixed</span>Turns interrupted by a restart or a crash resume</li>
-      <li class="added"><span class="tag">Added</span>Each tool row&#x27;s ⋯ menu runs, stops, copies, and opens the call</li>
-      <li class="added"><span class="tag">Added</span>Background tasks stop from the counts popover</li>
+      <li class="added"><span class="tag">Added</span>Running, stopping, copying, and opening tool calls from their row&#x27;s ⋯ menu</li>
+      <li class="added"><span class="tag">Added</span>Stopping background tasks from the counts popover</li>
       <li class="added"><span class="tag">Added</span>Settled background tasks report themselves in the transcript</li>
       <li class="added"><span class="tag">Added</span>Files ⌥-dropped on a chat go into the draft as a path</li>
       <li class="improved"><span class="tag">Improved</span>Replies in an unfocused pane are marked unread</li>
@@ -717,7 +717,7 @@
   <section>
     <h2><span class="v">0.9.2</span><span class="when">August 15, 2026</span></h2>
     <ul>
-      <li class="added"><span class="tag">Added</span>Tasks sidebar now has an Assistant Skills section</li>
+      <li class="added"><span class="tag">Added</span>An Assistant Skills section in the Tasks sidebar</li>
       <li class="added"><span class="tag">Added</span>Headless task output follows live in a popover</li>
       <li class="improved"><span class="tag">Improved</span>More menu commands and aliases in Quick Action</li>
       <li class="improved"><span class="tag">Improved</span>Streaming replies are followed on a lag, not pinned</li>
@@ -751,7 +751,7 @@
       <li class="added"><span class="tag">Added</span>Ultracode, fast mode, and pills that follow the model</li>
       <li class="added"><span class="tag">Added</span>/usage, /status, /plan, /rename, and /memory answer in the chat</li>
       <li class="added"><span class="tag">Added</span>Open files reload when they change on disk</li>
-      <li class="added"><span class="tag">Added</span>Manifests in the file tree install their dependencies</li>
+      <li class="added"><span class="tag">Added</span>Installing dependencies from manifests in the file tree</li>
       <li class="added"><span class="tag">Added</span>Terminal links open in Cove</li>
       <li class="added"><span class="tag">Added</span>Shell integration for bash and fish</li>
       <li class="added"><span class="tag">Added</span>Updates download in the background and install on quit</li>
@@ -846,7 +846,7 @@
   <section>
     <h2><span class="v">0.6</span><span class="when">August 3, 2026</span></h2>
     <ul>
-      <li class="added"><span class="tag">Added</span>Help menu reports an issue, copies diagnostics, and reveals the log</li>
+      <li class="added"><span class="tag">Added</span>Reporting an issue, copying diagnostics, and revealing the log from the Help menu</li>
       <li class="improved"><span class="tag">Improved</span>Missing language servers say how to install them</li>
       <li class="improved"><span class="tag">Improved</span>Only ripgrep is bundled, not the language servers or formatters</li>
       <li class="fixed"><span class="tag">Fixed</span>Formatters and the Claude Code CLI are found under fish</li>
@@ -883,7 +883,6 @@
       <li class="added"><span class="tag">Added</span>Images paste or drop into the composer</li>
       <li class="added"><span class="tag">Added</span>Unread replies badge the Dock icon</li>
       <li class="added"><span class="tag">Added</span>Zoomable image previews in the app</li>
-      <li class="improved"><span class="tag">Improved</span>The panes are laid out by AppKit now, dividers included</li>
       <li class="added"><span class="tag">Added</span>Go to Line (⌃G)</li>
       <li class="improved"><span class="tag">Improved</span>Arrow-key navigation glides the file tree</li>
     </ul>
@@ -895,7 +894,7 @@
       <li class="added"><span class="tag">Added</span>Hover popovers, go to definition, code actions, and completion</li>
       <li class="added"><span class="tag">Added</span>GitHub-style unified diff tabs, one per changed file</li>
       <li class="added"><span class="tag">Added</span>Interactive permission prompts, with a mode selector</li>
-      <li class="added"><span class="tag">Added</span>One long-lived Claude Code process per chat</li>
+      <li class="added"><span class="tag">Added</span>Chats keep Claude Code running between messages, so replies start sooner</li>
       <li class="added"><span class="tag">Added</span>Live turn status, token stats, and a context-window gauge</li>
       <li class="added"><span class="tag">Added</span>Staging checkboxes in Source Control</li>
       <li class="added"><span class="tag">Added</span>Auto-updates, with a signed release pipeline</li>
@@ -936,7 +935,7 @@
       <li class="added"><span class="tag">Added</span>Quick Open (⌘T), a fuzzy file finder</li>
       <li class="added"><span class="tag">Added</span>A terminal panel below the editor</li>
       <li class="added"><span class="tag">Added</span>Format on save, using the project&#x27;s own tooling</li>
-      <li class="added"><span class="tag">Added</span>Display lint problems from eslint, rubocop, ruff, stylelint, and Biome</li>
+      <li class="added"><span class="tag">Added</span>Lint problems from eslint, rubocop, ruff, stylelint, and Biome</li>
       <li class="added"><span class="tag">Added</span>Session restore across windows and workspaces</li>
       <li class="added"><span class="tag">Added</span>Syntax themes for light and dark</li>
       <li class="added"><span class="tag">Added</span>Smart indent, the line commands, and bracket matching</li>
