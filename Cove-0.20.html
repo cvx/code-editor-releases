@@ -1,0 +1,112 @@
+<style>
+.cove-log { box-sizing: border-box; max-width: 680px; margin: 0 auto; padding: 6px 16px; }
+.cove-notes { margin: 0; padding: 0; list-style: none;
+              font: 13px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+              color: color-mix(in srgb, currentColor 90%, transparent); }
+.cove-notes li { position: relative; margin: 0 0 8px; padding-left: 75px; }
+.cove-notes .tag {
+  position: absolute; left: 0; top: 1px; padding: 1px 7px 2px; border-radius: 999px;
+  font-size: 10.5px; font-weight: 600; line-height: 1.44; letter-spacing: -0.005em;
+  white-space: nowrap; box-sizing: border-box; min-width: 50.5px; text-align: center;
+}
+.cove-notes li:is(.added, .fixed) .tag { letter-spacing: 0.01em; }
+.cove-notes li.added .tag { min-width: 54px; }
+.cove-notes li.improved .tag { letter-spacing: -0.02em; padding-inline: 6px; }
+.cove-notes li.added .tag { background: rgba(255, 144,   0, .59); color: #472b07; }
+.cove-notes li.fixed .tag { background: rgba( 30, 184,  81, .42); color: #0b3619; }
+.cove-notes li.improved .tag { background: rgba(10, 186, 245, .42); color: #0b3a4b; }
+@media (prefers-color-scheme: dark) {
+  .cove-notes li.added .tag { background: rgba(255, 156,  26, .80); color: #fbf5ed; }
+  .cove-notes li.fixed .tag { background: rgba(  0, 184,  61, .52); color: #d4eddd; }
+  .cove-notes li.improved .tag { background: rgba(0, 184, 245, .52); color: #d4eaf1; }
+}
+.cove-notes code { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+                   font-size: .93em; }
+.cove-log h2 { margin: 16px 0 3px; letter-spacing: -0.014em;
+               font: 600 15px/1.3 "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif; }
+.cove-log h2 .v { display: inline-block; box-sizing: border-box;
+                  min-width: 75px; padding: 0 8px 0 6px; }
+.cove-log h2 .when { letter-spacing: -0.014em; opacity: .6;
+                     font: 400 11px/1.3 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif; }
+.cove-log > :first-child { margin-top: 0; }
+</style>
+<div class="cove-log">
+  <h2><span class="v">0.20</span><span class="when">November 22, 2026</span></h2>
+  <ul class="cove-notes">
+    <li class="added"><span class="tag">Added</span>Claude and Codex chats on other machines, via SSH or containers</li>
+    <li class="added"><span class="tag">Added</span>⌘Z undoes git operations, from commits to pulls</li>
+    <li class="added"><span class="tag">Added</span>Staging, committing, discarding, and stashing in the Source Control window</li>
+    <li class="added"><span class="tag">Added</span>Dragging commits to reorder them in the Source Control window</li>
+    <li class="added"><span class="tag">Added</span>Reverting and checking out commits in the Source Control window</li>
+    <li class="added"><span class="tag">Added</span>⌘Z undoes file tree renames, moves, new files, and trashing</li>
+    <li class="added"><span class="tag">Added</span>Commits dropped on Branches or Tags make a new one there</li>
+    <li class="added"><span class="tag">Added</span>Alarm glyphs on chats with something scheduled</li>
+    <li class="improved"><span class="tag">Improved</span>The side chat floats as a borderless glass panel</li>
+    <li class="improved"><span class="tag">Improved</span>Tab names read clearly over any page</li>
+    <li class="improved"><span class="tag">Improved</span>Unfocused panes ring their current tab</li>
+    <li class="improved"><span class="tag">Improved</span>Selections survive tab switches in chats and previews</li>
+    <li class="improved"><span class="tag">Improved</span>Diffs and their files share one undo history</li>
+    <li class="improved"><span class="tag">Improved</span>Reword sheets have summary and description fields</li>
+    <li class="improved"><span class="tag">Improved</span>Plan card buttons float over the plan</li>
+    <li class="improved"><span class="tag">Improved</span>⇧-arrows in sidebar lists scroll the way Finder&#x27;s do</li>
+    <li class="improved"><span class="tag">Improved</span>Commit pages fold the author table and drop repeated co-authors</li>
+    <li class="improved"><span class="tag">Improved</span>Codex visuals open as previews in chats</li>
+    <li class="improved"><span class="tag">Improved</span>Links to absolute paths open files outside the workspace</li>
+    <li class="improved"><span class="tag">Improved</span>⌘C in an empty composer copies the chat&#x27;s selection</li>
+    <li class="improved"><span class="tag">Improved</span>Background task pills name monitors and MCP tasks</li>
+    <li class="improved"><span class="tag">Improved</span>Error cards draw code spans as code</li>
+    <li class="improved"><span class="tag">Improved</span>Stopped merges and picks show git&#x27;s reason in the banner</li>
+    <li class="improved"><span class="tag">Improved</span>Quick Action fuzzy matches favor word starts</li>
+    <li class="improved"><span class="tag">Improved</span>The <code>cove</code> command updates with the app and creates missing files on save</li>
+    <li class="fixed"><span class="tag">Fixed</span>Keystrokes just before switching to a diff are no longer lost</li>
+    <li class="fixed"><span class="tag">Fixed</span>Agent error echoes no longer read as the reply</li>
+    <li class="fixed"><span class="tag">Fixed</span>Retry resends prompts the agent never received</li>
+    <li class="fixed"><span class="tag">Fixed</span>Keyboard focus follows clicks into another pane</li>
+    <li class="fixed"><span class="tag">Fixed</span>New terminal windows&#x27; shells start at their real size</li>
+    <li class="fixed"><span class="tag">Fixed</span>File tree paste takes Finder&#x27;s newer copy over Cove&#x27;s</li>
+    <li class="fixed"><span class="tag">Fixed</span>Swiping a scrolled image no longer mirrors it</li>
+    <li class="fixed"><span class="tag">Fixed</span>Web previews read undeclared UTF-8 pages correctly</li>
+    <li class="fixed"><span class="tag">Fixed</span>Question cards fold and dismiss correctly</li>
+    <li class="fixed"><span class="tag">Fixed</span>⌃R opens the shown pane&#x27;s workspace menu</li>
+    <li class="fixed"><span class="tag">Fixed</span>Capped workspace searches return the same results every run</li>
+    <li class="fixed"><span class="tag">Fixed</span>Dockerfile completion offers labs flags only under labs syntax</li>
+  </ul>
+  <h2><span class="v">0.19</span><span class="when">November 18, 2026</span></h2>
+  <ul class="cove-notes">
+    <li class="added"><span class="tag">Added</span>An MCP Servers panel for chats, opened by /mcp</li>
+    <li class="added"><span class="tag">Added</span>Merging branches and cherry-picking commits in the Source Control window, via menu or by dragging</li>
+    <li class="added"><span class="tag">Added</span>Squashing and rewording commits in place, in the Source Control window</li>
+    <li class="added"><span class="tag">Added</span>Staging, unstaging, or discarding changes from their gutter marks</li>
+    <li class="added"><span class="tag">Added</span>Show File History in the Source Control window, from tree, tabs, and menus</li>
+    <li class="added"><span class="tag">Added</span>Search in the Source Control window by message, author, committer, or added text</li>
+    <li class="added"><span class="tag">Added</span>Filtering history by file or date range in the Source Control window</li>
+    <li class="added"><span class="tag">Added</span>Switch Branch… in Quick Open and the Source Control menu</li>
+    <li class="added"><span class="tag">Added</span>Force click looks up words in the editor and chats</li>
+    <li class="improved"><span class="tag">Improved</span>Hover cards show local variables&#x27; definitions and doc tags</li>
+    <li class="improved"><span class="tag">Improved</span>Workspace search results open in place, reached with ↓</li>
+    <li class="improved"><span class="tag">Improved</span>Only the focused pane&#x27;s current tab sits on glass</li>
+    <li class="improved"><span class="tag">Improved</span>Diff undo, staging, and Stage All run much faster</li>
+    <li class="improved"><span class="tag">Improved</span>Edit, View, and Source Control menus regrouped and relabeled</li>
+    <li class="added"><span class="tag">Added</span>Reset HEAD to This Commit… in the Source Control window</li>
+    <li class="added"><span class="tag">Added</span>Stash and Switch when changes block a branch switch</li>
+    <li class="added"><span class="tag">Added</span>Force Push offered after a history rewrite, asked first</li>
+    <li class="added"><span class="tag">Added</span>Composers recall recent command arguments and commands run</li>
+    <li class="added"><span class="tag">Added</span>Model menus mark newly offered models as New</li>
+    <li class="improved"><span class="tag">Improved</span>Sidebar selection bands glide in every list</li>
+    <li class="improved"><span class="tag">Improved</span>Second views of large files use far less memory</li>
+    <li class="improved"><span class="tag">Improved</span>Source Control lists files of untracked workspace folders</li>
+    <li class="improved"><span class="tag">Improved</span>Double-click pops a stash, ⌥-double-click applies it</li>
+    <li class="improved"><span class="tag">Improved</span>Long identifiers in chats wrap at word seams</li>
+    <li class="improved"><span class="tag">Improved</span>Pane resizes run smoother over chats</li>
+    <li class="fixed"><span class="tag">Fixed</span>Quitting Cove ends every process it started</li>
+    <li class="fixed"><span class="tag">Fixed</span>Chats keep their scroll place across tab and mode switches</li>
+    <li class="fixed"><span class="tag">Fixed</span>Successful Codex MCP calls no longer read as failed</li>
+    <li class="fixed"><span class="tag">Fixed</span>Codex approvals no longer hang titles or side questions</li>
+    <li class="fixed"><span class="tag">Fixed</span>Tags named like branches no longer take their place</li>
+    <li class="fixed"><span class="tag">Fixed</span>Symlinks stage and discard as links, not their targets</li>
+    <li class="fixed"><span class="tag">Fixed</span>Nested repositories in untracked folders aren&#x27;t staged as gitlinks</li>
+    <li class="fixed"><span class="tag">Fixed</span>Hidden launches keep their restored windows</li>
+    <li class="fixed"><span class="tag">Fixed</span>Search result rows read correctly in light appearance</li>
+    <li class="fixed"><span class="tag">Fixed</span>Clicks in the empty composer no longer show a Siri bubble</li>
+  </ul>
+</div>
