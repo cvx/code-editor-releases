@@ -3,6 +3,168 @@
     <channel>
         <title>Code Editor</title>
         <item>
+            <title>0.22</title>
+            <pubDate>Fri, 27 Nov 2026 02:37:57 +0100</pubDate>
+            <sparkle:fullReleaseNotesLink>https://covecode.app/release-notes</sparkle:fullReleaseNotesLink>
+            <sparkle:version>10636</sparkle:version>
+            <sparkle:shortVersionString>0.22</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>
+.cove-log { box-sizing: border-box; max-width: 680px; margin: 0 auto; padding: 6px 16px; }
+.cove-notes { margin: 0; padding: 0; list-style: none;
+              font: 13px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+              color: color-mix(in srgb, currentColor 90%, transparent); }
+.cove-notes li { position: relative; margin: 0 0 8px; padding-left: 75px; }
+.cove-notes .tag {
+  position: absolute; left: 0; top: 1px; padding: 1px 7px 2px; border-radius: 999px;
+  font-size: 10.5px; font-weight: 600; line-height: 1.44; letter-spacing: -0.005em;
+  white-space: nowrap; box-sizing: border-box; min-width: 50.5px; text-align: center;
+}
+.cove-notes li:is(.added, .fixed) .tag { letter-spacing: 0.01em; }
+.cove-notes li.added .tag { min-width: 54px; }
+.cove-notes li.improved .tag { letter-spacing: -0.02em; padding-inline: 6px; }
+.cove-notes li.added .tag { background: rgba(255, 144,   0, .59); color: #472b07; }
+.cove-notes li.fixed .tag { background: rgba( 30, 184,  81, .42); color: #0b3619; }
+.cove-notes li.improved .tag { background: rgba(10, 186, 245, .42); color: #0b3a4b; }
+@media (prefers-color-scheme: dark) {
+  .cove-notes li.added .tag { background: rgba(255, 156,  26, .80); color: #fbf5ed; }
+  .cove-notes li.fixed .tag { background: rgba(  0, 184,  61, .52); color: #d4eddd; }
+  .cove-notes li.improved .tag { background: rgba(0, 184, 245, .52); color: #d4eaf1; }
+}
+.cove-notes code { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+                   font-size: .93em; }
+.cove-log h2 { margin: 16px 0 3px; letter-spacing: -0.014em;
+               font: 600 15px/1.3 "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif; }
+.cove-log h2 .v { display: inline-block; box-sizing: border-box;
+                  min-width: 75px; padding: 0 8px 0 6px; }
+.cove-log h2 .when { letter-spacing: -0.014em; opacity: .6;
+                     font: 400 11px/1.3 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif; }
+.cove-log > :first-child { margin-top: 0; }
+</style>
+<div class="cove-log">
+  <h2><span class="v">0.22</span><span class="when">November 27, 2026</span></h2>
+  <ul class="cove-notes">
+    <li class="added"><span class="tag">Added</span>Clone Repository… in the File menu, from page URLs too</li>
+    <li class="added"><span class="tag">Added</span><code>.diff</code> and <code>.patch</code> files preview as diff pages</li>
+    <li class="improved"><span class="tag">Improved</span>Markdown files open in preview by default</li>
+    <li class="added"><span class="tag">Added</span>Filterable branch and tag picker in Source Control</li>
+    <li class="added"><span class="tag">Added</span>Sync rows under the branch in Source Control</li>
+    <li class="added"><span class="tag">Added</span>Diffs wrap lines, side by side too, via View menu</li>
+    <li class="improved"><span class="tag">Improved</span>Side by side diffs search both columns and show commits</li>
+    <li class="added"><span class="tag">Added</span>@ in commit messages suggests co-authors</li>
+    <li class="improved"><span class="tag">Improved</span>Assistant context takes diff, terminal, chat, and Source Control selections</li>
+    <li class="improved"><span class="tag">Improved</span>Providers settings with agent logos and an Add Provider sheet</li>
+    <li class="improved"><span class="tag">Improved</span>Summary mode headlines every turn, even without the agent&#x27;s own</li>
+    <li class="added"><span class="tag">Added</span>⌥⌘V attaches copied image files to chats, then trashes them</li>
+    <li class="improved"><span class="tag">Improved</span>Agents show changes across several files as one diff page</li>
+    <li class="added"><span class="tag">Added</span>Checking out and comparing tags in Source Control</li>
+    <li class="added"><span class="tag">Added</span>Publishing branches by dropping them on a remote</li>
+    <li class="added"><span class="tag">Added</span>Copy as Patch on Source Control change rows</li>
+    <li class="added"><span class="tag">Added</span>Edit Remote… changes remotes&#x27; names and URLs together</li>
+    <li class="improved"><span class="tag">Improved</span>Branch and tag subtitles say how far they stand from main</li>
+    <li class="improved"><span class="tag">Improved</span>Source Control reopens where it was left, across relaunches too</li>
+    <li class="improved"><span class="tag">Improved</span>Long commit messages collapse</li>
+    <li class="improved"><span class="tag">Improved</span>Changes and Conflicts headings show their counts</li>
+    <li class="improved"><span class="tag">Improved</span>⌃⌘← and ⌃⌘→ fold or open all of a commit page&#x27;s diffs</li>
+    <li class="improved"><span class="tag">Improved</span>⌘-click on the sidebar&#x27;s Source Control button opens its window</li>
+    <li class="improved"><span class="tag">Improved</span>Scheduled assistant wake-ups survive agent restarts</li>
+    <li class="improved"><span class="tag">Improved</span>Copied chat text keeps its links when pasted</li>
+    <li class="improved"><span class="tag">Improved</span>Slash command suggestions rank most-used commands first</li>
+    <li class="improved"><span class="tag">Improved</span>Go Back returns to previewed pages where they were read</li>
+    <li class="improved"><span class="tag">Improved</span>Hover docs select across prose, code, and dependency cards</li>
+    <li class="improved"><span class="tag">Improved</span>Dependency cards show the lockfile version when not installed</li>
+    <li class="improved"><span class="tag">Improved</span>Opening symlinks selects the link&#x27;s tree row</li>
+    <li class="improved"><span class="tag">Improved</span>Drags from sidebar lists&#x27; empty space select rows</li>
+    <li class="improved"><span class="tag">Improved</span>Pane dividers drag from the toolbar band</li>
+    <li class="improved"><span class="tag">Improved</span>Wrapped lines break after punctuation, never after indent alone</li>
+    <li class="improved"><span class="tag">Improved</span>Diff find centers matches, as the editor does</li>
+    <li class="improved"><span class="tag">Improved</span>Tag lists shelve all but 10 under Previous, with counts</li>
+    <li class="improved"><span class="tag">Improved</span>Working Copy opens on its last change</li>
+    <li class="improved"><span class="tag">Improved</span>Syntax Coloring menu checks the detected language</li>
+    <li class="improved"><span class="tag">Improved</span>Untitled buffers drop a stale language guess</li>
+    <li class="improved"><span class="tag">Improved</span>Missing markdown images show muted alt text and their path</li>
+    <li class="improved"><span class="tag">Improved</span>Followed run tabs say &quot;Waiting for output…&quot; until they print</li>
+    <li class="improved"><span class="tag">Improved</span>Usage meters roll over at their window&#x27;s reset</li>
+    <li class="improved"><span class="tag">Improved</span>Sidebar workspace titles show the folder path on hover</li>
+    <li class="improved"><span class="tag">Improved</span>Switching chats with long recent lists is faster</li>
+    <li class="improved"><span class="tag">Improved</span>Settings&#x27; back and forward step through subpages</li>
+    <li class="improved"><span class="tag">Improved</span>Save to Downloads behind ⌥ in image menus</li>
+    <li class="improved"><span class="tag">Improved</span>Show Frame Rate moves to General settings</li>
+    <li class="improved"><span class="tag">Improved</span>New windows open at 1060 by 660</li>
+    <li class="fixed"><span class="tag">Fixed</span>Context gauges read right after compactions and restores</li>
+    <li class="fixed"><span class="tag">Fixed</span>Scheduled jobs no longer hold account switches when out of quota</li>
+    <li class="fixed"><span class="tag">Fixed</span>Git undo presses during a running step beep instead of queuing</li>
+    <li class="fixed"><span class="tag">Fixed</span>RuboCop servers stop once their folder is gone or untrusted</li>
+    <li class="fixed"><span class="tag">Fixed</span>The clones folder is no longer offered for trust</li>
+  </ul>
+  <h2><span class="v">0.21.1</span><span class="when">November 24, 2026</span></h2>
+  <ul class="cove-notes">
+    <li class="improved"><span class="tag">Improved</span>Recent chats keep the past week&#x27;s, up to 1000</li>
+    <li class="improved"><span class="tag">Improved</span>Tool group headers count failed calls by kind</li>
+    <li class="improved"><span class="tag">Improved</span>Side by side diffs sit tighter with bar-drawn gutter marks</li>
+    <li class="improved"><span class="tag">Improved</span>The assistant&#x27;s status ⌘ spins on a spring and settles when stopped</li>
+    <li class="improved"><span class="tag">Improved</span>Chats with answered questions stream smoother</li>
+    <li class="fixed"><span class="tag">Fixed</span>Titlebar double-clicks over the sidebar zoom the window</li>
+  </ul>
+  <h2><span class="v">0.21</span><span class="when">November 24, 2026</span></h2>
+  <ul class="cove-notes">
+    <li class="added"><span class="tag">Added</span>Side by side diffs, from the menu or Quick Action</li>
+    <li class="added"><span class="tag">Added</span>Source Control opens as a tab beside the editor</li>
+    <li class="improved"><span class="tag">Improved</span>SSH chats survive dropped connections and resume where they were</li>
+    <li class="added"><span class="tag">Added</span>Container accounts on Cove&#x27;s own image, managed in Settings</li>
+    <li class="added"><span class="tag">Added</span>Image files open in a zoomable canvas with zoom keys</li>
+    <li class="added"><span class="tag">Added</span>Agents add, edit, and delete Tasks sidebar commands</li>
+    <li class="improved"><span class="tag">Improved</span>Quick Open springs open and blurs out like Spotlight</li>
+    <li class="improved"><span class="tag">Improved</span>Image changes in Source Control show the image</li>
+    <li class="improved"><span class="tag">Improved</span>Commit bodies render as markdown in Source Control</li>
+    <li class="improved"><span class="tag">Improved</span>Markdown tables fit their contents and fade at overflowing edges</li>
+    <li class="improved"><span class="tag">Improved</span>Staging hunks and typing in diffs are faster</li>
+    <li class="improved"><span class="tag">Improved</span>Slash commands suggest their most-used recent arguments</li>
+    <li class="improved"><span class="tag">Improved</span>Codex changes to several files show a card per file</li>
+    <li class="improved"><span class="tag">Improved</span>Tool groups that commit name the commit in their header</li>
+    <li class="added"><span class="tag">Added</span>Objective-C++ highlighting</li>
+    <li class="improved"><span class="tag">Improved</span>More lockfiles, C++, systemd, Dockerfile, and fastlane files recognized</li>
+    <li class="improved"><span class="tag">Improved</span>YAML keys and markup attributes get their own colors</li>
+    <li class="improved"><span class="tag">Improved</span>Old tags shelve under Previous in branch lists</li>
+    <li class="improved"><span class="tag">Improved</span>Commit cards show line and file counts in a footer</li>
+    <li class="improved"><span class="tag">Improved</span>⌥- or ⌘-click folds or opens all commit file headers</li>
+    <li class="improved"><span class="tag">Improved</span>Wrapped diff rows hang under their indent</li>
+    <li class="improved"><span class="tag">Improved</span>Link tooltips show URLs in chats, previews, and hover cards</li>
+    <li class="improved"><span class="tag">Improved</span>⌘⏎ presses destructive alert buttons</li>
+    <li class="improved"><span class="tag">Improved</span>⌘⏎ commits from Working Copy&#x27;s composer</li>
+    <li class="improved"><span class="tag">Improved</span>Background tasks keep their names after finishing and across relaunches</li>
+    <li class="improved"><span class="tag">Improved</span>Language server and CLI install pills say ready, then fade</li>
+    <li class="improved"><span class="tag">Improved</span>Task edit forms&#x27; command fields wrap and grow</li>
+    <li class="improved"><span class="tag">Improved</span>Sidebar selections draw semibold on macOS 27</li>
+    <li class="improved"><span class="tag">Improved</span>Sidebars mute live and unread colors in background windows</li>
+    <li class="improved"><span class="tag">Improved</span>Git failures warn in Source Control, not a pane&#x27;s pill</li>
+    <li class="improved"><span class="tag">Improved</span>Shorter Source Control confirmations</li>
+    <li class="improved"><span class="tag">Improved</span>Run output&#x27;s Output button reads Copy to Editor</li>
+    <li class="fixed"><span class="tag">Fixed</span>CRLF files color and stage correctly in diffs</li>
+    <li class="fixed"><span class="tag">Fixed</span>Emptied files&#x27; hunks stage and discard</li>
+    <li class="fixed"><span class="tag">Fixed</span>Run output no longer flashes its scroller while following</li>
+    <li class="fixed"><span class="tag">Fixed</span>Background windows&#x27; sidebars follow theme switches</li>
+    <li class="fixed"><span class="tag">Fixed</span>Markdown list items continue onto unindented lines</li>
+    <li class="fixed"><span class="tag">Fixed</span>YAML ERB templates highlight as ERB with YAML inside</li>
+    <li class="fixed"><span class="tag">Fixed</span>The sidebar filter&#x27;s I-beam no longer blinks to an arrow</li>
+    <li class="fixed"><span class="tag">Fixed</span>Hover docs&#x27; @see links open the nearest declaration</li>
+    <li class="fixed"><span class="tag">Fixed</span>Composer suggestions stop offering to commit committed work</li>
+    <li class="fixed"><span class="tag">Fixed</span>Restored preview selections clear on the next click</li>
+    <li class="fixed"><span class="tag">Fixed</span>HDR cards no longer clip white in screenshots</li>
+  </ul>
+</div>
+]]></description>
+            <enclosure url="https://covecode.app/Cove-0.22.zip" length="27509701" type="application/octet-stream" sparkle:edSignature="5rdAocy5m2xnoc0X3MjUFD3IkIKJPs3tieIKWVE9yJymbTWS5xhNbma/HWjHBa/tD8FjlqKdBJXKqlT6Pze7AA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://covecode.app/Cove10636-10166.delta" sparkle:deltaFrom="10166" length="4757794" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="1g43qcKWGO7XMuw6wHq9ezcCsv0HkRlPrbO3zUHCDASyeFwroFfzhzXbJJNrIiAtcYskFkKuG7oy8U7Dcm4RBQ=="/>
+                <enclosure url="https://covecode.app/Cove10636-10139.delta" sparkle:deltaFrom="10139" length="4987818" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="m48kHjUQ3z+5ZKSMHPEyLpcY9K5+EvVDsiL+OBI5FoFOWz8L1bnoJJtuROzKpgru10Wd1MJ56EngGvGnTZWyCA=="/>
+                <enclosure url="https://covecode.app/Cove10636-9808.delta" sparkle:deltaFrom="9808" length="6674330" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="WzwUjqSxyakzmfobxUgPuGOhloOgpvP3oY4aQponCrwhnPxlgIG3JcKk8umMLuz/csBFZzB9C85Qs252+/9bAA=="/>
+                <enclosure url="https://covecode.app/Cove10636-9497.delta" sparkle:deltaFrom="9497" length="7724774" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="xAd8bfdOR72ahiuB9remDOvh9azu4JIIrVFinPAOckc4lpXlQqRhsXBT1UMBr6VMFTpdznVCkE+XnNhUf7gsCg=="/>
+                <enclosure url="https://covecode.app/Cove10636-9111.delta" sparkle:deltaFrom="9111" length="8627394" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="LRRGcR97n9wgy9aBtbd6RSsqViPTriqCMhNCkCv80DkZ5Xsj6Q6cmxtEQd4qJtOtx9UPZekn8+OLUXEc5bHUBA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.21.1</title>
             <pubDate>Tue, 24 Nov 2026 12:38:00 +0100</pubDate>
             <sparkle:fullReleaseNotesLink>https://covecode.app/release-notes</sparkle:fullReleaseNotesLink>
@@ -1470,168 +1632,6 @@
                 <enclosure url="https://covecode.app/Cove5625-4612.delta" sparkle:deltaFrom="4612" length="7795486" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="I8Rq76z/BDdtCGNIABXYqXXnUaZ2cNuGqg0Y1v8W+0p7mspjkKpjL2DSDuuOs1r6KUl6NHTR9SlBzjePLOVOCg=="/>
                 <enclosure url="https://covecode.app/Cove5625-4421.delta" sparkle:deltaFrom="4421" length="7864318" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="N0scq+hqud09mBnJwBu0vY9iUg+OQAijErqndZYT05JmzWtPKKVqmo6flmG8HD5g5AWFKFVW9l2xOL+lUND1Dg=="/>
                 <enclosure url="https://covecode.app/Cove5625-4383.delta" sparkle:deltaFrom="4383" length="7879338" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Ff58ZmBpRXJz9x7Tb0gDKFRuvYicGqa4mlVKT2kCjzhHbXNxIRmQ/DHL0g+mgif9cmqX4+APRL9ffDgCkAb6CQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.14</title>
-            <pubDate>Tue, 22 Sep 2026 13:37:49 +0200</pubDate>
-            <sparkle:fullReleaseNotesLink>https://covecode.app/release-notes</sparkle:fullReleaseNotesLink>
-            <sparkle:version>5198</sparkle:version>
-            <sparkle:shortVersionString>0.14</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>
-.cove-notes { margin: 0; padding: 0; list-style: none;
-              font: 13px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
-              color: color-mix(in srgb, currentColor 90%, transparent); }
-.cove-notes li { position: relative; margin: 0 0 8px; padding-left: 75px; }
-.cove-notes .tag {
-  position: absolute; left: 0; top: 1px; padding: 1px 7px 2px; border-radius: 999px;
-  font-size: 10.5px; font-weight: 600; line-height: 1.44; letter-spacing: -0.005em;
-  white-space: nowrap; box-sizing: border-box; min-width: 50.5px; text-align: center;
-}
-.cove-notes li:is(.added, .fixed) .tag { letter-spacing: 0.01em; }
-.cove-notes li.added .tag { min-width: 54px; }
-.cove-notes li.improved .tag { letter-spacing: -0.02em; padding-inline: 6px; }
-.cove-notes li.added .tag { background: rgba(255, 144,   0, .59); color: #472b07; }
-.cove-notes li.fixed .tag { background: rgba( 30, 184,  81, .42); color: #0b3619; }
-.cove-notes li.improved .tag { background: rgba(10, 186, 245, .42); color: #0b3a4b; }
-@media (prefers-color-scheme: dark) {
-  .cove-notes li.added .tag { background: rgba(255, 156,  26, .80); color: #fbf5ed; }
-  .cove-notes li.fixed .tag { background: rgba(  0, 184,  61, .52); color: #d4eddd; }
-  .cove-notes li.improved .tag { background: rgba(0, 184, 245, .52); color: #d4eaf1; }
-}
-.cove-notes code { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
-                   font-size: .93em; }
-.cove-log h2 { margin: 16px 0 6px 8px; letter-spacing: -0.014em;
-               font: 600 15px/1.3 "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif; }
-.cove-log h2 .v { display: inline-block; box-sizing: border-box;
-                  min-width: 67px; padding-right: 8px; }
-.cove-log h2 .when { letter-spacing: -0.014em; opacity: .6;
-                     font: 400 11px/1.3 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif; }
-.cove-log > :first-child { margin-top: 0; }
-</style>
-<div class="cove-log">
-  <h2><span class="v">0.14</span><span class="when">September 2026</span></h2>
-  <ul class="cove-notes">
-    <li class="added"><span class="tag">Added</span>Cove says when Claude Code or Codex is out of date, and updates it</li>
-    <li class="improved"><span class="tag">Improved</span>Chats stream, scroll, and switch tabs faster</li>
-    <li class="improved"><span class="tag">Improved</span>Model menus list each account&#x27;s own lineup, best models first</li>
-    <li class="improved"><span class="tag">Improved</span>Source Control is one list, with Repository and Changes sections</li>
-    <li class="improved"><span class="tag">Improved</span>The transcript view mode is app-wide, with a row in Settings ▸ Assistant</li>
-    <li class="improved"><span class="tag">Improved</span>Thinking mode gives every tool run its own row</li>
-    <li class="added"><span class="tag">Added</span>⌥-clicks in a markdown file open the path it names, at the line it cites</li>
-    <li class="added"><span class="tag">Added</span>Chat tab and title menus can delete the chat</li>
-    <li class="improved"><span class="tag">Improved</span>Code blocks and tool output scroll sideways unless Wrap Lines is on</li>
-    <li class="improved"><span class="tag">Improved</span>Chats streaming in a covered or minimized window stop stealing frames</li>
-    <li class="improved"><span class="tag">Improved</span>Pictures a tool returned draw in one strip under the run</li>
-    <li class="improved"><span class="tag">Improved</span>Grayed account rows say why they can&#x27;t be picked</li>
-    <li class="improved"><span class="tag">Improved</span>Settings says when the default account can&#x27;t send</li>
-    <li class="improved"><span class="tag">Improved</span>File links read paths holding a space, a +, or an @</li>
-    <li class="improved"><span class="tag">Improved</span>Folded tool runs lead with what they did to files</li>
-    <li class="improved"><span class="tag">Improved</span>Card headers wear one circled glyph, at one size</li>
-    <li class="fixed"><span class="tag">Fixed</span>Scheduled wake-ups resume a chat later, and survive a restart</li>
-    <li class="fixed"><span class="tag">Fixed</span>Git, formatters, and language servers resolve the way a login shell does</li>
-    <li class="fixed"><span class="tag">Fixed</span>Staging and branch actions say when git is missing</li>
-    <li class="fixed"><span class="tag">Fixed</span>Codex sign-in ends in Cove, not in the ChatGPT app</li>
-    <li class="fixed"><span class="tag">Fixed</span>Failed sign-ins keep their row, with the reason and a Try Again</li>
-    <li class="fixed"><span class="tag">Fixed</span>Accounts stop offering Sign In after a sign-in that worked</li>
-    <li class="fixed"><span class="tag">Fixed</span>Adding an account no longer takes the default</li>
-    <li class="fixed"><span class="tag">Fixed</span>Question and plan cards no longer stand as empty boxes</li>
-    <li class="fixed"><span class="tag">Fixed</span>Reopened chats no longer leave blank gaps where a run&#x27;s images were</li>
-    <li class="fixed"><span class="tag">Fixed</span>Vertical scrolls over a code block move the chat again</li>
-    <li class="fixed"><span class="tag">Fixed</span>Code fences under a list item draw as code while they stream</li>
-    <li class="fixed"><span class="tag">Fixed</span>Tool cards take Wrap Lines, and keep it across a tab switch</li>
-    <li class="fixed"><span class="tag">Fixed</span>Card verbs leave the composer&#x27;s attachments and highlight alone</li>
-    <li class="fixed"><span class="tag">Fixed</span>Queued follow-ups send the images they were written with</li>
-    <li class="fixed"><span class="tag">Fixed</span>Answering a card takes the chat&#x27;s unread mark down</li>
-    <li class="fixed"><span class="tag">Fixed</span>Resume no longer offers itself beside a live turn</li>
-    <li class="fixed"><span class="tag">Fixed</span>Parked cards answer as the account just picked</li>
-    <li class="fixed"><span class="tag">Fixed</span>Composer text follows a light↔dark switch</li>
-    <li class="fixed"><span class="tag">Fixed</span>Group boxes stop drawing an end cap mid-run</li>
-    <li class="fixed"><span class="tag">Fixed</span>Tool card titles stop truncating with room to spare</li>
-    <li class="fixed"><span class="tag">Fixed</span>Renamed chats stop leaving their title spark mid-name</li>
-    <li class="fixed"><span class="tag">Fixed</span>Restored terminals keep their name</li>
-    <li class="fixed"><span class="tag">Fixed</span>Cleared terminals come back cleared after a restart</li>
-    <li class="fixed"><span class="tag">Fixed</span>⌃L leaves nothing drawn above the cleared page</li>
-    <li class="fixed"><span class="tag">Fixed</span>Hovers renew the terminal&#x27;s scrollbar rather than summoning one</li>
-    <li class="fixed"><span class="tag">Fixed</span>Skill folders in Tasks remember their fold</li>
-    <li class="fixed"><span class="tag">Fixed</span>Branch rows stop clipping the last digit of their commit count</li>
-    <li class="fixed"><span class="tag">Fixed</span>Diffs draw a deleted trailing blank line</li>
-    <li class="fixed"><span class="tag">Fixed</span>Pane dividers and panel seams draw whole in both appearances</li>
-    <li class="fixed"><span class="tag">Fixed</span>The pointer stops going stale under another app&#x27;s menu</li>
-    <li class="fixed"><span class="tag">Fixed</span>Files copied in Finder paste as files, not as their name</li>
-    <li class="fixed"><span class="tag">Fixed</span>⌘V in a composer with no attachment strip pastes the text</li>
-    <li class="fixed"><span class="tag">Fixed</span>Identifiers that merely contain a TLD stop linking</li>
-    <li class="fixed"><span class="tag">Fixed</span>The image preview&#x27;s zoom readout stops shifting the bar beside it</li>
-  </ul>
-  <h2><span class="v">0.13</span><span class="when">September 2026</span></h2>
-  <ul class="cove-notes">
-    <li class="added"><span class="tag">Added</span>Repository (⇧⌘Y), a window for branches, commits, and diffs</li>
-    <li class="added"><span class="tag">Added</span>Plan cards reject, revise, or accept into a permission mode</li>
-    <li class="improved"><span class="tag">Improved</span>Source Control is the working copy, with history in Repository</li>
-    <li class="added"><span class="tag">Added</span>Commit options for amend, sign-off, bypass hooks, and Commit and Push</li>
-    <li class="added"><span class="tag">Added</span>An operation banner for a rebase, merge, or cherry-pick under way</li>
-    <li class="added"><span class="tag">Added</span>Messages from other sessions arrive as their own chat rows</li>
-    <li class="improved"><span class="tag">Improved</span>Codex chats catch up to Claude&#x27;s on restarts, skills, commands, and usage</li>
-    <li class="added"><span class="tag">Added</span>Assistant settings say when each account&#x27;s usage limit resets</li>
-    <li class="added"><span class="tag">Added</span>The assistant files task cards for work it passed over</li>
-    <li class="improved"><span class="tag">Improved</span>Chats scroll smoother and stream without stalling</li>
-    <li class="improved"><span class="tag">Improved</span>Quick Open and the composer&#x27;s @ menu rank instantly on large trees</li>
-    <li class="improved"><span class="tag">Improved</span>Windows restore and files open faster</li>
-    <li class="added"><span class="tag">Added</span>Markdown files open rendered or in the editor by preference</li>
-    <li class="added"><span class="tag">Added</span>Ask Assistant quotes selections in previews, rendered pages, and diffs</li>
-    <li class="added"><span class="tag">Added</span>⌘- and ⇧-clicks open a chat link in another pane</li>
-    <li class="added"><span class="tag">Added</span>Held clicks on a title toggle open that mode in another pane</li>
-    <li class="improved"><span class="tag">Improved</span>Finished task runs say so in their row</li>
-    <li class="improved"><span class="tag">Improved</span>The Tasks sidebar groups global and plugin skills apart</li>
-    <li class="added"><span class="tag">Added</span>Markdown previews keep code blocks unwrapped across relaunches</li>
-    <li class="improved"><span class="tag">Improved</span>Quitting keeps terminal shells alive for a quick relaunch</li>
-    <li class="improved"><span class="tag">Improved</span>The assistant&#x27;s worktree setting is saved per workspace</li>
-    <li class="improved"><span class="tag">Improved</span>A failed turn is a record in the transcript, not a reply</li>
-    <li class="improved"><span class="tag">Improved</span>Permission cards read clearer, and keep Allow primary when unfocused</li>
-    <li class="improved"><span class="tag">Improved</span>Chat titles name a session after its first exchange</li>
-    <li class="improved"><span class="tag">Improved</span>The provider menu grades every account it lists</li>
-    <li class="improved"><span class="tag">Improved</span>⌘-clicking an address opens it without raising the browser</li>
-    <li class="improved"><span class="tag">Improved</span>Hover popovers fold types nested past two levels</li>
-    <li class="improved"><span class="tag">Improved</span>The usage popover&#x27;s Spent section folds, and names fresh input</li>
-    <li class="improved"><span class="tag">Improved</span>Tables and blocks under a list item draw at its indent</li>
-    <li class="improved"><span class="tag">Improved</span>Code fences in a chat offer one menu, however they are drawn</li>
-    <li class="improved"><span class="tag">Improved</span>Diff hunk bands and expander glyphs center on the numbers</li>
-    <li class="improved"><span class="tag">Improved</span>Commit message fields each type onto their own undo stack</li>
-    <li class="improved"><span class="tag">Improved</span>Prompt suggestions wait until the chat is back at the reader</li>
-    <li class="improved"><span class="tag">Improved</span>Image previews open at a round zoom stop</li>
-    <li class="improved"><span class="tag">Improved</span>Sidebar headings line up with the file tree&#x27;s columns</li>
-    <li class="improved"><span class="tag">Improved</span>Search result headings drop a directory rather than clip it</li>
-    <li class="improved"><span class="tag">Improved</span>The background tasks popover is as wide as its longest line</li>
-    <li class="added"><span class="tag">Added</span>Addresses in an error card are links</li>
-    <li class="added"><span class="tag">Added</span>Raw <code>&lt;img&gt;</code> tags in a reply draw as pictures</li>
-    <li class="fixed"><span class="tag">Fixed</span>Bookmarked chats are no longer pruned with old workspaces</li>
-    <li class="fixed"><span class="tag">Fixed</span>⌘W closes whichever window is in front, the updater&#x27;s included</li>
-    <li class="fixed"><span class="tag">Fixed</span>Stopping a turn no longer leaves a mark nothing clears</li>
-    <li class="fixed"><span class="tag">Fixed</span>Usage gauges read the chat&#x27;s own account, not the window&#x27;s</li>
-    <li class="fixed"><span class="tag">Fixed</span>Chats restore at the place they were left</li>
-    <li class="fixed"><span class="tag">Fixed</span>Chat prose selections clear, and no longer paint over bullets</li>
-    <li class="fixed"><span class="tag">Fixed</span>Chat inline-code pills fit the line they sit on</li>
-    <li class="fixed"><span class="tag">Fixed</span>A resumed turn ends when it ends, not 30 seconds later</li>
-    <li class="fixed"><span class="tag">Fixed</span>The Dock badge stops counting a chat that went back to work</li>
-    <li class="fixed"><span class="tag">Fixed</span>Chat list sections stay put as ages tick over</li>
-    <li class="fixed"><span class="tag">Fixed</span>Deletions above the first line redraw whole</li>
-    <li class="fixed"><span class="tag">Fixed</span>Quick Open&#x27;s list follows the arrow keys again</li>
-    <li class="fixed"><span class="tag">Fixed</span>Symlinks appear in Quick Open</li>
-    <li class="fixed"><span class="tag">Fixed</span>The pointer stops flickering over chats and while a menu is up</li>
-    <li class="fixed"><span class="tag">Fixed</span>The account usage popover survives a focus change</li>
-    <li class="fixed"><span class="tag">Fixed</span>Sidebar and license labels follow a light↔dark switch</li>
-  </ul>
-</div>
-]]></description>
-            <enclosure url="https://covecode.app/Cove-0.14.zip" length="17197360" type="application/octet-stream" sparkle:edSignature="ZdSr+W/8xrpXh8Gv9vRliHLxgqP7NGoP5Oy3MSTW8W7+xqTAsBLB7lc8mEfOuri8VqB3lyPBSwBJgrs+RsjNCg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://covecode.app/Cove5198-5003.delta" sparkle:deltaFrom="5003" length="5271350" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="N1mQSPS7t2+Xtb+Pc6l4jHe8YfFec9GJdENEBXWKBd0yF7Zu8RP9HgKC2tx+o4AzMCObgpuf8QMPVWu93jwLBA=="/>
-                <enclosure url="https://covecode.app/Cove5198-4612.delta" sparkle:deltaFrom="4612" length="5697766" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="kNig2wQQ0wcPwa4Zluo3Ms9Pm9aCwLB10D45VE9Rwa0YPySGFxthVmt78F2xdg86AClolSz7VZ9mX8PpxtTkCw=="/>
-                <enclosure url="https://covecode.app/Cove5198-4421.delta" sparkle:deltaFrom="4421" length="5795870" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="q7AbRTrDougj2k+TO3YY7RCWIfGZd9xp6KelrKeeLcI1Kk28Fyplh4PSTm8OKw6a17S0goo6FZArool5/PipCw=="/>
-                <enclosure url="https://covecode.app/Cove5198-4383.delta" sparkle:deltaFrom="4383" length="5818646" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="BVwR7sn8h86YFtHwLO6MIE7qUJDuJELj/CcoBpXLDD96ZcPqvTbcyNqvaLcqi5RtVNAfUyCUhX4ZwgqqFVp8Bg=="/>
-                <enclosure url="https://covecode.app/Cove5198-4339.delta" sparkle:deltaFrom="4339" length="5859318" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="0eF0mnF3li/263IAmstJC6r4eDCVWuOfHqjFD4CqJUw9LN4zrhe2TPOiXFS8sytTs/oD9HeUAFsEQqnq4GhRBQ=="/>
             </sparkle:deltas>
         </item>
     </channel>

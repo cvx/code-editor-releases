@@ -1,0 +1,144 @@
+<style>
+.cove-log { box-sizing: border-box; max-width: 680px; margin: 0 auto; padding: 6px 16px; }
+.cove-notes { margin: 0; padding: 0; list-style: none;
+              font: 13px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+              color: color-mix(in srgb, currentColor 90%, transparent); }
+.cove-notes li { position: relative; margin: 0 0 8px; padding-left: 75px; }
+.cove-notes .tag {
+  position: absolute; left: 0; top: 1px; padding: 1px 7px 2px; border-radius: 999px;
+  font-size: 10.5px; font-weight: 600; line-height: 1.44; letter-spacing: -0.005em;
+  white-space: nowrap; box-sizing: border-box; min-width: 50.5px; text-align: center;
+}
+.cove-notes li:is(.added, .fixed) .tag { letter-spacing: 0.01em; }
+.cove-notes li.added .tag { min-width: 54px; }
+.cove-notes li.improved .tag { letter-spacing: -0.02em; padding-inline: 6px; }
+.cove-notes li.added .tag { background: rgba(255, 144,   0, .59); color: #472b07; }
+.cove-notes li.fixed .tag { background: rgba( 30, 184,  81, .42); color: #0b3619; }
+.cove-notes li.improved .tag { background: rgba(10, 186, 245, .42); color: #0b3a4b; }
+@media (prefers-color-scheme: dark) {
+  .cove-notes li.added .tag { background: rgba(255, 156,  26, .80); color: #fbf5ed; }
+  .cove-notes li.fixed .tag { background: rgba(  0, 184,  61, .52); color: #d4eddd; }
+  .cove-notes li.improved .tag { background: rgba(0, 184, 245, .52); color: #d4eaf1; }
+}
+.cove-notes code { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+                   font-size: .93em; }
+.cove-log h2 { margin: 16px 0 3px; letter-spacing: -0.014em;
+               font: 600 15px/1.3 "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif; }
+.cove-log h2 .v { display: inline-block; box-sizing: border-box;
+                  min-width: 75px; padding: 0 8px 0 6px; }
+.cove-log h2 .when { letter-spacing: -0.014em; opacity: .6;
+                     font: 400 11px/1.3 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif; }
+.cove-log > :first-child { margin-top: 0; }
+</style>
+<div class="cove-log">
+  <h2><span class="v">0.22</span><span class="when">November 27, 2026</span></h2>
+  <ul class="cove-notes">
+    <li class="added"><span class="tag">Added</span>Clone Repository… in the File menu, from page URLs too</li>
+    <li class="added"><span class="tag">Added</span><code>.diff</code> and <code>.patch</code> files preview as diff pages</li>
+    <li class="improved"><span class="tag">Improved</span>Markdown files open in preview by default</li>
+    <li class="added"><span class="tag">Added</span>Filterable branch and tag picker in Source Control</li>
+    <li class="added"><span class="tag">Added</span>Sync rows under the branch in Source Control</li>
+    <li class="added"><span class="tag">Added</span>Diffs wrap lines, side by side too, via View menu</li>
+    <li class="improved"><span class="tag">Improved</span>Side by side diffs search both columns and show commits</li>
+    <li class="added"><span class="tag">Added</span>@ in commit messages suggests co-authors</li>
+    <li class="improved"><span class="tag">Improved</span>Assistant context takes diff, terminal, chat, and Source Control selections</li>
+    <li class="improved"><span class="tag">Improved</span>Providers settings with agent logos and an Add Provider sheet</li>
+    <li class="improved"><span class="tag">Improved</span>Summary mode headlines every turn, even without the agent&#x27;s own</li>
+    <li class="added"><span class="tag">Added</span>⌥⌘V attaches copied image files to chats, then trashes them</li>
+    <li class="improved"><span class="tag">Improved</span>Agents show changes across several files as one diff page</li>
+    <li class="added"><span class="tag">Added</span>Checking out and comparing tags in Source Control</li>
+    <li class="added"><span class="tag">Added</span>Publishing branches by dropping them on a remote</li>
+    <li class="added"><span class="tag">Added</span>Copy as Patch on Source Control change rows</li>
+    <li class="added"><span class="tag">Added</span>Edit Remote… changes remotes&#x27; names and URLs together</li>
+    <li class="improved"><span class="tag">Improved</span>Branch and tag subtitles say how far they stand from main</li>
+    <li class="improved"><span class="tag">Improved</span>Source Control reopens where it was left, across relaunches too</li>
+    <li class="improved"><span class="tag">Improved</span>Long commit messages collapse</li>
+    <li class="improved"><span class="tag">Improved</span>Changes and Conflicts headings show their counts</li>
+    <li class="improved"><span class="tag">Improved</span>⌃⌘← and ⌃⌘→ fold or open all of a commit page&#x27;s diffs</li>
+    <li class="improved"><span class="tag">Improved</span>⌘-click on the sidebar&#x27;s Source Control button opens its window</li>
+    <li class="improved"><span class="tag">Improved</span>Scheduled assistant wake-ups survive agent restarts</li>
+    <li class="improved"><span class="tag">Improved</span>Copied chat text keeps its links when pasted</li>
+    <li class="improved"><span class="tag">Improved</span>Slash command suggestions rank most-used commands first</li>
+    <li class="improved"><span class="tag">Improved</span>Go Back returns to previewed pages where they were read</li>
+    <li class="improved"><span class="tag">Improved</span>Hover docs select across prose, code, and dependency cards</li>
+    <li class="improved"><span class="tag">Improved</span>Dependency cards show the lockfile version when not installed</li>
+    <li class="improved"><span class="tag">Improved</span>Opening symlinks selects the link&#x27;s tree row</li>
+    <li class="improved"><span class="tag">Improved</span>Drags from sidebar lists&#x27; empty space select rows</li>
+    <li class="improved"><span class="tag">Improved</span>Pane dividers drag from the toolbar band</li>
+    <li class="improved"><span class="tag">Improved</span>Wrapped lines break after punctuation, never after indent alone</li>
+    <li class="improved"><span class="tag">Improved</span>Diff find centers matches, as the editor does</li>
+    <li class="improved"><span class="tag">Improved</span>Tag lists shelve all but 10 under Previous, with counts</li>
+    <li class="improved"><span class="tag">Improved</span>Working Copy opens on its last change</li>
+    <li class="improved"><span class="tag">Improved</span>Syntax Coloring menu checks the detected language</li>
+    <li class="improved"><span class="tag">Improved</span>Untitled buffers drop a stale language guess</li>
+    <li class="improved"><span class="tag">Improved</span>Missing markdown images show muted alt text and their path</li>
+    <li class="improved"><span class="tag">Improved</span>Followed run tabs say &quot;Waiting for output…&quot; until they print</li>
+    <li class="improved"><span class="tag">Improved</span>Usage meters roll over at their window&#x27;s reset</li>
+    <li class="improved"><span class="tag">Improved</span>Sidebar workspace titles show the folder path on hover</li>
+    <li class="improved"><span class="tag">Improved</span>Switching chats with long recent lists is faster</li>
+    <li class="improved"><span class="tag">Improved</span>Settings&#x27; back and forward step through subpages</li>
+    <li class="improved"><span class="tag">Improved</span>Save to Downloads behind ⌥ in image menus</li>
+    <li class="improved"><span class="tag">Improved</span>Show Frame Rate moves to General settings</li>
+    <li class="improved"><span class="tag">Improved</span>New windows open at 1060 by 660</li>
+    <li class="fixed"><span class="tag">Fixed</span>Context gauges read right after compactions and restores</li>
+    <li class="fixed"><span class="tag">Fixed</span>Scheduled jobs no longer hold account switches when out of quota</li>
+    <li class="fixed"><span class="tag">Fixed</span>Git undo presses during a running step beep instead of queuing</li>
+    <li class="fixed"><span class="tag">Fixed</span>RuboCop servers stop once their folder is gone or untrusted</li>
+    <li class="fixed"><span class="tag">Fixed</span>The clones folder is no longer offered for trust</li>
+  </ul>
+  <h2><span class="v">0.21.1</span><span class="when">November 24, 2026</span></h2>
+  <ul class="cove-notes">
+    <li class="improved"><span class="tag">Improved</span>Recent chats keep the past week&#x27;s, up to 1000</li>
+    <li class="improved"><span class="tag">Improved</span>Tool group headers count failed calls by kind</li>
+    <li class="improved"><span class="tag">Improved</span>Side by side diffs sit tighter with bar-drawn gutter marks</li>
+    <li class="improved"><span class="tag">Improved</span>The assistant&#x27;s status ⌘ spins on a spring and settles when stopped</li>
+    <li class="improved"><span class="tag">Improved</span>Chats with answered questions stream smoother</li>
+    <li class="fixed"><span class="tag">Fixed</span>Titlebar double-clicks over the sidebar zoom the window</li>
+  </ul>
+  <h2><span class="v">0.21</span><span class="when">November 24, 2026</span></h2>
+  <ul class="cove-notes">
+    <li class="added"><span class="tag">Added</span>Side by side diffs, from the menu or Quick Action</li>
+    <li class="added"><span class="tag">Added</span>Source Control opens as a tab beside the editor</li>
+    <li class="improved"><span class="tag">Improved</span>SSH chats survive dropped connections and resume where they were</li>
+    <li class="added"><span class="tag">Added</span>Container accounts on Cove&#x27;s own image, managed in Settings</li>
+    <li class="added"><span class="tag">Added</span>Image files open in a zoomable canvas with zoom keys</li>
+    <li class="added"><span class="tag">Added</span>Agents add, edit, and delete Tasks sidebar commands</li>
+    <li class="improved"><span class="tag">Improved</span>Quick Open springs open and blurs out like Spotlight</li>
+    <li class="improved"><span class="tag">Improved</span>Image changes in Source Control show the image</li>
+    <li class="improved"><span class="tag">Improved</span>Commit bodies render as markdown in Source Control</li>
+    <li class="improved"><span class="tag">Improved</span>Markdown tables fit their contents and fade at overflowing edges</li>
+    <li class="improved"><span class="tag">Improved</span>Staging hunks and typing in diffs are faster</li>
+    <li class="improved"><span class="tag">Improved</span>Slash commands suggest their most-used recent arguments</li>
+    <li class="improved"><span class="tag">Improved</span>Codex changes to several files show a card per file</li>
+    <li class="improved"><span class="tag">Improved</span>Tool groups that commit name the commit in their header</li>
+    <li class="added"><span class="tag">Added</span>Objective-C++ highlighting</li>
+    <li class="improved"><span class="tag">Improved</span>More lockfiles, C++, systemd, Dockerfile, and fastlane files recognized</li>
+    <li class="improved"><span class="tag">Improved</span>YAML keys and markup attributes get their own colors</li>
+    <li class="improved"><span class="tag">Improved</span>Old tags shelve under Previous in branch lists</li>
+    <li class="improved"><span class="tag">Improved</span>Commit cards show line and file counts in a footer</li>
+    <li class="improved"><span class="tag">Improved</span>⌥- or ⌘-click folds or opens all commit file headers</li>
+    <li class="improved"><span class="tag">Improved</span>Wrapped diff rows hang under their indent</li>
+    <li class="improved"><span class="tag">Improved</span>Link tooltips show URLs in chats, previews, and hover cards</li>
+    <li class="improved"><span class="tag">Improved</span>⌘⏎ presses destructive alert buttons</li>
+    <li class="improved"><span class="tag">Improved</span>⌘⏎ commits from Working Copy&#x27;s composer</li>
+    <li class="improved"><span class="tag">Improved</span>Background tasks keep their names after finishing and across relaunches</li>
+    <li class="improved"><span class="tag">Improved</span>Language server and CLI install pills say ready, then fade</li>
+    <li class="improved"><span class="tag">Improved</span>Task edit forms&#x27; command fields wrap and grow</li>
+    <li class="improved"><span class="tag">Improved</span>Sidebar selections draw semibold on macOS 27</li>
+    <li class="improved"><span class="tag">Improved</span>Sidebars mute live and unread colors in background windows</li>
+    <li class="improved"><span class="tag">Improved</span>Git failures warn in Source Control, not a pane&#x27;s pill</li>
+    <li class="improved"><span class="tag">Improved</span>Shorter Source Control confirmations</li>
+    <li class="improved"><span class="tag">Improved</span>Run output&#x27;s Output button reads Copy to Editor</li>
+    <li class="fixed"><span class="tag">Fixed</span>CRLF files color and stage correctly in diffs</li>
+    <li class="fixed"><span class="tag">Fixed</span>Emptied files&#x27; hunks stage and discard</li>
+    <li class="fixed"><span class="tag">Fixed</span>Run output no longer flashes its scroller while following</li>
+    <li class="fixed"><span class="tag">Fixed</span>Background windows&#x27; sidebars follow theme switches</li>
+    <li class="fixed"><span class="tag">Fixed</span>Markdown list items continue onto unindented lines</li>
+    <li class="fixed"><span class="tag">Fixed</span>YAML ERB templates highlight as ERB with YAML inside</li>
+    <li class="fixed"><span class="tag">Fixed</span>The sidebar filter&#x27;s I-beam no longer blinks to an arrow</li>
+    <li class="fixed"><span class="tag">Fixed</span>Hover docs&#x27; @see links open the nearest declaration</li>
+    <li class="fixed"><span class="tag">Fixed</span>Composer suggestions stop offering to commit committed work</li>
+    <li class="fixed"><span class="tag">Fixed</span>Restored preview selections clear on the next click</li>
+    <li class="fixed"><span class="tag">Fixed</span>HDR cards no longer clip white in screenshots</li>
+  </ul>
+</div>
